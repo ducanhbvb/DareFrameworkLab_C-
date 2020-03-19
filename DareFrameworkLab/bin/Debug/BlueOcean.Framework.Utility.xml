@@ -1,0 +1,1661 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Utility</name>
+    </assembly>
+    <members>
+        <member name="M:BlueOcean.Framework.Utility.UtilProcess.StartProcess(System.String,System.Diagnostics.ProcessWindowStyle,System.Boolean)">
+            <summary>
+            프로세스를 시작한다.
+            </summary>
+            <param name="filename">프로세스 경로</param>
+            <param name="style">윈도우스타일</param>
+            <param name="bDuplicateStart">중복실행 허용여부</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilProcess.KillProcess(System.String)">
+            <summary>
+            프로세스를 중지시킨다.
+            </summary>
+            <param name="processname"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilProcess.IsProcessRunning(System.String)">
+            <summary>
+            특정 프로세스가 실행중인지 여부를 확인한다.
+            </summary>
+            <param name="processname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilProcess.StartProcessIE(System.String)">
+            <summary>
+            IE 페이지를 호출하는 프로세스를 시작한다.
+            </summary>
+            <param name="filename">홈페이지 주소</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilProcess.StartProcessIE(System.String,System.Diagnostics.ProcessWindowStyle)">
+            <summary>
+            IE 페이지를 호출하는 프로세스를 시작한다.
+            </summary>
+            <param name="filename">홈페이지 주소</param>
+            <param name="style">윈도우스타일</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilCheckNumber.GetCheckJuminNo(System.String)">
+            <summary>
+            주민등록번호가 유효한지에 대한 오류 검사를 진행 합니다.
+            </summary>
+            <param name="pn"></param>
+            <returns>True : 정상, False : 오류</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilCheckNumber.GetCheckBizNo(System.String,System.String,System.String)">
+            <summary>
+            사업자등록번호 값이 유효한지에 대한 오류를 검사 합니다.
+            </summary>
+            <returns>True : 정상, False : 오류</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilCheckNumber.GetCheckBizNo(System.String)">
+            <summary>
+            사업자등록번호 값이 유효한지에 대한 오류를 검사 합니다.
+            </summary>
+            <returns>True : 정상, False : 오류</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilCheckNumber.IsDigit(System.String)">
+            <summary>
+            모든 문자열이 숫자로만 이루어져 있는지를 검사한다.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DatabaseInfo.#ctor(System.String)">
+            Creates a new DatabaseInfo object given the database info String.
+            @param info
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DatabaseInfo.isPremium">
+             Returns true if the database is the premium version.
+            
+             @return true if the premium version of the database.
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DatabaseInfo.getDate">
+             Returns the date of the database.
+            
+             @return the date of the database.
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.UtilDataTable">
+            <summary>
+            System.Data.DataTable 관련 Helper 클래스 입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.AddColumn(System.Data.DataTable@,System.String,System.Type)">
+            <summary>
+            선택 컬럼에 대한 합계 값을 반환 받는다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="column">누적 컬럼 값</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.GetSummaryAmountValue(System.Data.DataTable,System.String)">
+            <summary>
+            선택 컬럼에 대한 합계 값을 반환 받는다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="column">누적 컬럼 값</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.GetSummaryAmountValue(System.Data.DataTable,System.String,System.String,System.String)">
+            <summary>
+            포맷 형식에 따라서 데이터 테이블에서 값을 반환 받는다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="column">값 누적 컬럼</param>
+            <param name="format">필터링 포맷</param>
+            <param name="value">필터링 값</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.GetFilterORSort(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            데이터 소스를 필터링, 정렬해서 DataTable을 반환 한다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="filter">필터링 공식</param>
+            <param name="sort">정렬 공식</param>
+            <returns>필터링된 DataTable 반환. dt 가 null이면 null을 반환 한다. 그외는 무조건 DataTable 을 반환 하진 않는다. </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.GetDataTableSelectFilter(System.Data.DataTable,System.String)">
+            <summary>
+            데이터 소스를 필터링, 정렬해서 DataTable을 반환 한다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="filter">필터링 공식</param>
+            <param name="sort">정렬 공식</param>
+            <returns>필터링된 DataTable 반환. dt 가 null이면 null을 반환 한다. 그외는 무조건 DataTable 을 반환 하진 않는다. </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.GetDataTableSelectFilter(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            데이터 소스를 필터링, 정렬해서 DataTable을 반환 한다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="filter">필터링 공식</param>
+            <param name="sort">정렬 공식</param>
+            <returns>필터링된 DataTable 반환. dt 가 null이면 null을 반환 한다. 그외는 무조건 DataTable 을 반환 하진 않는다. </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.GetDataTableSelectFilter2(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            데이터 소스를 필터링, 정렬해서 DataTable을 반환 한다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="filter">필터링 공식</param>
+            <param name="sort">정렬 공식</param>
+            <returns>필터링된 DataTable 반환. dt 가 null이면 null을 반환 한다. 그외는 무조건 DataTable 을 반환 하진 않는다. </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.GetDataTableSelectFilter2(System.Data.DataTable,System.String)">
+            <summary>
+            데이터 소스를 필터링, 정렬해서 DataTable을 반환 한다.  [alth,20150115]
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="filter">필터링 공식</param>
+            <param name="sort">정렬 공식</param>
+            <returns>필터링된 DataTable 반환. dt 가 null이면 null을 반환 한다. 그외는 무조건 DataTable 을 반환 하진 않는다. </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataTable.MakeCodeList(System.Data.DataTable,System.String)">
+            <summary>
+            멀티 CODE 스트링으로 조합, code1|code2|code3|...
+            코드 수정 :: 동일한 코드에 대해서는 체크해서 추가 안함. [20130807,alth]
+            </summary>
+            <param name="dt">조합할 테이블</param>
+            <param name="columnName">조합할 컬럼</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.WriteFile(System.String,System.Byte[])">
+            <summary>
+            문자열 데이터를 가진 파일을 생성 한다.
+            텍스트의 인코딩 : 949 ks_c_5601-1987 Korean :: Encoding.GetEncoding(949);
+            </summary>
+            <param name="sFileName"></param>
+            <param name="bData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.WriteFile(System.String,System.Byte[],System.Text.Encoding)">
+            <summary>
+            문자열 데이터를 가진 파일을 생성 한다.
+            텍스트의 인코딩 : 949 ks_c_5601-1987 Korean :: Encoding.GetEncoding(949);
+            </summary>
+            <param name="sFileName"></param>
+            <param name="bData"></param>
+            <param name="encodin">인코딩 방식</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.WriteFile(System.String,System.String)">
+            <summary>
+            문자열 데이터를 가진 파일을 생성 한다.
+            텍스트의 인코딩 : 949 ks_c_5601-1987 Korean :: Encoding.GetEncoding(949);
+            </summary>
+            <param name="sFileName"></param>
+            <param name="sData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.WriteFile(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            문자열 데이터를 가진 파일을 생성 한다.
+            </summary>
+            <param name="sFileName"></param>
+            <param name="sData"></param>
+            <param name="encodin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.ReadFile(System.String,System.Byte[]@)">
+            <summary>
+            파일을 문자열을 읽어 온다.
+            텍스트의 인코딩 : 949 ks_c_5601-1987 Korean :: Encoding.GetEncoding(949);
+            </summary>
+            <param name="sFileName"></param>
+            <param name="bOutput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.ReadFile(System.String,System.Byte[]@,System.Text.Encoding)">
+            <summary>
+            파일을 문자열을 읽어 온다.
+            </summary>
+            <param name="sFileName"></param>
+            <param name="bOutput"></param>
+            <param name="encodin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.ReadFile(System.String,System.String@)">
+            <summary>
+            파일을 문자열을 읽어 온다.
+            텍스트의 인코딩 : 949 ks_c_5601-1987 Korean :: Encoding.GetEncoding(949);
+            </summary>
+            <param name="sFileName"></param>
+            <param name="sOutput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.ReadFile(System.String,System.String@,System.Text.Encoding)">
+            <summary>
+            파일을 문자열을 읽어 온다.
+            </summary>
+            <param name="sFileName"></param>
+            <param name="sOutput"></param>
+            <param name="encodin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.DeleteFile(System.String)">
+            <summary>
+            파일을 삭제 한다.
+            </summary>
+            <param name="fileFullPath">파일 전체경로</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFile.GetTempFileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Utility.UtilFile.GetFileNameValid(System.String)" 멤버에 대해 무시됩니다. -->
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Utility.UtilFile.GetExcelSheetNameValid(System.String)" 멤버에 대해 무시됩니다. -->
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Utility.UtilFile.GetAvailableFilterString(System.String)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Utility.Country.#ctor(System.String,System.String)">
+             Creates a new Country.
+            
+             @param code the country code.
+             @param name the country name.
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.Country.getCode">
+             Returns the ISO two-letter country code of this country.
+            
+             @return the country code.
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.Country.getName">
+             Returns the name of this country.
+            
+             @return the country name.
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.NullStringToEmpty(System.String)">
+            <summary>
+            string의 값이 null이면 ""을 리턴한다.
+            </summary>
+            <param name="pstr">string 값</param>
+            <returns>"" 또는 Trim된 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.NullStringToZero(System.String)">
+            <summary>
+            string의 값이 null이면 "0"을 리턴한다.
+            </summary>
+            <param name="pstr">string 값</param>
+            <returns>"0" 또는 Trim된 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.NullStringToBool(System.String)">
+            <summary>
+            string의 값이 "0" 이외의 값이면 true를 리턴한다.
+            </summary>
+            <param name="pstr">string 값</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.GetAvailableFileNameString(System.String)">
+            <summary>
+            파일에 특수문자 사용금지 한다.
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.ConvertByte(System.Object,System.Int32)">
+            <summary>
+            특정 영역 설정 메소드
+            한글 데이타 
+            </summary>
+            <param name="s"></param>
+            <param name="len"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.CreateAppendEmptyStringList(System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+            길이만큼 공백을 배열의 문자열 앞 부분에 추가해서 통합된 문자열을 반환 한다.
+            </summary>
+            <param name="list">문자열 리스트</param>
+            <param name="size">공백 추가 갯수</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.CreateAppendEmptyString(System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+            길이만큼 공백을 배열의 문자열 앞 부분에 추가해서 통합된 문자열을 반환 한다.
+            </summary>
+            <param name="list">문자열 리스트</param>
+            <param name="size">공백 추가 갯수</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.GetAddLengthEmpty(System.Int32)">
+            <summary>
+            길이만큼 공백을 문자열로 생성해서 반환 한다. " "
+            </summary>
+            <param name="length">공백 문자열 갯수</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilString.GetLastEnterRemove(System.String)">
+            <summary>
+            최종 엔터 문자를 삭제 한다.  str.Substring(0, str.Length - 2);
+            </summary>
+            <param name="str">문자열</param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.WaitCursor">
+            <summary>
+            Provides a simple way to set a wait cursor (or other cursor)
+            around a block of code.
+            </summary>
+            <example>
+            using (new WaitCursor())
+            {
+                // Do something
+            }
+            
+            using( WaitCursor wait = new WaitCursor()
+            {
+            	// Do something
+            }
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.WaitCursor.#ctor">
+            <summary>
+            <para>Initialize a new instance of the <see cref="T:BlueOcean.Framework.Utility.WaitCursor"/> class.</para>
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.WaitCursor.#ctor(System.Windows.Forms.Cursor)">
+            <summary>
+            <para>Initialize a new instance of the <see cref="T:BlueOcean.Framework.Utility.WaitCursor"/> class.</para>
+            </summary>
+            <param name="cursor">
+            <para>The <see cref="T:System.Windows.Forms.Cursor"/> to use as the wait <see cref="T:System.Windows.Forms.Cursor"/>.</para>
+            </param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.WaitCursor.Dispose">
+            <summary>
+            <para>Releases the unmanaged resources used by the <see cref="T:BlueOcean.Framework.Utility.WaitCursor"/> and optionally releases the managed resources.</para>
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.PCInfo">
+            <summary>
+            Local 컴퓨터의 정보 클래스.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress">
+            <summary>
+            컴퓨터의 IP Address를 구해옵니다. 192.168.0.xxx 형식의 값을 리턴 받는다.
+            </summary>
+            <returns>컴퓨터 아이피, 오류이면 '' 공백 리턴.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress_External">
+            <summary>
+            컴퓨터의 사설 공유기의 외부 공개 IP Address를 반환 한다.
+            2초 정도의 시간이 소요 된다. http://www.whatismyip.com/automation/n09230945.asp 사이트 이용
+            </summary>
+            <returns>컴퓨터 아이피, 오류이면 '' 공백 리턴.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress_External2">
+            <summary>
+            외부 아이피 가져오기. 로그인 후에 다시 한번 공인 아이피 가져오는 것을 시도해 본다. [20110916]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress_External3">
+            <summary>
+            외부 아이피 가져오기. 로그인 후에 다시 한번 공인 아이피 가져오는 것을 시도해 본다. [20140715]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress_External4">
+            <summary>
+            외부 아이피 가져오기. 로그인 후에 다시 한번 공인 아이피 가져오는 것을 시도해 본다. [20140715]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress_External5">
+            <summary>
+            외부 아이피 가져오기. 로그인 후에 다시 한번 공인 아이피 가져오는 것을 시도해 본다. [20140715]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress_External6">
+            <summary>
+            외부 아이피 가져오기. 로그인 후에 다시 한번 공인 아이피 가져오는 것을 시도해 본다. [20140715]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetMACAddress">
+            <summary>
+            Mac Address를 가지고 온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetComputerName">
+            <summary>
+            Computer Name을 가지고 온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetNetworkIsAvailable">
+            <summary>
+            네트워크가 사용 가능한지 여부를 나타냅니다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetPhysicalMemorySize">
+            <summary>
+            컴퓨터의 총 실제 메모리 양을 가져옵니다.
+            Physical Memory Size 를 가지고 온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetAvailablePhysicalMemorySize">
+            <summary>
+            컴퓨터에서 사용 가능한 실제 메모리의 전체 양을 가져옵니다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetTotalVirtualMemorySize">
+            <summary>
+            컴퓨터의 총 가상 메모리 양을 가져옵니다. 닷넷이 사용할 수 있는 가상메모리 양 입니다 최대 2G 반환 [20130429]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.ConvertMemorySize(System.UInt64)">
+            <summary>
+            메모리 사이즈 계산. 메가 바이트 기가 바이트
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetOSType">
+            <summary>
+            OS Type : OSFullName
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetVersion">
+            <summary>
+            공용 언어 런타임의 주 번호, 보조 번호, 빌드 번호 및 수정 번호를 설명하는 Version 개체를 가져옵니다. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetTotalCpuUsagePercent">
+            <summary>
+            Cpu 총사용율
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetTotalMemoryUsage">
+            <summary>
+            Memory 총사용량
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetProcessInfoList">
+            <summary>
+            현재 실행되고 있는 모든 Process의 정보를 구한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetFixedDriveInfoToStringArray">
+            <summary>
+            Local Drives 중 fix된 Drive들만의 정보를 String으로 가져온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetFixedDriveInfoToString">
+            <summary>
+             Local Drives 중 fix된 Drive들만의 정보를 String Array로 가져온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetSystemRootDriveString">
+            <summary>
+            WINDOWS 가 설치된 드라이브를 가져 온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Utility.PCInfo.GetDriveInfoFreeSpaceToMBytes(System.String)" 멤버에 대해 무시됩니다. -->
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Utility.PCInfo.GetDriveInfoFreeSpaceToGBytes(System.String)" 멤버에 대해 무시됩니다. -->
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Utility.PCInfo.GetDriveInfoFreeSpaceToLong(System.String)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetConvertSizToBytesString(System.Int64)">
+            <summary>
+            사이즈를 Bytes 타입으로 변환 해서 숫자 뒤에 Bytes, MBytes, GBytes 를 붙여서 반환 한다.
+            </summary>
+            <param name="checkSize">체크 사이즈.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.IsProcessRunning(System.String)">
+            <summary>
+            특정 Process가 실행되고 있는지 알려준다. 
+            </summary>
+            <param name="strProcessNm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetProcessHandle(System.String)">
+            <summary>
+            특정 Process의 Handle을 가져온다.
+            </summary>
+            <param name="strProcessNm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.ExistProcess(System.Int32)">
+            <summary>
+            특정 ProcessID를 통해서 Process 가 살아있는지 여부를 가져옵니다.
+            </summary>
+            <param name="strProcessNm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetProcessNameFromHandle(System.IntPtr)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.PCInfo.GetIPAddress_External_Custom">
+            <summary>
+            외부 아이피 가져오기. 로그인 후에 다시 한번 공인 아이피 가져오는 것을 시도해 본다. [20110916]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.UtilImageHelper">
+            <summary>
+            이미지 객체 헬퍼 클래스.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilImageHelper.ConvertFileToByteArray(System.String)">
+            <summary>
+            이미지 파일을 이용해서 Byte[] 타입으로 변환 해서 반환 한다.
+            </summary>
+            <param name="pFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilImageHelper.ConvertImageToByteArray(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            이미지 객체를 byte[] 배열로 변환 해서 반환 한다.
+            </summary>
+            <param name="imageToConvert"></param>
+            <param name="formatOfImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilImageHelper.GetFileName(System.String)">
+            <summary>
+            이미지 객체의 파일명만을 반환 한다.
+            </summary>
+            <param name="FileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilModule.GetVersion(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.UtilDataRow">
+            <summary>
+            DataRow 의 Column 정보에 대한 처리 Helper Class
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.SetValue(System.Data.DataRow,System.String,System.Object)">
+            <summary>
+            데이터 행의 컬럼 값을 설정한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <param name="value">값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToObject(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 object 로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToString(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 "" 공백으로 아니면 문자열 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToZero(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 "0" 으로 아니면 문자열 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToInt(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            Int32 타입으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 Int, 오류 이면 -1 반환</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToInt64(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            Int64 타입으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 Int64</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToDecimal(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 Decimal</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToDouble(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 Double</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.GetValueToBool(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이거나 공백이면 false, 아니면 true 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이거나 공백이면 false, 아니면 true</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataRow.ZGetDataRowColumnsValueString(System.Data.DataRow)">
+            <summary>
+            DataRow 의 값을 디버그 용도로 문자열로 반환 한다.
+            </summary>
+            <param name="drRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.FileHandler.LoadTextFile(System.String)">
+            <summary>
+            텍스트 파일 전체를 로드합니다. 내부적으로 LoadBinFile 메서드를 사용.
+            </summary>
+            <param name="strPath">읽어들일 텍스트 파일의 전체경로</param>
+            <returns>텍스트 파일의 내용 - string</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.FileHandler.LoadBinFile(System.String)">
+            <summary>
+            바이너리 파일 전체를 로드합니다.
+            </summary>
+            <param name="strPath">읽어들일 파일의 전체경로</param>
+            <returns>파일의 내용 - byte []</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.FileHandler.WriteTextFile(System.String,System.String)">
+            <summary>
+            텍스트 파일 전체를 파일에 기록합니다. 내부적으로 WriteBinFIle 메서드를 사용.
+            </summary>
+            <param name="strPath">파일의 전체경로</param>
+            <param name="strContents">파일내용</param>
+            <returns>성공여부</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.FileHandler.WriteBinFile(System.String,System.Byte[])">
+            <summary>
+            바이너리 파일 전체를 파일에 기록합니다.
+            </summary>
+            <param name="strPath">파일의 전체경로</param>
+            <param name="byteContents">파일내용</param>
+            <returns>성공여부</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.FileHandler.Delete(System.String)">
+            <summary>
+            파일을 삭제합니다.
+            </summary>
+            <param name="file"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.FileHandler.DeleteNoError(System.String)">
+            <summary>
+            파일을 삭제합니다. 에러가 발생해도 표시하지 않스니다.
+            </summary>
+            <param name="file"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.FileHandler.IsWriteAccess(System.String)">
+            <summary>
+            존재하는 파일을 사용다른 프로그램이 사용중인지 여부를 가져옵니다.
+            </summary>
+            <param name="file">파일경로명</param>
+            <returns>
+            True 액세스 할수 있는 파일
+            False 다른 프로세서에서 제어중
+            </returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.UtilHashTable">
+            <summary>
+            DataRow 의 Column 정보에 대한 처리 Helper Class
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilHashTable.GetValueToString(System.Collections.Hashtable,System.String)">
+            <summary>
+            Hashtable 파라미터 항목에서 Key 값에 해당하는 값을 반환 한다.
+            Key 가 존재하지 않을 경우에는 Exception 에러 메시지 창을 호출 한다. [20120109]
+            </summary>
+            <param name="ht">데이터 행</param>
+            <param name="key">컬럼명</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilHashTable.GetValueToString(System.Collections.Hashtable,System.String,System.Boolean)">
+            <summary>
+            Hashtable 파라미터 항목에서 Key 값에 해당하는 값을 반환 한다.
+            Key 가 존재하지 않을 경우에는 Exception 에러 메시지 창을 호출 한다. [20120109]
+            </summary>
+            <param name="ht">데이터 행</param>
+            <param name="key">컬럼명</param>
+            <param name="isErrorMsg">키 값이 없으면 에러를 표시할지 true 표시, false 표시 안하고 공백 리턴</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.Write_LocalMachine_StringValue(System.String,System.String,System.String)">
+            <summary>
+            CurrentUser 레지스트리에 값을 설정 한다. SetValue() 함수 호출.
+            </summary>
+            <param name="path"></param>
+            <param name="valuename"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.Write_LocalMachine_StringValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)">
+            <summary>
+            LocalMachine 레지스트리에 값을 설정 한다. SetValue() 함수 호출. [20130429]
+            </summary>
+            <param name="path"></param>
+            <param name="valuename"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.WriteStringValue(System.String,System.String,System.String)">
+            <summary>
+            CurrentUser 레지스트리에 값을 설정 한다. SetValue() 함수 호출.
+            </summary>
+            <param name="path"></param>
+            <param name="valuename"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.WriteStringValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)">
+            <summary>
+            CurrentUser 레지스트리에 값을 설정 한다. SetValue() 함수 호출. [20130429]
+            </summary>
+            <param name="path"></param>
+            <param name="valuename"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.WriteIntValue(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <param name="valuename"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.ReadStringValue(System.String,System.String)">
+            <summary>
+            CurrentUser 폴더에 키 값을 읽는다.
+            </summary>
+            <param name="path"></param>
+            <param name="valuename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.ReadIntValue(System.String,System.String,System.Int32)">
+            <summary>
+            CurrentUser 폴더에 키 값을 읽는다.
+            </summary>
+            <param name="path"></param>
+            <param name="valuename"></param>
+            <param name="defaultvalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.GetResitryKeyValue(System.String)">
+            <summary>
+            Software\\NEWGEN 정보에 대한 정보를 반환 한다.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.GetResitryKeyValue(System.String,System.String)">
+            <summary>
+            레지스트리에 있는 키 정보를 반환 한다. LocalMachine
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilRegistry.GetResitryKeyValueList(System.String,System.String)">
+            <summary>
+            레지스트리에 있는 키 정보를 반환 한다. LocalMachine
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.IpAddress.GetLocalComputerIP">
+            <summary>
+            해당 로컬호스트의 ip를 가져온다.
+            </summary>
+            <returns>ipAddress</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.TreeViewHelper.UpDownTreeNode(System.Windows.Forms.TreeNode,System.Boolean)">
+            <summary>
+            TreeNode위치를 위,아래로변경합니다.
+            </summary>
+            <param name="selectNode">선택된 Node</param>
+            <param name="isDown">false :위로,True : 아래로</param>
+            <remarks>같은형제노드에서 순서를 변경할때 사용합니다.</remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilXML.GetRootNode(System.Xml.XmlDocument)">
+            <summary>
+            
+            </summary>
+            <param name="doc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilXML.GetNodeValue(System.Xml.XmlNode)">
+            <summary>
+            
+            </summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilXML.GetAttributeValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="node"></param>
+            <param name="sAttributeName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.Location">
+            <summary>
+            요청한 아이피의 위치 정보를 설정 및 반환 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.Location.distance(BlueOcean.Framework.Utility.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.Location.TestLocation">
+            <summary>
+            외부 공개 아이피 이용해서 현재 컴퓨터의 위치를 파악하는 기능 테스트용 메소드.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.DateTimeHelper">
+            <summary>
+            날짜/시간 관련 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Utility.DateTimeHelper._StdDateFormat">
+            <summary>
+            yyyyMMdd : 8자리 일자 문자열
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Utility.DateTimeHelper._StdDateTimeFormat">
+            <summary>
+            yyyyMMddHHmmss : 14자리 일자시간 문자열
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetToDay">
+            <summary>
+            오늘 날자를 다음형식으로 가져온다. yyyyMMdd
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearFirstDay">
+            <summary>
+            해당 년도의 1월 1일 날자를 다음형식으로 가져온다. yyyyMMdd
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearMonthFirstDay">
+            <summary>
+            해당 년도 해당월의 1일 날자를 다음형식으로 가져온다. yyyyMM
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetLastDay(System.String)">
+            <summary>
+            월단위 최대일자 값을 반환 한다. 자릿수가 6자리가 안되는 경우에는 0을 반환 한다.
+            </summary>
+            <param name="ym"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetLastDay(System.Int32,System.Int32)">
+            <summary>
+            월단위 최대일자 값을 반환 한다. 자릿수가 6자리가 안되는 경우에는 1을 반환 한다.
+            </summary>
+            <param name="y"></param>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.AddDay(System.String,System.Int32)">
+            <summary>
+            시스템 일자에 일자를 추가 후 계산한 일자를 반환 한다. yyyyMMdd 8자리
+            </summary>
+            <param name="addDay">추가 일 수</param>
+            <returns>yyyyMMdd 8자리 문자열, 아니면 공백을 리턴 한다.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.AddDays(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            파라미터 일자에 추가 일자를 계산해서 반환 한다.
+            </summary>
+            <param name="year">년도</param>
+            <param name="mon">월</param>
+            <param name="day">일</param>
+            <param name="addDay">추가 일수</param>
+            <returns>yyyyMMdd 8자리 문자열</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.AddMonth(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="yearMonth">현재 년도 : yyyyMM</param>
+            <param name="addMonth">추가 월 수</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.AddMonth(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="year">년도</param>
+            <param name="mon">월</param>
+            <param name="addMonth">추가 월</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.IsDate(System.String)">
+            <summary>
+            일자 문자열의 유효성 여부를 체크 한다.
+            </summary>
+            <param name="sDate"></param>
+            <returns>true : 정상, false : 오류</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.IsDate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="y"></param>
+            <param name="m"></param>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.IsDigit(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.BL``1(``0,``0,``0)">
+            <summary>
+            범위 값 체크
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.DaysDiff(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="sDate"></param>
+            <param name="eDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.DaysDiff(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sDate"></param>
+            <param name="eDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetDateTimeFromString(System.String)">
+            <summary>
+            string 8자리 일자 문자열을 DateTime 으로 반환 한다.
+            </summary>
+            <param name="strDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetDateTimeFromYmdHmsString(System.String)">
+            <summary>
+            string 14자리 일자 문자열을 DateTime 으로 반환 한다.
+            20090825130040 ==> 2009-04-01 13:53:51
+            </summary>
+            <param name="strDate">20090825130040 : 14자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStringFromShortDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetFormattedDate(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetFormattedDateHangul(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetPrevAccountDate(System.String@,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearByAccount(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="mon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStringFromDate(System.DateTime)">
+            <summary>
+            DateTime을 문자열로 변환한다.
+            </summary>
+            <param name="dt">DateTime 객체</param>
+            <returns>날짜 문자열(시간제외) : ######## 8자리 (yyyyMMdd) </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetDateFromString(System.String)">
+            <summary>
+            문자열 날짜를 DateTime 으로 변환
+            </summary>
+            <param name="dateString">날짜 문자열</param>
+            <returns>DateTime</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetDayOffset(System.DateTime,System.DateTime)">
+            <summary>
+            두 날짜 사이의 일수를 반환한다.
+            </summary>
+            <param name="from">시작 날짜</param>
+            <param name="to">종료 날짜</param>
+            <returns>두 일자 사이의 일수</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetHourOffset(System.DateTime,System.DateTime)">
+            <summary>
+            두 날자 사이의 시간을 반환한다.
+            </summary>
+            <param name="from">시작 날짜및 시간</param>
+            <param name="to">종료 날짜 및 시간</param>
+            <returns>시간 수</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetDayOffset(System.String,System.String)">
+            <summary>
+            두 날짜 사이의 일수를 반환한다.
+            </summary>
+            <param name="from">시작 날짜 (문자열 형식, 시간 제외)</param>
+            <param name="to">끝 날짜 (문자열 형식, 시간 제외)</param>
+            <returns>두 일자 사이의 일수</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.IsDateValidation(System.String)">
+            <summary>
+            날짜의 Validation 체크 : 8자리 입력 날자가 유효한 날자 인지를 체크 한다.
+            </summary>
+            <param name="sDate">확인을 원하는 날짜 (문자열)</param>
+            <returns>true 정상 / false 날자 유효성 오류</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.IsFromAndToDateValidation(System.String,System.String)">
+            <summary>
+            두 날짜 사이의 일수를 반환한다.
+            </summary>
+            <param name="from">시작 날짜 (yyyyMMdd 문자열 형식, 시간 제외)</param>
+            <param name="to">끝 날짜 (yyyyMMdd 문자열 형식, 시간 제외)</param>
+            <returns>0:시작, 종료 일자가 같다, 1:시작일자가 종료일자보다 크다, -1: 종료일자가 시작일자보다 크다</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.IsFromAndToDateValidation(System.DateTime,System.DateTime)">
+            <summary>
+            두 날자 사이의 시간을 반환한다.
+            </summary>
+            <param name="from">시작 날짜및 시간</param>
+            <param name="to">종료 날짜 및 시간</param>
+            <returns>0:시작, 종료 일자가 같다, 1:시작일자가 종료일자보다 크다, -1: 종료일자가 시작일자보다 크다</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetReportPrint_DateShow1(System.Object,System.Object)">
+            <summary>
+            프린트 출력시 파라미터의 시작 ~ 종료 일자 값 변환 메소드. 형식 : "2012-03-14 ~ 2012-05-27" 형식으로 반환.   ex) 회계쪽 출력 방식.
+            </summary>
+            <param name="fr_date">시작일자</param>
+            <param name="to_date">종료일자</param>
+            <example>
+            BlueOcean.Framework.Utility.DateTimeHelper.GetReportPrint_DateShow1("20120314", "20120527");
+            BlueOcean.Framework.Utility.DateTimeHelper.GetReportPrint_DateShow2("20120314", "20120527")
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetReportPrint_DateShow2(System.Object,System.Object)">
+            <summary>
+            프린트 출력시 파라미터의 시작 ~ 종료 일자 값 변환 메소드. 형식 : "2012 년 3월 14일 ~ 2012 년 5월 27일" 형식으로 반환.   ex) 물류쪽 출력 방식.
+            </summary>
+            <param name="fr_date">시작일자</param>
+            <param name="to_date">종료일자</param>
+            <example>
+            BlueOcean.Framework.Utility.DateTimeHelper.GetReportPrint_DateShow1("20120314", "20120527");
+            BlueOcean.Framework.Utility.DateTimeHelper.GetReportPrint_DateShow2("20120314", "20120527")
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetValueToYmdString(System.Object)">
+            <summary>
+            yyyyMMdd ==> yyyy-MM-dd 
+            </summary>
+            <param name="ymd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetValueToYmdHMSString(System.Object)">
+            <summary>
+            yyyyMMdd ==> yyyy-MM-dd 
+            </summary>
+            <param name="ymd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetValueToYmdString2(System.Object)">
+            <summary>
+            yyyyMMdd ==> yyyy-MM-dd 
+            </summary>
+            <param name="ymd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetValueToYmdHMSString2(System.Object)">
+            <summary>
+            yyyyMMdd ==> yyyy-MM-dd 
+            </summary>
+            <param name="ymd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetValueToMMDDString(System.Object)">
+            <summary>
+            MMdd ==> MM-dd
+            </summary>
+            <param name="ymd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStartEndDateText(System.String,System.String)">
+            <summary>
+            종료일자 - 시작일자 = 년월일 형태로 기간 구할때 사용
+            </summary>
+            <param name="psStartDate">시작일자 / 포함하지 않을때</param>
+            <param name="psEndDate">종료일자 / 포함하지 않을때</param>
+            <returns>20040801, 20040830 => 000100</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStartEndDate(System.String,System.String)">
+            <summary>
+            종료일자- 시작일자= 년월일형태로기간구할때사용
+            </summary>
+            <param name="psStartDate">시작일자/ 포함하지않을때</param>
+            <param name="psEndDate">종료일자/ 포함하지않을때</param>
+            <returns>20040801, 20040830 => 000100</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetLastDayDate(System.String)">
+            <summary>
+            그해, 그달의 마지막날짜 구하기
+            </summary>
+            <param name="psDate">/ 포함한 년월일</param>
+            <returns>2004/08/01 -> 20040831</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetLastDayDateText(System.String)">
+            <summary>
+            그해, 그달의 마지막날짜 구하기
+            </summary>
+            <param name="psDate">/ 포함하지 않은 년월일</param>
+            <returns>20040801 -> 20040831</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetDayCountFromTo(System.Object,System.Object)">
+            <summary>
+            시작일과 종료일 사이의 날수를 얻는다.
+            </summary>
+            <param name="ps_startDay"></param>
+            <param name="ps_endDay"></param>
+            <returns>20040801, 20040820 -> 20
+            2004/08/01, 2004/08/20 -> 20
+            </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStartEndDay(System.String,System.String)">
+            <summary>
+            종료일자 - 시작일자 = 일 형태로 기간 구할때 사용
+            </summary>
+            <param name="psStartDate">시작일자(MaskEditBox.Text) / 포함</param>
+            <param name="psEndDate">종료일자(MaskEditBox.Text) / 포함</param>
+            <returns>2004/08/01, 2004/08/20 -> 20</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetIsLeapYear(System.String)">
+            <summary>
+            지정된 연도가 윤년인지 여부를 나타내는 값을 반환합니다.
+            </summary>
+            <param name="psDate">/ 포함하지 않은 년 4자리, 8자리. ex)2009, 20090305</param>
+            <returns>year가 윤년이면 true이고, 그렇지 않으면 false입니다.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearMonthLastDayToString(System.Int32,System.Int32)">
+            <summary>
+            해당 년도, 월의 마지막 일자를 int 로 반환 받는다. yyyyMMdd 형식 8자리
+            </summary>
+            <param name="year">년도</param>
+            <param name="month">월</param>
+            <returns>마지막 일자 문자열</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearMonthLastDayToInt(System.Int32,System.Int32)">
+            <summary>
+            해당 년도, 월의 마지막 일자를 int 로 반환 받는다.
+            </summary>
+            <param name="year">년도</param>
+            <param name="month">월</param>
+            <returns>해당 년월의 총 일자 수, 값이 유효하지 않으면 0을 리턴 한다.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearMonthLastDayToInt(System.String)">
+            <summary>
+             지정된 월과 연도의 날짜 수를 반환합니다. 
+             예를 들어, 2월의 month가 2이면, 반환 값은 year가 윤년인지 여부에 따라 28이나 29가 됩니다. 
+            </summary>
+            <param name="strDate">년월 일자 6자리, 또는 년월일 8자리</param>
+            <returns>해당 년월의 총 일자 수, 값이 유효하지 않으면 0을 리턴 한다.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearMonthLastDayToYmdString(System.String)">
+            <summary>
+             지정된 월과 연도의 날짜 수를 반환합니다. 
+             예를 들어, 2월의 month가 2이면, 반환 값은 year가 윤년인지 여부에 따라 28이나 29가 됩니다. 
+            </summary>
+            <param name="strDate">년월 일자 6자리, 또는 년월일 8자리</param>
+            <returns> yyyyMMdd 형식 8자리</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetYearMonthLastDayToString(System.String)">
+            <summary>
+             지정된 월과 연도의 날짜 수를 반환합니다. 
+             예를 들어, 2월의 month가 2이면, 반환 값은 year가 윤년인지 여부에 따라 28이나 29가 됩니다. 
+            </summary>
+            <param name="strDate">년월 일자 6자리, 또는 년월일 8자리</param>
+            <returns>해당 년월의 총 일자 수, 값이 유효하지 않으면 0을 리턴 한다.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStringValueToDateField(System.String,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            문자열 값을 이용해서 int 형 변수를 설정 한다.
+            int 형 필드 값 설정. 년, 월, 일 필드에 값을 설정 한다. 값이 없는 경우 1로 설정 한다.
+            </summary>
+            <param name="strDate">년월 일자 6자리, 또는 년월일 8자리</param>
+            <param name="year">년도 변수</param>
+            <param name="month">월 변수</param>
+            <param name="day">일자 변수</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStringValueToDateField(System.String,System.Int32@,System.Int32@,System.Int32@,System.Int32)">
+            <summary>
+            문자열 값을 이용해서 int 형 변수를 설정 한다.
+            int 형 필드 값 설정. 년, 월, 일 필드에 값을 설정 한다. 값이 없는 경우 1로 설정 한다.
+            </summary>
+            <param name="strDate">년월 일자 6자리, 또는 년월일 8자리</param>
+            <param name="year">년도 변수</param>
+            <param name="month">월 변수</param>
+            <param name="day">일자 변수</param>
+            <param name="defaultValue">변수 기본값 :0 또는 1</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStringValueToDateField(System.String,System.String@,System.String@)">
+            <summary>
+            문자열 값을 이용해서 int 형 변수를 설정 한다.
+            </summary>
+            <param name="strDate">년월 일자 6자리, 또는 년월일 8자리</param>
+            <param name="year">년도 변수</param>
+            <param name="month">월 변수</param>
+            <returns>int 형 필드 값 설정. 년, 월 필드에 값을 설정 한다. 값이 없는 경우 '' 공백으로 설정 한다.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetStringValueToDateField(System.String,System.String@,System.String@,System.String@)">
+            <summary>
+            문자열 값을 이용해서 int 형 변수를 설정 한다.
+            </summary>
+            <param name="strDate">년월 일자 6자리, 또는 년월일 8자리</param>
+            <param name="year">년도 변수</param>
+            <param name="month">월 변수</param>
+            <param name="day">일자 변수</param>
+            <returns>int 형 필드 값 설정. 년, 월, 일 필드에 값을 설정 한다. 값이 없는 경우 '' 공백으로 설정 한다.</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DateTimeHelper.GetExcelTotalDaysToYMD(System.String)">
+            <summary>
+            엑셀에서 서식이 날자인 경우에  2011-01-28 같은 경우 40571로 설정이 되어서 바인딩 된다.
+            5자리 숫자를 날자 형식 8자리로 변환 해서 반환 한다.
+            </summary>
+            <param name="year">년도</param>
+            <param name="month">월</param>
+            <returns>마지막 일자 문자열</returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Utility.DateTimeHelper.StdDateFormat">
+            <summary>
+            표준 날짜 포맷 문자열 (시간 제외)
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Utility.DateTimeHelper.StdDateTimeFormat">
+            <summary>
+             표준 날짜/시간 포맷 문자열
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.ProcessCpuAndMemory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetProcessInfoList">
+            <summary>
+            일단 한번 WMI를 조회해서 
+            Process명, ID, Cpu사용률, Memory사용량을 구해온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.UpdateProcessList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetNewProcessInfoList">
+            <summary>
+            WMI를 이용하여 Process관련 정보들을 쿼리해온다.		
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetProcessCollection(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.UpdateExistingProcesses(BlueOcean.Framework.Utility.ProcessInfo[])">
+            <summary>
+            
+            </summary>
+            <param name="NewProcessInfoList"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.ProcessExists(BlueOcean.Framework.Utility.ProcessInfo[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="NewProcessInfoList"></param>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetProcessInfo(BlueOcean.Framework.Utility.ProcessInfo,BlueOcean.Framework.Utility.ProcessInfo)">
+            <summary>
+            
+            </summary>
+            <param name="TempProcessInfo"></param>
+            <param name="CurrentProcessInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.AddNewProcessInfoList(BlueOcean.Framework.Utility.ProcessInfo[])">
+            <summary>
+            
+            </summary>
+            <param name="NewProcessInfoList"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.ProcessInfoExists(BlueOcean.Framework.Utility.ProcessInfo)">
+            <summary>
+            
+            </summary>
+            <param name="NewProcessInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.ProcessInfoByID(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.AddNewProcessInfo(BlueOcean.Framework.Utility.ProcessInfo)">
+            <summary>
+            
+            </summary>
+            <param name="NewProcessInfo"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetCurrentProcessMemorySize">
+            <summary>
+            현재 활성화되어 있는 프로세스의 사용하고 있는 메모리 사이즈를 숫자로 반환 합니다
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetCurrentProcessMemorySizeString">
+            <summary>
+            현재 활성화되어 있는 프로세스의 사용하고 있는 메모리 사이즈를 문자열로 변환 해서 반환 합니다
+            ex) 200 MBytes,  150 KBytes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GlobalMemoryStatusEx">
+            <summary>
+            시스템 메모리의 정보를 반환 한다. [20130429]
+            LogMessage(string.Format("MEMORYSTATUSEX  ullTotalPhys : [ {0:#,###} ] ", ms.ullTotalPhys / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailPhys : [ {0:#,###} ] ", ms.ullAvailPhys / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullTotalPageFile : [ {0:#,###} ] ", ms.ullTotalPageFile / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailPageFile : [ {0:#,###} ] ", ms.ullAvailPageFile / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullTotalVirtual : [ {0:#,###} ] ", ms.ullTotalVirtual / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailVirtual : [ {0:#,###} ] ", ms.ullAvailVirtual / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailExtendedVirtual : [ {0:#,###} ] ", ms.ullAvailExtendedVirtual / 1024 / 1024));        /// 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GolbalWMI_MemoryCheck">
+            <summary>
+            WMI 이용해서 시스템 메모리의 정보를 반환 한다. [20130429]
+            TotalVisibleMemorySize : 실제 물리적 메모리
+            SizeStoredInPagingFiles : 페이징 파일 사이즈
+            TotalVirtualMemorySize : 가상메모리 전체 사이즈
+            FreePhysicalMemory : 사용 가능 물리적 메모리
+            FreeVirtualMemory : 사용 가능 가상 메모리
+            FreeSpaceInPagingFiles : 사용가능 페이징 파일 메모리 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.Get_Golbal_WMI_Memory_Key_Value(System.String)">
+            <summary>
+            WMI 이용해서 시스템 메모리의 정보를 반환 한다. [20130429]
+            TotalVisibleMemorySize : 실제 물리적 메모리
+            SizeStoredInPagingFiles : 페이징 파일 사이즈
+            TotalVirtualMemorySize : 가상메모리 전체 사이즈
+            FreePhysicalMemory : 사용 가능 물리적 메모리
+            FreeVirtualMemory : 사용 가능 가상 메모리
+            FreeSpaceInPagingFiles : 사용가능 페이징 파일 메모리 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetConvertSizToMBytes(System.Object)">
+            <summary>
+            사이즈를 Bytes 타입으로 변환 해서 숫자 뒤에 Bytes, MBytes, GBytes 를 붙여서 반환 한다.
+            </summary>
+            <param name="checkSize">체크 사이즈.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetPhysicalMemorySize">
+            <summary>
+            컴퓨터의 총 실제 메모리 양을 가져옵니다.
+            Physical Memory Size 를 가지고 온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetAvailablePhysicalMemorySize">
+            <summary>
+            컴퓨터에서 사용 가능한 실제 메모리의 전체 양을 가져옵니다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.ProcessCpuAndMemory.GetAvailableVirtualMemorySize">
+            <summary>
+            호출하는 프로세스(calling process)의 전체 주소 공간에서 사용가능한 남은 메모리 사이즈를 반환 한다. [20130429]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Utility.ProcessCpuAndMemory.ProcessList">
+            <summary>
+            바로 이전 WMI 조회시 구해져 있는 ProcessInfo를 가지고 온다.
+            단, Null 여부를 반드시 체크해야 한다. 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFolder.GetTempFolder">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilFolder.CreateDirectory(System.String)">
+            <summary>
+            폴더가 없으면 폴더를 생성 한다.
+            </summary>
+            <param name="folder">폴더</param>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.DirectoryHelper">
+            <summary>
+            Directory에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DirectoryHelper.DirectoryCopy(System.String,System.String)">
+            <summary>
+            폴더의 파일들을 복사합니다.
+            </summary>
+            <param name="src">Source</param>
+            <param name="dest">Destination</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.DirectoryHelper.Delete(System.String)">
+            <summary>
+            선택된 폴더의 하위폴더까지 삭제합니다.
+            </summary>
+            <param name="dir"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Utility.UtilDataSet">
+            <summary>
+            System.Data.DataSet 관련 Helper 클래스 입니다.
+            </summary>
+            <remarks>
+            ROW_STATE 컬럼 추가 
+            값 ==> I : INSERT, U : UPDATE, D : DELETE
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.AddColumnRowState(System.Data.DataTable@)">
+            <summary>
+            DataTable 에 ROW_STATE 컬럼을 추가 한다.
+            </summary>
+            <param name="dtSource"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataSet(System.Data.DataTable)">
+            <summary>
+            System.Data.DataSet.AcceptChanges()가 마지막으로 호출된 후에 변경된 내용이 모두 들어 있는
+            System.Data.DataSet의 복사본을 가져옵니다.  ROW_STATE 컬럼을 추가 합니다.
+            추가, 수정 상태 테이블명 : "save"
+            삭제       상태 테이블명 : "delete"
+            체크 조건 : if (dsSave.Tables.Count == 0) 로 해주면 됩니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <example>
+            <code>
+            반환 값으로 null 을 넘기지 않으므로 Tables.Count 로 체크 하면 됩니다.
+            
+            DataSet dsSave = UtilDataSet.GetChangesDataSet(dtSource);
+            if (dsSave.Tables.Count == 0)
+                return;
+            </code>
+            </example>
+            <returns>변경 내역 DataSet</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataSetExec(System.Data.DataTable)">
+            <summary>
+            System.Data.DataSet.AcceptChanges()가 마지막으로 호출된 후에 변경된 내용이 모두 들어 있는
+            System.Data.DataSet의 복사본을 가져옵니다.  ROW_STATE 컬럼을 추가 합니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataSet(System.Data.DataTable,System.Data.DataRowState)">
+            <summary>
+            System.Data.DataSet.AcceptChanges()가 마지막으로 호출된 후에 System.Data.DataRowState를
+            기준으로 필터링된 내용이 모두 들어 있는 System.Data.DataSet의 복사본을 가져옵니다. ROW_STATE 컬럼을 추가 합니다.
+            반환 테이블명 : "table1"
+            체크 조건 : if (dsSave.Tables.Count == 0) 로 해주면 됩니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <param name="rowState">System.Data.DataRowState 값 중 하나입니다.</param>
+            <example>
+            <code>
+            반환 값으로 null 을 넘기지 않으므로 Tables.Count 로 체크 하면 됩니다.
+            
+            DataSet dsSave = UtilDataSet.GetChangesDataSet(dtSource, DataRowState.Added);
+            if (dsSave.Tables.Count == 0)
+                return;
+            </code>
+            </example>
+            <returns>변경 내역 DataSet</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataSetExec(System.Data.DataTable,System.Data.DataRowState)">
+            <summary>
+            System.Data.DataSet.AcceptChanges()가 마지막으로 호출된 후에 System.Data.DataRowState를
+            기준으로 필터링된 내용이 모두 들어 있는 System.Data.DataSet의 복사본을 가져옵니다. ROW_STATE 컬럼을 추가 합니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <param name="rowState">System.Data.DataRowState 값 중 하나입니다.</param>
+            <returns>변경 내역 DataSet</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataTable(System.Data.DataTable)">
+            <summary>
+            System.Data.DataTable.AcceptChanges()가 마지막으로 호출된 후에 변경된 내용이 모두 들어 있는
+            System.Data.DataTable의 복사본을 가져옵니다.  ROW_STATE 컬럼을 추가 합니다.
+            체크 조건 : if (dsSave == null) 로 해주면 됩니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <example>
+            <code>
+            변경 내역 없으면 반환 값으로 null 을 넘긴다.
+            
+            DataTable dtSave = UtilDataSet.GetChangesDataTable(dtSource);
+            if (dtSave == null)
+                return;
+            </code>
+            </example>
+            <returns>변경 내역 DataTable, 변경 내역 없으면 null 반환</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataTableExec(System.Data.DataTable)">
+            <summary>
+            System.Data.DataSet.AcceptChanges()가 마지막으로 호출된 후에 변경된 내용이 모두 들어 있는
+            System.Data.DataTable의 복사본을 가져옵니다. ROW_STATE 컬럼을 추가 합니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <returns>변경 내역 DataTable, 값 없으면 null 반환</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataTable(System.Data.DataTable,System.Data.DataRowState)">
+            <summary>
+            System.Data.DataTable.AcceptChanges()가 마지막으로 호출된 후에 System.Data.DataRowState를
+            기준으로 필터링된 내용이 모두 들어 있는 System.Data.DataTable의 복사본을 가져옵니다. ROW_STATE 컬럼을 추가 합니다.
+            체크 조건 : if (dsSave == null) 로 해주면 됩니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <param name="rowState">System.Data.DataRowState 값 중 하나입니다.</param>
+            <example>
+            <code>
+            변경 내역 없으면 반환 값으로 null 을 넘긴다.
+            
+            DataTable dtSave = UtilDataSet.GetChangesDataTable(dtSource);
+            if (dtSave == null)
+                return;
+            </code>
+            </example>
+            <returns>변경 내역 DataTable, 변경 내역 없으면 null 반환</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Utility.UtilDataSet.GetChangesDataTableExec(System.Data.DataTable,System.Data.DataRowState)">
+            <summary>
+            System.Data.DataTable.AcceptChanges()가 마지막으로 호출된 후에 System.Data.DataRowState를
+            기준으로 필터링된 내용이 모두 들어 있는 System.Data.DataTable의 복사본을 가져옵니다. ROW_STATE 컬럼을 추가 합니다.
+            </summary>
+            <param name="dtSource">데이터소스 테이블</param>
+            <param name="rowState">System.Data.DataRowState 값 중 하나입니다.</param>
+            <returns>변경 내역 DataTable, 값 없으면 null 반환</returns>
+        </member>
+    </members>
+</doc>

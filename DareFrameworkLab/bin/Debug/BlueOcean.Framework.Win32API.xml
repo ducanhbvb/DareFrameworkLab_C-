@@ -1,0 +1,690 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Win32API</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.Win32API.WindowMessage">
+            <summary>
+            Message에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.CaptureScreenUser32">
+            <summary>
+            에러 화면 브라우저 캡쳐용 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.User32">
+            <summary>
+            User32.DLL의 API를 선언하는 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.User32.GetWindowRect(System.Int32,BlueOcean.Framework.Win32API.User32.RECT@)">
+            <summary>
+            너비, 높이 및 왼쪽 위 모퉁이를 사용하여 사각형을 정의합니다. 
+            </summary>
+            <param name="hwnd"></param>
+            <param name="lpRect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.User32.GetWindowRect(System.Int32)">
+            <summary>
+            너비, 높이 및 왼쪽 위 모퉁이를 사용하여 사각형을 정의합니다. 
+            </summary>
+            <param name="hwnd"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.User32.HookType">
+            <summary>
+            WindowHookType에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.User32.RECT">
+            <summary>
+            너비, 높이 및 왼쪽 위 모퉁이를 사용하여 사각형을 정의합니다. 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.User32.SystemMetric">
+            <summary>
+            Flags used with the Windows API (User32.dll):GetSystemMetrics(SystemMetric smIndex)
+              
+            This Enum and declaration signature was written by Gabriel T. Sharp
+            ai_productions@verizon.net or osirisgothra@hotmail.com
+            Obtained on pinvoke.net, please contribute your code to support the wiki!
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXSCREEN">
+            <summary>
+             Width of the screen of the primary display monitor, in pixels. This is the same values obtained by calling GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, HORZRES).
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYSCREEN">
+            <summary>
+            Height of the screen of the primary display monitor, in pixels. This is the same values obtained by calling GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, VERTRES).
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYVSCROLL">
+            <summary>
+            Width of a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXVSCROLL">
+            <summary>
+            Height of a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYCAPTION">
+            <summary>
+            Height of a caption area, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXBORDER">
+            <summary>
+            Width of a window border, in pixels. This is equivalent to the SM_CXEDGE value for windows with the 3-D look. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYBORDER">
+            <summary>
+            Height of a window border, in pixels. This is equivalent to the SM_CYEDGE value for windows with the 3-D look. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXDLGFRAME">
+            <summary>
+            Thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels. SM_CXFIXEDFRAME is the height of the horizontal border and SM_CYFIXEDFRAME is the width of the vertical border. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYDLGFRAME">
+            <summary>
+            Thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels. SM_CXFIXEDFRAME is the height of the horizontal border and SM_CYFIXEDFRAME is the width of the vertical border. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYVTHUMB">
+            <summary>
+            Height of the thumb box in a vertical scroll bar, in pixels
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXHTHUMB">
+            <summary>
+            Width of the thumb box in a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXICON">
+            <summary>
+            Default width of an icon, in pixels. The LoadIcon function can load only icons with the dimensions specified by SM_CXICON and SM_CYICON
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYICON">
+            <summary>
+            Default height of an icon, in pixels. The LoadIcon function can load only icons with the dimensions SM_CXICON and SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXCURSOR">
+            <summary>
+            Width of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYCURSOR">
+            <summary>
+            Height of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMENU">
+            <summary>
+            Height of a single-line menu bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXFULLSCREEN">
+            <summary>
+            Width of the client area for a full-screen window on the primary display monitor, in pixels. To get the coordinates of the portion of the screen not obscured by the system taskbar or by application desktop toolbars, call the SystemParametersInfo function with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYFULLSCREEN">
+            <summary>
+            Height of the client area for a full-screen window on the primary display monitor, in pixels. To get the coordinates of the portion of the screen not obscured by the system taskbar or by application desktop toolbars, call the SystemParametersInfo function with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYKANJIWINDOW">
+            <summary>
+            For double byte character set versions of the system, this is the height of the Kanji window at the bottom of the screen, in pixels
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_MOUSEWHEELPRESENT">
+            <summary>
+            Nonzero if a mouse with a wheel is installed; zero otherwise
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYHSCROLL">
+            <summary>
+            Height of the arrow bitmap on a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXHSCROLL">
+            <summary>
+            Width of the arrow bitmap on a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_DEBUG">
+            <summary>
+            Nonzero if the debug version of User.exe is installed; zero otherwise.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_SWAPBUTTON">
+            <summary>
+            Nonzero if the left and right mouse buttons are reversed; zero otherwise.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_RESERVED1">
+            <summary>
+            Reserved for future use
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_RESERVED2">
+            <summary>
+            Reserved for future use
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_RESERVED3">
+            <summary>
+            Reserved for future use
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_RESERVED4">
+            <summary>
+            Reserved for future use
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMIN">
+            <summary>
+            Minimum width of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMIN">
+            <summary>
+            Minimum height of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXSIZE">
+            <summary>
+            Width of a button in a window's caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYSIZE">
+            <summary>
+            Height of a button in a window's caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXFRAME">
+            <summary>
+            Thickness of the sizing border around the perimeter of a window that can be resized, in pixels. SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYFRAME">
+            <summary>
+            Thickness of the sizing border around the perimeter of a window that can be resized, in pixels. SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMINTRACK">
+            <summary>
+            Minimum tracking width of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions. A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMINTRACK">
+            <summary>
+            Minimum tracking height of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions. A window can override this value by processing the WM_GETMINMAXINFO message
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXDOUBLECLK">
+            <summary>
+            Width of the rectangle around the location of a first click in a double-click sequence, in pixels. The second click must occur within the rectangle defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system to consider the two clicks a double-click
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYDOUBLECLK">
+            <summary>
+            Height of the rectangle around the location of a first click in a double-click sequence, in pixels. The second click must occur within the rectangle defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system to consider the two clicks a double-click. (The two clicks must also occur within a specified time.) 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXICONSPACING">
+            <summary>
+            Width of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CXICON
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYICONSPACING">
+            <summary>
+            Height of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_MENUDROPALIGNMENT">
+            <summary>
+            Nonzero if drop-down menus are right-aligned with the corresponding menu-bar item; zero if the menus are left-aligned.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_PENWINDOWS">
+            <summary>
+            Nonzero if the Microsoft Windows for Pen computing extensions are installed; zero otherwise.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_DBCSENABLED">
+            <summary>
+            Nonzero if User32.dll supports DBCS; zero otherwise. (WinMe/95/98): Unicode
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CMOUSEBUTTONS">
+            <summary>
+            Number of buttons on mouse, or zero if no mouse is installed.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXFIXEDFRAME">
+            <summary>
+            Identical Values Changed After Windows NT 4.0  
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYFIXEDFRAME">
+            <summary>
+            Identical Values Changed After Windows NT 4.0
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXSIZEFRAME">
+            <summary>
+            Identical Values Changed After Windows NT 4.0
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYSIZEFRAME">
+            <summary>
+            Identical Values Changed After Windows NT 4.0
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_SECURE">
+            <summary>
+            Nonzero if security is present; zero otherwise.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXEDGE">
+            <summary>
+            Width of a 3-D border, in pixels. This is the 3-D counterpart of SM_CXBORDER
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYEDGE">
+            <summary>
+            Height of a 3-D border, in pixels. This is the 3-D counterpart of SM_CYBORDER
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMINSPACING">
+            <summary>
+            Width of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged. This value is always greater than or equal to SM_CXMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMINSPACING">
+            <summary>
+            Height of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged. This value is always greater than or equal to SM_CYMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXSMICON">
+            <summary>
+            Recommended width of a small icon, in pixels. Small icons typically appear in window captions and in small icon view
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYSMICON">
+            <summary>
+            Recommended height of a small icon, in pixels. Small icons typically appear in window captions and in small icon view.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYSMCAPTION">
+            <summary>
+            Height of a small caption, in pixels
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXSMSIZE">
+            <summary>
+            Width of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYSMSIZE">
+            <summary>
+            Height of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMENUSIZE">
+            <summary>
+            Width of menu bar buttons, such as the child window close button used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMENUSIZE">
+            <summary>
+            Height of menu bar buttons, such as the child window close button used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_ARRANGE">
+            <summary>
+            Flags specifying how the system arranged minimized windows
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMINIMIZED">
+            <summary>
+            Width of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMINIMIZED">
+            <summary>
+            Height of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMAXTRACK">
+            <summary>
+            Default maximum width of a window that has a caption and sizing borders, in pixels. This metric refers to the entire desktop. The user cannot drag the window frame to a size larger than these dimensions. A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMAXTRACK">
+            <summary>
+            Default maximum height of a window that has a caption and sizing borders, in pixels. This metric refers to the entire desktop. The user cannot drag the window frame to a size larger than these dimensions. A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMAXIMIZED">
+            <summary>
+            Default width, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMAXIMIZED">
+            <summary>
+            Default height, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_NETWORK">
+            <summary>
+            Least significant bit is set if a network is present; otherwise, it is cleared. The other bits are reserved for future use
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CLEANBOOT">
+            <summary>
+            Value that specifies how the system was started: 0-normal, 1-failsafe, 2-failsafe /w net
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXDRAG">
+            <summary>
+            Width of a rectangle centered on a drag point to allow for limited movement of the mouse pointer before a drag operation begins, in pixels. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYDRAG">
+            <summary>
+            Height of a rectangle centered on a drag point to allow for limited movement of the mouse pointer before a drag operation begins. This value is in pixels. It allows the user to click and release the mouse button easily without unintentionally starting a drag operation.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_SHOWSOUNDS">
+            <summary>
+            Nonzero if the user requires an application to present information visually in situations where it would otherwise present the information only in audible form; zero otherwise. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXMENUCHECK">
+            <summary>
+            Width of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYMENUCHECK">
+            <summary>
+            Height of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_SLOWMACHINE">
+            <summary>
+            Nonzero if the computer has a low-end (slow) processor; zero otherwise
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_MIDEASTENABLED">
+            <summary>
+            Nonzero if the system is enabled for Hebrew and Arabic languages, zero if not.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_MOUSEPRESENT">
+            <summary>
+            Nonzero if a mouse is installed; zero otherwise. This value is rarely zero, because of support for virtual mice and because some systems detect the presence of the port instead of the presence of a mouse.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_XVIRTUALSCREEN">
+            <summary>
+            Windows 2000 (v5.0+) Coordinate of the top of the virtual screen
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_YVIRTUALSCREEN">
+            <summary>
+            Windows 2000 (v5.0+) Coordinate of the left of the virtual screen
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXVIRTUALSCREEN">
+            <summary>
+            Windows 2000 (v5.0+) Width of the virtual screen
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYVIRTUALSCREEN">
+            <summary>
+            Windows 2000 (v5.0+) Height of the virtual screen
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CMONITORS">
+            <summary>
+            Number of display monitors on the desktop
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_SAMEDISPLAYFORMAT">
+            <summary>
+            Windows XP (v5.1+) Nonzero if all the display monitors have the same color format, zero otherwise. Note that two displays can have the same bit depth, but different color formats. For example, the red, green, and blue pixels can be encoded with different numbers of bits, or those bits can be located in different places in a pixel's color value. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_IMMENABLED">
+            <summary>
+            Windows XP (v5.1+) Nonzero if Input Method Manager/Input Method Editor features are enabled; zero otherwise
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CXFOCUSBORDER">
+            <summary>
+            Windows XP (v5.1+) Width of the left and right edges of the focus rectangle drawn by DrawFocusRect. This value is in pixels. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CYFOCUSBORDER">
+            <summary>
+            Windows XP (v5.1+) Height of the top and bottom edges of the focus rectangle drawn by DrawFocusRect. This value is in pixels. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_TABLETPC">
+            <summary>
+            Nonzero if the current operating system is the Windows XP Tablet PC edition, zero if not.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_MEDIACENTER">
+            <summary>
+            Nonzero if the current operating system is the Windows XP, Media Center Edition, zero if not.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CMETRICS_OTHER">
+            <summary>
+            Metrics Other
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CMETRICS_2000">
+            <summary>
+            Metrics Windows 2000
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_CMETRICS_NT">
+            <summary>
+            Metrics Windows NT
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_REMOTESESSION">
+            <summary>
+            Windows XP (v5.1+) This system metric is used in a Terminal Services environment. If the calling process is associated with a Terminal Services client session, the return value is nonzero. If the calling process is associated with the Terminal Server console session, the return value is zero. The console session is not necessarily the physical console - see WTSGetActiveConsoleSessionId for more information. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_SHUTTINGDOWN">
+            <summary>
+            Windows XP (v5.1+) Nonzero if the current session is shutting down; zero otherwise
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Win32API.User32.SystemMetric.SM_REMOTECONTROL">
+            <summary>
+            Windows XP (v5.1+) This system metric is used in a Terminal Services environment. Its value is nonzero if the current session is remotely controlled; zero otherwise
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.ImeModeSetting">
+            <summary>
+            프로그램 시작시에 한글 입력상태로 하기 위해, MainForm 생성자에서 호출함
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.ImeModeSetting.GetImm_InputMode(System.IntPtr)">
+            <summary>
+            한글, 영문 모드인지를 체크해서 리턴 한다. true이면 한글, false 이면 영문이다. 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.ImeModeSetting.SetImmChange(System.IntPtr)">
+            <summary>
+            한글모드 여부를 체크해서 한글인 경우에 한글로 설정을 해준다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.ImeModeSetting.SetImm_HangleMode_Change(System.IntPtr)">
+            <summary>
+            한글모드 여부를 체크해서 영문모드인 경우에 한글모드로 설정을 해준다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.ImeModeSetting.SetImm_EnglishMode_Change(System.IntPtr)">
+            <summary>
+            한글모드 여부를 체크해서 한글모드인 경우에 영문모드로 설정을 해준다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.OSVersion">
+            <summary>
+            
+                              WIN95,  WIN98,  WINME, NT 3.51 , NT 4.0 , WIN2000  , WINXP , WINXP PRO , WIN2003 , WIN2008, WIN2008 R2 , VISTA , WIN7 , WIN 8,  WIN 8.1, WIN 10
+               ------------------------------------------------------------------------------------------------------------------------------------------------------------
+               dwPlatformId     1        1       1       2        2        2         2       2           2        2          2          2       2      2        2        2
+               dwMajorVersion   4        4       4       3        4        5         5       5           5        6          6          6       6      6        6        6
+               dwMinorVersion   0        10      90      51       0        0         1       2           2        0          1          0       1      2        3        4??
+               
+               Windows XP Professional x64 Edition	5.2.3790
+               
+               체크 방법은?
+               X86, X64
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.OSVersion.IsWindows7">
+            <summary>
+            windows 7 버전.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.OSVersion.IsWindows8">
+            <summary>
+            windows 8   버전. [alth,20141218]
+            windows 8.1 버전. [alth,20141218]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.OSVersion.IsWindows10">
+            <summary>
+            windows 10 버전. [alth,20141218]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.OSVersion.IsWindows8_OR_10">
+            <summary>
+            windows 8   버전. [alth,20141218]
+            windows 8.1 버전. [alth,20141218]
+            windows 10  버전. [alth,20141218]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.OSVersion.Is64BitOperatingSystem">
+            <summary>
+            C# 64bit OS runtime check : true 64 비트, false 32 비트  [20150203]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.Utilities.GetMsgLParam(System.IntPtr)">
+            <summary>
+            오른쪽버튼 마우스 클릭 이벤트 : 33816577
+            HWnd	25110198	 
+            LParam	33816577	 
+            Msg	33	int
+            왼쪽버튼   마우스 클릭 이벤트 : 33619969
+            HWnd	25110198	 
+            LParam	33619969 
+            Msg	33	int
+            </summary>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.Kernel32">
+            <summary>
+            This class export win 32 finction signatures
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.InternetUseChecker">
+            <summary>
+            인터넷 연결 여부 체크.
+            
+            http://msdn.microsoft.com/en-us/library/aa384702(VS.85).aspx
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Win32API.RebirthAdapterHandler">
+            <summary>
+               class RebirthAdapter
+               {
+                   [DllImport("RebirthAdapter") ]
+                   public static extern bool   IsRebirthRun();
+                   [DllImport("RebirthAdapter", CharSet = CharSet.Unicode)]
+                   public static extern string GetRebirthRunInfo();
+               }
+               
+               GetRebirthRunInfo 리턴 문자열
+               회사코드^사업자등록번호^회계기간시작년월일^회계기간종료년월일
+               
+               Release 에서만 동작합니다. 
+               
+               HKEY_LOCAL_MACHINE\\SOFTWARE\\NewGen\\Rebirth
+               path  에 경로가 있는경우 
+               
+               그 경로안에 rebirth.exe 가 있는경우에만 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.RebirthAdapterHandler.Get_IsRebirthRun">
+            <summary>
+            리버스 실행 여부 : 실행 true, 실행 안됨 : false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.RebirthAdapterHandler.GetRebirthInfo">
+            <summary>
+            리버스 실행 정보 : 회사코드, 사업자등록번호, 회계기간시작년월일, 회계기간종료년월일
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.RebirthAdapterHandler.GetResitry_RebirthPath">
+            <summary>
+            리버스 실행 경로 : 레지스트리에서 가져 온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.RebirthAdapterHandler.GetResitryKeyValue(System.String)">
+            <summary>
+            Software\\BlueOcean 정보에 대한 정보를 반환 한다.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.RebirthAdapterHandler.GetResitryKeyValue(System.String,System.String)">
+            <summary>
+            레지스트리에 있는 키 정보를 반환 한다
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Win32API.NativeMethods.Util.GetPInvokeStringLength(System.String)">
+            <summary>
+            omputes the string size that should be passed to a typical Win32 call.
+            his will be the character count under NT, and the ubyte count for Win95.
+            </summary>
+            <param EntryPoint="s">
+            he string to get the size of.
+            </param>
+            <returns>
+            he count of characters or bytes, depending on what the pinvoke
+            all wants
+            </returns>
+        </member>
+    </members>
+</doc>

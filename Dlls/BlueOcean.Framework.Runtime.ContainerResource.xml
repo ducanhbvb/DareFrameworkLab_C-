@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Runtime.ContainerResource</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Func_popup_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Etax_config">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Etax_config.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Etax_config.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper">
+            <summary>
+            이미지 타입에 따른 리스트를 가지는 클래스를 전역으로 생성 하는 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper._ImageCollection">
+            <summary>
+            이미지 정보 클래스 전역 변수.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper._ImageManager">
+            <summary>
+            이미지 파일 객체 생성 인스턴스.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper.#cctor">
+            <summary>
+            static 생성자 : 호출하는 시점에서 가장 먼저 수행 된다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper.InitUserSkinType">
+            <summary>
+            사용자 정의 스킨 타입별 이미지 항목을 추가 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper.GetBitmapImage(System.Drawing.Bitmap,System.String)">
+            <summary>
+            선언된 버튼 타입에 해당하는 이미지 정보 클래스를 반환 한다.
+            </summary>
+            <param name="bitmap">이미지 리소스 객체</param>
+            <param name="imageFileName">이미지 파일명</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper.GetImageItemInfo(System.Drawing.Bitmap,System.String)">
+            <summary>
+            선언된 버튼 타입에 해당하는 이미지 정보 클래스를 반환 한다.
+            </summary>
+            <param name="imageFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper.ImageItemListAdd">
+            <summary>
+            이미지 항목을 리스트에 추가 한다.
+            각 스킨 별로 별도 작업 한다.
+            Default 는 무조건 모두다 추가를 하고, 현재 브라우저 스킨이 Default 가 아니면
+            해당 스킨만 별도로 추가해서 사용할수 있도록 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageResourceHelper.ImageItemList_SkinStyle_Add">
+            <summary>
+            각 스킨별 이미지 항목을 추가 한다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_ModuleCD_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_ModuleCD_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_ModuleCD_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.TabControl_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.StatusBar_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.BrowserMain_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.BrowserMain_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.BrowserMain_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.ModuleCD_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ModuleCD_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ModuleCD_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.WebCam_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.WebCam_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.WebCam_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Bronze">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Bronze.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Bronze.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.TitleBar_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Login_Img_Type_ERP_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Login_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Login_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Login_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_TabControl_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_TabControl_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_TabControl_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Treeview_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Treeview_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Treeview_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Func_popup_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Func_popup_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Func_popup_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Toolbar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Toolbar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Toolbar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.StatusBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.StatusBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.StatusBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Pro">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Pro.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Pro.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Toolbar_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.TabContextMenu_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.TabContextMenu_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.TabContextMenu_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Toolbar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Toolbar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Toolbar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfoCollection">
+            <summary>
+            이미지 항목 객체 리스트 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfoCollection.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfoCollection.Add(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType)">
+            <summary>
+            이미지 항목 추가
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfoCollection.Add(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            이미지 항목 추가
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+            <param name="imageskinstyle">이미지 스킨 스타일</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfoCollection.Contains(System.String,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            이미지 객체 항목의 존재 유무를 체크 합니다.
+            </summary>
+            <param name="imageFileName">이미지 파일명</param>
+            <param name="imageSkinStyle">이미지 스킨 스타일</param>
+            <returns>true:이미지 존재, false:이미지 없음</returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfoCollection.Item(System.String,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            이미지 객체 항목의 인스턴스를 리턴 합니다.
+            </summary>
+            <param name="imageFileName">이미지 파일명</param>
+            <param name="imageSkinStyle">이미지 스킨 스타일</param>
+            <returns>이미지 항목 인스턴스, 없으면 null 리턴함.</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.TitleBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.TitleBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.TitleBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Product_BI_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Product_BI_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Product_BI_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_StatusBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_StatusBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_StatusBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo">
+            <summary>
+            이미지 항목 정보 클래스.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo._ImageFileName">
+            <summary>
+            이미지 이름을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo._ImageExt">
+            <summary>
+            이미지 파일 확장자를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo._FolderPath">
+            <summary>
+            이미지 파일의 폴더 위치를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo._Key">
+            <summary>
+            이미지 파일의 항목 키 값 설정. 형식 : 스킨폴더 +_+ 폴더경로 +_+ 파일이름 +_+ 확장자  ex) default_
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo._ImageType">
+            <summary>
+            이미지 타입(이미지, 아이콘)을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo._ImageSkinStyle">
+            <summary>
+            이미지 스킨 스타일 : 브라우저 테마
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.#ctor(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType)">
+            <summary>
+            생성자
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.#ctor(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            생성자
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+            <param name="imageskinstyle">이미지 스킨 스타일</param>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.ImageFileName">
+            <summary>
+            이미지 이름을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.ImageExtType">
+            <summary>
+            이미지 파일 확장자를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.ExtType">
+            <summary>
+            이미지 파일 확장자를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.FolderPath">
+            <summary>
+            이미지 파일의 폴더 위치를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.Key">
+            <summary>
+            이미지 파일의 항목 키 값 설정. 형식 : 스킨폴더 +_+ 폴더경로 +_+ 파일이름 +_+ 확장자  ex) default_
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.ImageType">
+            <summary>
+            이미지 타입(이미지, 아이콘)을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo.IMAGE_STYLE">
+            <summary>
+            이미지 스킨 스타일 : 브라우저 테마
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ResxContainerImage.GetBitmap(System.String)">
+            <summary>
+            Bitmap 이미지를 설정한다.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ResxContainerImage.GetIcon(System.String)">
+            <summary>
+            아이콘 이미지를 설정한다.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.IconManager">
+            <summary>
+            Class which serves bitmaps created from icons embedded as
+            resources. The implementation was designed to be somewhat
+            portable; however, it is coupled with the naming convention
+            of the icon files it uses. The filenames are implied to contain a 
+            number which identifies its dimensions; it is also implied
+            that the dimensions of the icons are perfect squares, i.e., the width
+            and height are the same.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.IconManager.baseSize">
+            <summary>
+            The base size of the icons generated by this class (16).
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.IconManager.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="T:BlueOcean.Framework.Runtime.ContainerResource.IconManager"/> class.
+            </summary>
+            <param name="form">The form which contains the embedded icon resources.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.IconManager.GetIcon(BlueOcean.Framework.Runtime.ContainerResource.IconGroup,BlueOcean.Framework.Runtime.ContainerResource.IconSize)">
+            <summary>
+            Returns the Icon corresponding to the specified IconGroup
+            at the specified IconSize. Note that the caller is responsible
+            for maintaining the lifetime of the returned icon, i.e., must
+            dispose of it when it is no longer needed.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.IconManager.GetBitmap(BlueOcean.Framework.Runtime.ContainerResource.IconGroup,BlueOcean.Framework.Runtime.ContainerResource.IconSize)">
+            <summary>
+            Returns the Bitmap corresponding to the specified IconGroup
+            at the specified IconSize. If no icon exists in the associated
+            form's resources, null is returned.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.IconManager.System#IDisposable#Dispose">
+            <summary>
+            Implements the IDisposable interface's Dispose method.
+            Disposes of all Bitmaps created by this instance and closes
+            any streams that remain open.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.IconSize.Medium">
+            <summary>
+            16 * 2 = 32
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.IconSize.Large">
+            <summary>
+            16 * 3 = 48
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_TitleBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_TitleBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_TitleBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Login_Img_Type_ERP_Cloud">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Login_Img_Type_ERP_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.ImageManager">
+            <summary>
+            이미지 및 아이콘 객체를 Bitmap, ICon 객체로 리턴 한다.
+            아이콘 및 이미지는 포함리소스로 해당 프로젝트에 추가되어 있다.
+            별도로 이미지 파일을 배포 안한다. dll 안에 포함되어 있다.
+            Class which serves bitmaps created from icons embedded as resources.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerResource.ImageManager._BitmapList">
+            <summary>
+            Bitmap 객체인 경우에는 중복 호출 제어를 위해서 해당 객체 만큼 배열을 생성 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageManager.GetIcon(BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo)">
+            <summary>
+            Returns the Icon corresponding to the specified IconName constant.
+            Note that the caller is responsible for maintaining the
+            lifetime of the returned icon, i.e., must dispose of it
+            when it is no longer needed.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>ICon 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageManager.GetIconExec(BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo)">
+            <summary>
+            아이콘 이미지를 체크 해서 리턴 한다.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>ICon 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageManager.GetBitmap(BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo)">
+            <summary>
+            이미지 객체를 불러와서 리턴 한다.
+            로드한 이미지는 전역 변수에 추가 한다.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>bitmap 이미지 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageManager.GetBitmapExec(BlueOcean.Framework.Runtime.ContainerResource.ImageItemInfo)">
+            <summary>
+            이미지 객체를 불러와서 리턴 한다.
+            로드한 이미지는 전역 변수에 추가 한다.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>bitmap 이미지 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageManager.GetLoadingBitmapCheck(System.String)">
+            <summary>
+            한번 로드한 이미지 인지를 체크 한다.
+            </summary>
+            <param name="imgKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerResource.ImageManager.System#IDisposable#Dispose">
+            <summary>
+            Implements the IDisposable interface's Dispose method.
+            Disposes of all Bitmaps created by this instance.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Gadjet_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Gadjet_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Gadjet_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Etc_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Etc_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Etc_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.TabControl_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.TabControl_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.TabControl_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Silver">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Silver.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Silver.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.BrowserMain_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_BrowserMain_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_BrowserMain_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_BrowserMain_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Cloud">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Cloud.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Cloud.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Product_BI_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Login_Img_Type_ERP_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.WorkDiary_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.WorkDiary_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.WorkDiary_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Product_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Product_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Product_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Gold">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Gold.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Type1_Login_Img_ERP_Gold.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.ModuleCD_Img_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerResource.Image_Skin.skin_type_1.Login_Img_Type_ERP_Gold">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+    </members>
+</doc>

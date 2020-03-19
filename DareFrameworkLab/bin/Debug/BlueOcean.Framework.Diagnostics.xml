@@ -1,0 +1,1250 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Diagnostics</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.Diagnostics.UtilMemory">
+            <summary>
+            SendException() 메소드에서 사용하기 위한 용도.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.UtilMemory._SystemRoot">
+            <summary>
+            SystemRoot 윈도우가 설치된 디스크 정보 : c:\\ 또는  d:\\
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.UtilMemory._SystemDisk_AvailableFreeSpace">
+            <summary>
+            SystemRoot 윈도우가 설치된 디스크의 사용 가능 용량
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GetGuiResources(System.IntPtr,System.Int32)">
+            <summary>
+            gdi object count : gdi 객체 갯수 리턴. 0 : uiFlags gid, 1 : user object
+            </summary>
+            <param name="hProcess"></param>
+            <param name="uiFlags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GlobalMemoryStatusEx">
+            <summary>
+            시스템 메모리의 정보를 반환 한다. [20130429]
+            LogMessage(string.Format("MEMORYSTATUSEX  ullTotalPhys : [ {0:#,###} ] ", ms.ullTotalPhys / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailPhys : [ {0:#,###} ] ", ms.ullAvailPhys / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullTotalPageFile : [ {0:#,###} ] ", ms.ullTotalPageFile / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailPageFile : [ {0:#,###} ] ", ms.ullAvailPageFile / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullTotalVirtual : [ {0:#,###} ] ", ms.ullTotalVirtual / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailVirtual : [ {0:#,###} ] ", ms.ullAvailVirtual / 1024 / 1024));
+            LogMessage(string.Format("MEMORYSTATUSEX  ullAvailExtendedVirtual : [ {0:#,###} ] ", ms.ullAvailExtendedVirtual / 1024 / 1024));        /// 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GolbalWMI_MemoryCheck">
+            <summary>
+            WMI 이용해서 시스템 메모리의 정보를 반환 한다. [20130429]
+            TotalVisibleMemorySize : 실제 물리적 메모리
+            SizeStoredInPagingFiles : 페이징 파일 사이즈
+            TotalVirtualMemorySize : 가상메모리 전체 사이즈 : 이 값은 항상 2GB로 고정될 것이다
+            FreePhysicalMemory : 사용 가능 물리적 메모리
+            FreeVirtualMemory : 사용 가능 가상 메모리
+            FreeSpaceInPagingFiles : 사용가능 페이징 파일 메모리 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GetConvertSizToMBytes(System.Object)">
+            <summary>
+            사이즈를 Bytes 타입으로 변환 해서 숫자 뒤에 Bytes, MBytes, GBytes 를 붙여서 반환 한다.
+            </summary>
+            <param name="checkSize">체크 사이즈.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GetConvertSizToMBytes_2(System.Object)">
+            <summary>
+            사이즈를 Bytes 타입으로 변환 해서 숫자 뒤에 Bytes, MBytes, GBytes 를 붙여서 반환 한다.  [alth,20160704]
+            </summary>
+            <param name="checkSize">체크 사이즈.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GetSystemDriveInfoFreeSpaceToMBytes">
+            <summary>
+            SystemRoot 디스크의 용량 사이즈를 체크 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GetSystemRootDriveString">
+            <summary>
+            WINDOWS 가 설치된 드라이브를 가져 온다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GetResitryKeyValue(System.String,System.String)">
+            <summary>
+            레지스트리에 있는 키 정보를 반환 한다. LocalMachine
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.UtilMemory.GetLargeObject_HeapSize">
+            <summary>
+            Gen1 + Gen2 + LOH 의 메모리 사이즈를 계산한 후 리턴 한다.  [alth,20160704]
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Diagnostics.LogLevel">
+            <summary>
+            Log의 레벨을 정의하는 열거자
+            </summary>
+            <remarks>
+            LogLevel은 이벤트 로그의 로그 레벨과 동등하다. 다만 Verbose는 이벤트 로그의
+            SuccessAduit에 대응된다.
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.LogLevel.Verbose">
+            <summary>
+            단순 트레이스, 디버깅을 위한 용도의 로깅 레벨
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.LogLevel.Information">
+            <summary>
+            정보 표시 용도의 로깅 레벨
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.LogLevel.Warnning">
+            <summary>
+            경고 표시 용도의 로깅 레벨
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.LogLevel.Error">
+            <summary>
+            오류 표시 용도의 로깅 레벨
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.DebugFile.FW">
+            <summary>
+            FW 단순 디버깅
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.DebugFile.Page">
+            <summary>
+            화면용 디버깅
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.IpAddress.GetLocalComputerIP">
+            <summary>
+            해당 로컬호스트의 ip를 가져온다.
+            </summary>
+            <returns>ipAddress</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            생성자
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.#ctor(System.String,System.String,System.String)">
+            <summary>
+            ErrorLog 클래스 생성과 동시에 초기화 한다. 
+            </summary>
+            <param name="sourceName">소스이름</param>
+            <param name="logName">로그이름</param>
+            <param name="logFilePath">로그 파일 이름 또는 Null</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.WriteLogMessage(System.String)">
+            <summary>
+            로그메세지를 작성하고 이벤트 로그에 추가한다. 만일 LogFilePath 가 지정되어 있으면 
+            지정된 파일에도 동일한 메세지를 기록한다. 
+            기본적으로 이벤트로그 기록은 정보분류(error) 로써 기록
+            </summary>
+            <param name="logMessage">로그 메세지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.WriteLogMessage(System.String,System.Diagnostics.EventLogEntryType)">
+            <summary>
+            로그메세지를 작성하고 이벤트 로그에 추가한다. 만일 LogFilePath 가 지정되어 있으면 
+            지정된 파일에도 동일한 메세지를 기록한다. 
+            </summary>
+            <param name="logMessage">로그 메세지</param>
+            <param name="entryType">이벤트로그 기록시 정보분류(Infomation, warning, error)</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.FormatException(System.Exception,System.Boolean)">
+            <summary>
+            예외처리시 발생하는 메세지를 필터링해서 사용자에게 친숙한 메세지를 보여준다.
+            </summary>
+            <param name="ex">예외 정보</param>
+            <param name="filtering">필터링 여부(true/false)</param>
+            <returns>포맷된 결과 예외메세지</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.WriteExceptionLog(System.Exception)">
+            <summary>
+            Exception 정보를 로그에 기록한다. 
+            사용자가 지정한 메시지를 두번쨰 파라미터로 추가로 기록된다.
+            </summary>
+            <param name="ex">예외 정보</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.WriteExceptionLog(System.Exception,System.String)">
+            <summary>
+            Exception 정보를 로그에 기록한다. 
+            사용자가 지정한 메시지를 두번쨰 파라미터로 추가로 기록된다.
+            </summary>
+            <param name="ex">예외 정보</param>
+            <param name="logMessage">사용자 지정 메세지</param>
+            <returns>전체 에러 메세지</returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.ErrorLog.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ErrorLog.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.ErrorLog.LogName">
+            <value>
+            이벤트 기록되는 로그 리스트 이름지정
+            </value>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.ErrorLog.SourceName">
+            <value>
+            이벤트 기록되는 로그들이 소스(원본) 이름지정
+            </value>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.ErrorLog.LogFilePath">
+            <value>
+            로그파일 이름을 지정하면 로그 메세지 저장시 동일한 이벤트기록이 파일에 기록된다.
+            </value>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.ExecutionTimeLog._logFileName">
+            <summary>
+            로그파일 이름 지정 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.ExecutionTimeLog._traceEnable">
+            <summary>
+            외부 컴퍼넌트로 Trace를 확장할수 있도록 함(미구현됨)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.ExecutionTimeLog.Enable">
+            <summary>
+            로그 지정여부 Bool변수
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ExecutionTimeLog.#ctor(System.String)">
+            <summary>
+            ExecutionTimeLog 클래스의 생성자로써 로그 파일 이름을 지정한다.
+            </summary>
+            <param name="logFileName">로그 파일 이름</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ExecutionTimeLog.#ctor(System.String,System.Boolean)">
+            <summary>
+            ExecutionTimeLog 클래스의 생성자로써 로그 파일 이름을 지정한다.
+            로그파일 기록은 성능에 영향을 미친다. 이를 설정하는 두번째 파라미터가 있다.
+            </summary>
+            <param name="logFileName">로그 파일 이름</param>
+            <param name="traceEnable">로그정보를 별도로 기록 여부 지정</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ExecutionTimeLog.Prepare">
+            <summary>
+            ExecutionTimeLog 클래스가 생성된 이후 Prepare를 호출하므로써 시작시간을 설정한다.
+            또한 현재 실행중이 메서드를 Reflection 를 얻어낸다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ExecutionTimeLog.Measure">
+            <summary>
+            Prepare 를 호출후 소요된 시간을 기록한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ExecutionTimeLog.WriteLog">
+            <summary>
+            Enable 속성이 지정되었을경우 
+            logFileName 이 지정되어 있으면 파일에 소요된 시간, 호출된 메서드를 기록한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.ExecutionTimeLog.MeasureAndWriteLog">
+            <summary>
+            소요된 시간을 체크후 그 결과를 기록한다. 
+            주로 COM+ 의 JITA 에서 Deative 호출되도록 되어 있다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Diagnostics.BlueOceanException">
+            <summary>
+            BlueOcean 에서 내부 지정한 Exception 으로 사용 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.BlueOceanException.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.BlueOceanException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.BlueOceanException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.BlueOceanException.#ctor(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <param name="inner"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.BlueOceanException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Diagnostics.FileLogger">
+            <summary>
+            파일로 로그를 기록 하는 클래스이다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger.USER_DB_ACCESS_LOG_YN">
+            <summary>
+            사용자 단위 LOG 저장 유무 'Y' 이면 저장. : 기본값 기록 안함. [20150608]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.#ctor">
+            <summary>
+            디폴트 로그레벨과 디폴트 파일명을 사용하여 FileLogger 객체를 생성한다.
+            생성한다.
+            </summary>
+            <remarks>
+            디폴트 로그레벨은 Verbose 이며 디폴트 파일명은 static DefaultFilePrefix 프로퍼티의 값이
+            사용된다. 로그레벨이 BaseLogLevel 보다 낮은 경우, 로그는 기록되지 않음에 유의해야 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.#ctor(BlueOcean.Framework.Diagnostics.LogLevel)">
+            <summary>
+            주어진 로그 레벨과 디폴트 파일명을 사용하여 FileLogger 객체를 생성한다.
+            </summary>
+            <param name="level">로그 레벨</param>
+            <remarks>
+            디폴트 파일명은 static DefaultFilePrefix 프로퍼티의 값이 사용된다.
+            로그 레벨이 BaseLogLevel 보다 낮은 경우, 로그는 기록되지 않음에 유의해야 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.#ctor(System.String)">
+            <summary>
+            디폴트 로그레벨과 주어진 파일명을 사용하여 FileLogger 객체를 생성한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <remarks>
+            디폴트 로그레벨은 Verbose 이다.
+            로그 레벨이 BaseLogLevel 보다 낮은 경우, 로그는 기록되지 않음에 유의해야 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.#ctor(System.String,BlueOcean.Framework.Diagnostics.LogLevel)">
+            <summary>
+            주어진 로그레벨과 파일명을 사용하여 FileLogger 객체를 생성한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="defaultLevel">로그 레벨</param>
+            <remarks>
+            로그 레벨이 BaseLogLevel 보다 낮은 경우, 로그는 기록되지 않음에 유의해야 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.#ctor(System.String,System.String)">
+            <summary>
+            디폴트 로그레벨과 주어진 파일명을 사용하여 FileLogger 객체를 생성한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <remarks>
+            디폴트 로그레벨은 Verbose 이다.
+            로그 레벨이 BaseLogLevel 보다 낮은 경우, 로그는 기록되지 않음에 유의해야 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.#ctor(System.String,System.String,BlueOcean.Framework.Diagnostics.LogLevel)">
+            <summary>
+            주어진 로그레벨과 파일명을 사용하여 FileLogger 객체를 생성한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="defaultLevel">로그 레벨</param>
+            <remarks>
+            로그 레벨이 BaseLogLevel 보다 낮은 경우, 로그는 기록되지 않음에 유의해야 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteString(System.String)">
+            <summary>
+            로그파일에 로그 메시지를 기록한다. [20120627,alth]
+            </summary>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            로그 메시지의 로그 레벨은 FileLogger 클래스의 인스턴스 프로퍼티인
+            LogLevel 프로퍼티의 값을 따른다. 
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger("MyLog");
+            log.WriteString("Message");			// use default (Verbose)
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.String,System.Object[])">
+            <summary>
+            로그파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            로그 메시지의 로그 레벨은 FileLogger 클래스의 인스턴스 프로퍼티인
+            LogLevel 프로퍼티의 값을 따른다. 
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger("MyLog");
+            log.Write("Message");			// use default (Verbose)
+            log.LogLevel = LogLevel.Error;
+            log.Write("Message {0}", DateTime.Now);		// log level is 'Error'
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(BlueOcean.Framework.Diagnostics.LogLevel,System.String,System.Object[])">
+            <summary>
+            로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="level">로그 메시지 레벨</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            이 메쏘드 호출에 주어진 로그 레벨은 LogLevel 프로퍼티의 값을 오버라이드 한다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger("MyLog");
+            log.Write("Message");			// use default (Verbose) 
+            log.Write(LogLevel.Error, "Message {0}", DateTime.Now);		// log level is 'Error'
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteIf(System.Boolean,System.String,System.Object[])">
+            <summary>
+            주어진 조건식이 true 이면 로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="expr">조건식</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            로그 메시지의 로그 레벨은 FileLogger 클래스의 인스턴스 프로퍼티인
+            LogLevel 프로퍼티의 값을 따른다. 
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger("MyLog");
+            log.Write("Message");			// force logging (using default verbose level)
+            log.LogLevel = LogLevel.Error;
+            log.WriteIf(!successFlag, "Error Message {0}", DateTime.Now);		// log level is 'Error'
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteIf(System.Boolean,BlueOcean.Framework.Diagnostics.LogLevel,System.String,System.Object[])">
+            <summary>
+            주어진 조건식이 true 이면 로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="expr">조건식</param>
+            <param name="level">로그 메시지 레벨</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            이 메쏘드 호출에 주어진 로그 레벨은 LogLevel 프로퍼티의 값을 오버라이드 한다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger("MyLog");
+            log.Write("Message");			// force logging. use default (Verbose)
+            log.WriteIf(!successFlag, LogLevel.Error, "Error Message {0}", DateTime.Now);		// log level is 'Error'
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.String)">
+            <summary>
+            로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="message">로그 메시지</param>
+            <remarks>
+            이 메쏘드의 로그 메시지 레벨은 DefaultLogLevel 프로퍼티의 설정을 오버라이드 한다.
+            Static Write 메쏘드는 간단히 한 번의 로그 메시지를 남기고자 할 때
+            FileLogger의 인스턴스를 생성할 필요 없이 사용가능하므로 사용이 용이하다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger.Write("Message");			// use default log level(verbose)
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.String[])">
+            <summary>
+            string array value log
+            </summary>
+            <param name="messageArray"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Collections.Hashtable)">
+            <summary>
+            HashTable Value Log
+            </summary>
+            <param name="htArray"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteFileName(System.String,System.String)">
+            <summary>
+            로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="level">로그 메시지 레벨</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            이 메쏘드의 로그 메시지 레벨은 DefaultLogLevel 프로퍼티의 설정을 오버라이드 한다.
+            Static Write 메쏘드는 간단히 한 번의 로그 메시지를 남기고자 할 때
+            FileLogger의 인스턴스를 생성할 필요 없이 사용가능하므로 사용이 용이하다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger.WriteFileName("MyLog", "로그 문자열");		// 'Error' log message
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.String,BlueOcean.Framework.Diagnostics.LogLevel,System.String)">
+            <summary>
+            로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="level">로그 메시지 레벨</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            이 메쏘드의 로그 메시지 레벨은 DefaultLogLevel 프로퍼티의 설정을 오버라이드 한다.
+            Static Write 메쏘드는 간단히 한 번의 로그 메시지를 남기고자 할 때
+            FileLogger의 인스턴스를 생성할 필요 없이 사용가능하므로 사용이 용이하다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger.Write("MyLog", LogLevel.Error, "Message {0}", DateTime.Now);		// 'Error' log message
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.String,BlueOcean.Framework.Diagnostics.LogLevel,System.String,System.Object[])">
+            <summary>
+            로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="level">로그 메시지 레벨</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            이 메쏘드의 로그 메시지 레벨은 DefaultLogLevel 프로퍼티의 설정을 오버라이드 한다.
+            Static Write 메쏘드는 간단히 한 번의 로그 메시지를 남기고자 할 때
+            FileLogger의 인스턴스를 생성할 필요 없이 사용가능하므로 사용이 용이하다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger.Write("MyLog", LogLevel.Error, "Message {0}", DateTime.Now);		// 'Error' log message
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.String,System.String,BlueOcean.Framework.Diagnostics.LogLevel,System.String,System.Object[])">
+            <summary>
+            로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="level">로그 메시지 레벨</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            이 메쏘드의 로그 메시지 레벨은 DefaultLogLevel 프로퍼티의 설정을 오버라이드 한다.
+            Static Write 메쏘드는 간단히 한 번의 로그 메시지를 남기고자 할 때
+            FileLogger의 인스턴스를 생성할 필요 없이 사용가능하므로 사용이 용이하다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger.Write("MyLog", LogLevel.Error, "Message {0}", DateTime.Now);		// 'Error' log message
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write_Debug(System.String)">
+            <summary>
+            FW 디버깅용도의 로그 파일에 로그 메시지를 기록한다. [20130627]
+            </summary>
+            <param name="message">로그 메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write_Debug(System.String,BlueOcean.Framework.Diagnostics.DebugFile)">
+            <summary>
+            FW 디버깅용도의 로그 파일에 로그 메시지를 기록한다. [20130627]
+            </summary>
+            <param name="message">로그 메시지</param>
+            <param name="logFile">로그 파일 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write_Debug_Only(System.String)">
+            <summary>
+            FW 디버깅용도의 로그 파일에 로그 메시지를 기록한다. [20130627]
+            </summary>
+            <param name="message">로그 메시지</param>
+            <param name="logFile">로그 파일 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteIf(System.Boolean,System.String,System.String,System.Object[])">
+            <summary>
+            주어진 조건식이 true 이면 로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="expr">조건식</param>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            로그 메시지의 로그 레벨은 이 클래스의 static 프로퍼티인 DefaultLogLevel의 값을
+            사용한다.
+            Static Write 메쏘드는 간단히 한 번의 로그 메시지를 남기고자 할 때
+            FileLogger의 인스턴스를 생성할 필요 없이 사용가능하므로 사용이 용이하다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger.WriteIf(!successFlag, "MyLog", "Error Message");			// use default log level(verbose)
+            FileLogger.DefaultLogLevel = LogLevel.Error;
+            FileLogger.WriteIf(!successFlag, "MyLog", "Error Message {0}", DateTime.Now);		// 'Error' log message
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteIf(System.Boolean,System.String,BlueOcean.Framework.Diagnostics.LogLevel,System.String,System.Object[])">
+            <summary>
+            주어진 조건식이 true 이면 로그 파일에 로그 메시지를 기록한다.
+            </summary>
+            <param name="expr">조건식</param>
+            <param name="filePrefix">로그 파일명</param>
+            <param name="level">로그 메시지 레벨</param>
+            <param name="format">로그 메시지 포맷</param>
+            <param name="args">가변 매개변수</param>
+            <remarks>
+            이 메쏘드의 로그 메시지 레벨은 DefaultLogLevel 프로퍼티의 설정을 오버라이드 한다.
+            Static Write 메쏘드는 간단히 한 번의 로그 메시지를 남기고자 할 때
+            FileLogger의 인스턴스를 생성할 필요 없이 사용가능하므로 사용이 용이하다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger.WriteIf(!successFlag, LogLevel.Error, "MyLog", "Error !");
+            </code>
+            </example>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._Is_Checking_SendException_Direct_Call">
+            <summary>
+            에러 로그를 SendException 직접 호출해서 저장을 했는지 여부를 체크하기 위한 메시지 제어. : true 직접 호출  [alth,20160704]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._Is_Checking_ErrorMsgBoxShow">
+            <summary>
+            사용자 한테 보여주지 않아도 되는 에러 창은 숨기도록 한다. : true 에러창 표시 안함 [alth,20160704]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Exception)">
+            <summary>
+            Exception 에러에 대한 정보를 기록 한다.
+            </summary>
+            <param name="ex"></param>
+            <example>
+            <code>
+            FileLogger.Write(ex);
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Publish(System.Exception)">
+            <summary>
+            에러 정보를 이벤트 로그 기록 한다.
+            에러를 호출한 클래스정보, 메소드 정보
+            SqlClient.SqlException 의 상세 에러 정보를 표시한다.
+            </summary>
+            <param name="exception">에러</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Publish(System.Exception,System.String,System.String)">
+            <summary>
+            에러 정보를 이벤트 로그 기록 한다.
+            에러를 호출한 클래스정보, 메소드 정보
+            SqlClient.SqlException 의 상세 에러 정보를 표시한다.
+            </summary>
+            <param name="exception">에러</param>
+            <param name="exception_error">Exception 에러 메시지</param>
+            <param name="params_query">문자열 쿼리</param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._Msg_Publish">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._VirtualMemorySize64_BEFORE">
+            <summary>
+            GC.Collect(); 호출이 되고 나서 프로세스가 차지하고 있는 메모리양.  [alth,20160704]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._gcGetLargeObject_HeapSize">
+            <summary>
+            Gen Heap Size 체크 변수.  [alth,20160704]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Publish(System.Exception,System.String,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="exception"></param>
+            <param name="exception_error"></param>
+            <param name="params_query"></param>
+            <param name="isMemoryCheck"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Data.DataTable)">
+            <summary>
+            DataTable 에 들어 있는 정보를 기록해서 정보로 이용한다.
+            dat 파일 생성을 기본으로 한다.
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Data.DataTable,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="dt"></param>
+            <param name="IsMakeDatFile">dat 파일 생성 유무 - T:생성, F:미생성</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Data.DataTable,System.String,System.Boolean)">
+            <summary>
+            DataTable 에 들어 있는 정보를 기록해서 정보로 이용한다.
+            </summary>
+            <param name="dt"></param>
+            <param name="logMsg"></param>
+            <param name="IsMakeDatFile">dat 파일 생성 유무 - T:생성, F:미생성</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Data.DataSet)">
+            <summary>
+            DataSet 에 들어 있는 정보를 기록해서 정보로 이용한다.
+            dat 파일 생성을 기본으로 한다.
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Data.DataSet,System.String,System.Boolean)">
+            <summary>
+            DataSet 안에 있는 파일을 내용을 .dat 파일로 만든다.
+            </summary>
+            <param name="ds"></param>
+            <param name="logMsg"></param>
+            <param name="IsMakeDatFile">dat 파일 생성 유무 - T:생성, F:미생성</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Write(System.Data.DataSet,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            컬럼의 상태 4가지에 대해서 value 를 출력한다.
+            1줄에 하나의 컬럼에 값이 보여준다.
+            
+            DataSet 을 Copy해서 사용한다.
+            Copy 본은 FileLog시 엑세스 에러 나는 것으로 사용한다.
+            Copy 해서 사용하는 이유는 Delete 행 엑세스 할때 에러가 발생을 하기 때문이다.
+            원본은 .dat 로그 파일 사용시 사용한다.
+            </summary>
+            <param name="ds"></param>
+            <param name="logMsg"></param>
+            <param name="colnm"></param>
+            <param name="IsMakeDatFile">dat 파일 생성 유무 - T:생성, F:미생성</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteLogFile(System.Data.DataTable)">
+            <summary>
+            DataTable 에 있는 정보를 .dat 파일로 저장한다.
+            </summary>
+            <param name="dt"></param>        
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteLogFile(System.Data.DataTable,System.String)">
+            <summary>
+            .Copy() 를 해서 datatable이 ds 에 중복으로 ADD 되어
+            에러가 나는 것을 방지한다.
+            </summary>
+            <param name="dt"></param>
+            <param name="tablename"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.WriteLogFile(System.Data.DataSet)">
+            <summary>
+            DataSet에 있는 정보를 .dat 파일로 저장한다.
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Diagnostics.FileLogger.WriteLogFile(System.Data.DataSet,System.String,System.String)" 멤버에 대해 무시됩니다. -->
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Diagnostics.FileLogger.WriteLogFileFullPath(System.Data.DataSet,System.String)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.ReadLogFile(System.String)">
+            <summary>
+            Dat Log File Read
+            </summary>
+            <param name="fullFilePath">파일 전체 주소</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.DisplayRow(System.Data.DataRow,System.Data.DataColumn)">
+            <summary>
+            컬럼의 상태에 따른 값을 반환 한다.
+            </summary>
+            <param name="dr"></param>
+            <param name="colnm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.SqlParameterLog(System.Data.CommandType,System.String,System.Data.IDataParameterCollection,System.Diagnostics.Stopwatch,System.String)">
+            <summary>
+            파라미터 정보를 기록 한다.
+            </summary>
+            <example>
+            FileLogger.SqlLog(commandType, commandText, dataParams, startTime, endTick);
+            </example>
+            <param name="commandType">CommandType</param>
+            <param name="commandText">commandText</param>
+            <param name="dataParams">파라미터</param>
+            <param name="startTime">시작 시간</param>
+            <param name="tickTime">경과 시간</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.SqlParameterLog(System.Data.CommandType,System.String,System.Data.IDataParameterCollection,System.Diagnostics.Stopwatch,System.String,System.Boolean)">
+            <summary>
+            파라미터 정보를 기록 한다.
+            </summary>
+            <example>
+            FileLogger.SqlLog(commandType, commandText, dataParams, startTime, endTick);
+            </example>
+            <param name="commandType">CommandType</param>
+            <param name="commandText">commandText</param>
+            <param name="dataParams">파라미터</param>
+            <param name="startTime">시작 시간</param>
+            <param name="tickTime">경과 시간</param>
+            <param name="isSelectCall">조회 프로시저 호출여부 [20140724]</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.SqlParameterLog(System.Data.CommandType,System.String,System.Data.IDataParameterCollection,System.Diagnostics.Stopwatch,System.String,System.Boolean,System.String)">
+            <summary>
+            파라미터 정보를 기록 한다.
+            </summary>
+            <example>
+            FileLogger.SqlLog(commandType, commandText, dataParams, startTime, endTick);
+            </example>
+            <param name="commandType">CommandType</param>
+            <param name="commandText">commandText</param>
+            <param name="dataParams">파라미터</param>
+            <param name="startTime">시작 시간</param>
+            <param name="tickTime">경과 시간</param>
+            <param name="isSelectCall">조회 프로시저 호출여부 [20140724]</param>
+            <param name="menu_nm">메뉴코드,명</param>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._DB_CALL_REMOVE_SP_LIST_1">
+            <summary>
+            조회 전용 프로시저 : 에러 체크 제외용 프로시저 리스트. [alth,20140724]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._DB_CALL_REMOVE_SP_LIST_2">
+            <summary>
+            조회 전용 프로시저 : 에러 체크 제외용 프로시저 리스트. [alth,20140724]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger.DB_CALL_LONG_TIME_SP_LIST">
+            <summary>
+            조회 전용 프로시저 : 호출 시간을 체크 한다.
+            5 초 이상 시간이 소요되면 에러 로그에 기록해서 개발자가 튜닝을 할 수 있도록 한다. [alth,20140724]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.CheckStringSqlParameter(System.Data.SqlDbType)">
+            <summary>
+            
+            </summary>
+            <param name="sqlDbType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.SqlExceptionLog(System.Data.CommandType,System.String,System.Data.IDataParameterCollection,System.Diagnostics.Stopwatch,System.String,System.Data.SqlClient.SqlException)">
+            <summary>
+            SqlException을 기록하고 SqlException 예외를 Throw한다.  
+            </summary>
+            <param name="commandType">CommandType</param>
+            <param name="commandText">commandText</param>
+            <param name="sqlParams">파라미터</param>
+            <param name="startTime">시작 시간</param>
+            <param name="oe">SqlException</param>        
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.ExceptionLog(System.Exception)">
+            <summary>
+            Exception 정보를 기록 한다.
+            UI 화면에서는 사용하면 안된다. throw 때문에 2번 실행 된다.
+            
+            서버쪽에서 에러 정보를 기록하고 throw 하는 용도로 사용한다.
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.RunLog(System.String,System.String,System.DateTime)">
+            <summary>
+            실행 정보를 기록 한다.
+            </summary>
+            <example>
+            FileLogger.RunLog(this.GetType(), "select_code", StartTime);
+            </example>
+            <param name="Type"></param>
+            <param name="MethodName"></param>
+            <param name="StartTime"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.RunLog(System.String,System.String,System.DateTime,System.DateTime,System.String,System.Int64)">
+            <summary>
+            실행 정보를 기록 한다.
+            </summary>
+            <param name="Type"></param>
+            <param name="MethodName"></param>
+            <param name="StartTime"></param>
+            <param name="EndTime"></param>
+            <param name="IP"></param>
+            <param name="Tick"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.GetFilePath(System.String,System.String)">
+            <summary>
+            파일 경로를 반환 한다.
+            </summary>
+            <param name="yn">환경파일 키값</param>
+            <param name="path">폴더 주소</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.InitFileHeader(System.String,System.Text.StringBuilder)">
+            <summary>
+            파일의 헤더 부분을 작성한다.
+            </summary>
+            <param name="filePath"></param>
+            <param name="sb"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.DirectoryCreate(System.String)">
+            <summary>
+            폴더를 생성한다.
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.GetLocalIP">
+            <summary>
+            사용자 컴퓨터의 아이피를 조회 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._Data_WorkTime_FilePath">
+            <summary>
+            DB CALL 작업 시간 설정 정보의 첫번째 실행 파일. [alth,20140715]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._startTimeLog">
+            <summary>
+            시작 시간을 설정 한다. [alth,20140705]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._Data_WorkTime_CheckSecond">
+            <summary>
+            작업 시간에 소요된 시간을 초로 리턴 한다.. [alth,20140715]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._stopWatchLog">
+            <summary>
+            진행 시간 체크용도 스톱 워치 인스턴스. [alth,20140705]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Reset">
+            <summary>
+             DB CALL 작업 시간 설정 정보를 초기화 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Reset();
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Start">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 시작 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Start();
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Start(System.String)">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 시작 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Start();
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Append(System.String)">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 중단 한 후에 로그에 기록 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Append("");
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Stop">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 중단 한 후에 로그에 기록 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Stop();
+            </example>        
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Stop(System.String)">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 중단 한 후에 로그에 기록 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Stop("");
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._Data_WorkTime_FilePath2">
+            <summary>
+            DB CALL 작업 시간 설정 정보의 첫번째 실행 파일. [alth,20140715]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._startTimeLog2">
+            <summary>
+            시작 시간을 설정 한다. [alth,20140705]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._Data_WorkTime_CheckSecond2">
+            <summary>
+            작업 시간에 소요된 시간을 초로 리턴 한다.. [alth,20140715]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._stopWatchLog2">
+            <summary>
+            진행 시간 체크용도 스톱 워치 인스턴스. [alth,20140705]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Reset2">
+            <summary>
+             DB CALL 작업 시간 설정 정보를 초기화 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Reset();
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Start2">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 시작 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Start();
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Start2(System.String)">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 시작 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Start();
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Append2(System.String)">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 중단 한 후에 로그에 기록 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Append("");
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Stop2">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 중단 한 후에 로그에 기록 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Stop();
+            </example>        
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.Data_WorkTime_Stop2(System.String)">
+            <summary>
+             DB CALL 작업 시간 설정 시간을 중단 한 후에 로그에 기록 한다.
+            </summary>
+            <example>
+            FileLogger.Data_WorkTime_Stop("");
+            </example>
+            <param name="msg">메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.CreateDirectory(System.String)">
+            <summary>
+            폴더가 없으면 폴더를 생성 한다.
+            </summary>
+            <param name="folder">폴더</param>
+        </member>
+        <member name="F:BlueOcean.Framework.Diagnostics.FileLogger._IsLogFileNameHour">
+            <summary>
+            로그 파일을 일자의 시간당 30분 단위로 쪼개서 저장할지 유무. 기본값 true : 30분단위.  [alth,20151013]
+            false : yyyyMMdd 일단위.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Diagnostics.FileLogger.GetLogFileNameHour">
+            <summary>
+            로그 파일을 일자의 시간당 30분 단위로 쪼개서 저장 한다.  [alth,20150603]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.FilePrefix">
+            <summary>
+            FileLogger 인스턴스에서 사용하는 로그 파일명
+            </summary>
+            <remarks>
+            로그 파일명 뒤에 yymmd 형식의 날짜 suffix 가 붙는다. 예를 들어
+            FilePrefix 프로퍼티의 값이 MyLog 라면 MyLog_050101.log 형태의 로그
+            파일이 기록되며 이 로그는 2005년 1월 1일에 작성된 로그인 것이다.
+            디폴트 로그 파일명은 static DefaultFilePrefix 프로퍼티의 값이 사용된다.
+            </remarks>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.LogDirectory2">
+            <summary>
+            FileLogger 인스턴스에서 사용하는 로그 폴더명
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.LogLevel">
+            <summary>
+            FileLogger 인스턴스에서 로깅 메시지의 메시지 레벨
+            </summary>
+            <remarks>
+            Write 메쏘드들에서 명시적으로 LogLevel을 주지 않을 때 이 프로퍼티의
+            값이 메시지 레벨로 사용된다. 디폴트는 Verbose 이며, 이 디폴트 값을 읽거나
+            수정하기 위해서느 static 프로퍼티인 DefaultLogLevel 을 사용한다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger("MyLog");
+            log.Write("Hello");				// Verbose 메시지
+            log.LogLevel = LogLevel.Error;	// 디폴트 로그 레벨 수정
+            log.Write("Hello again");		// Error 메시지
+            </code>
+            </example>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.DefaultLogLevel">
+            <summary>
+            FileLogger 클래스의 인스턴스나 static Write 메쏘드에서 사용하는 디폴트
+            로그 레벨
+            </summary>
+            <remarks>
+            FileLogger 인스턴스를 생성하거나 static Write 메쏘드를 호출 할 때 명시적으로
+            LogLevel이 주어지지 않으면 이 프로퍼티의 값(기본 Verbose)이 사용된다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger("MyLog");		// DeafultLogLevel 프로퍼티 값 사용
+            log.Write("Message");
+            log.Write(LogLevel.Error, "Error Message");		// DefaultLogLevel 값 오버라이드
+            log.LogLevel = LogLevel.Information;			// DefaultLogLevel 값 오버라이드
+            log.Write("Info Message");
+            
+            FileLogger.Write("NewLog", "Message");			// DefaultLogLevel 프로퍼티 값 사용
+            FileLogger.Write("NewLog", LogLevel.Warnning,	// DefaultLogLevel 값 오버라이드
+            				"Warnning Message");
+            </code>
+            </example>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.BaseLogLevel">
+            <summary>
+            로그 메시지의 필터링을 위해 사용되는 베이스 로그 레벨 (읽기 전용)
+            </summary>
+            <remarks>
+            베이스 로그 레벨 즉, BaseLogLevel 프로퍼티의 로그 레벨보다 낮은 
+            메시지는 로그 파일에 기록되지 않는다. BaseLogLevel 프로퍼티의 값은
+            configuration 파일의 appSettings 요소의 FileLoggerLevel 키 값을 통해
+            설정한다. 이 키값이 존재하지 않는 경우 디폴트는 Information 레벨이다.
+            </remarks>
+            <example>
+            <code>
+            // configuration file like this
+            &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;configuration&gt;
+            &lt;appSettings&gt;
+            &lt;add key=&quot;FileLoggerLevel&quot; value=&quot;Information&quot; /&gt;
+            &lt;add key=&quot;FileLoggerDirectory&quot; value=&quot;C:\Temp\Log\MyLogs\&quot; /&gt;
+            &lt;/appSettings&gt;
+            &lt;/configuration&gt;
+            
+            // code
+            FileLogger log = new FileLogger("MyLog");	// default log level is Verbose
+            log.Write("Message");						// filtered
+            log.Write(LogLevel.Information, "message");	// not filtered
+            </code>
+            </example>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.DefaultFilePrefix">
+            <summary>
+            로그 파일며이 명시적으로 주어지지 않을 때 사용되는 로그 파일명 (읽기 전용)
+            </summary>
+            <remarks>
+            로그 파일명이 명시적으로 주어지지 않을 때 DefaultFilePrefix  프로퍼티가
+            나타내는 파일명이 암시적으로 사용된다.
+            이 값은 PoscoEncLog 이다.
+            </remarks>
+            <example>
+            <code>
+            FileLogger log = new FileLogger();		// DefaultFilePrefix 프로퍼티의 값을 파일명으로 사용
+            log.Write("Message");
+            </code>
+            </example>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.LogDirectory">
+            <summary>
+            로그 파일이 생성될 로그 디렉토리 (읽기 전용)
+            </summary>
+            <remarks>
+            로그 파일이 생성될 로그 디렉토리를 나타낸다. 로그 디렉토리를 설정하기 위해서는
+            configuration 파일의 appSettings의 FileLoggerDirectory 키의 값을 추가한다.
+            이 설정이 존재하지 않는 경우 C:\Temp\Log 폴더를 사용한다.
+            로그 디렉토리가 존재하지 않는 경우, 해당 디렉토리를 자동으로 생성한다.
+            </remarks>
+            <example>
+            <code>
+            </code>
+            </example>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.Encoding">
+            <summary>
+            로그 메시지에 사용되는 문자열 인코딩
+            </summary>
+            <remarks>
+            로그 파일은 Encoding 프로퍼티가 지시하는 인코딩 값을 사용하여 생성된다.
+            디폴트는 Code Page 949, 즉 ks_c_5601 인코딩(ANSI) 을 사용한다.
+            </remarks>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.IsRunLog">
+            <summary>
+            실행 로그 : 디폴트 true (기록)
+            true : 로그 기록, false : 기록 안함
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.IsDataBaseLog">
+            <summary>
+            SQL 파라미터 로그 기록 : 디폴트 true (기록)
+            true : 로그 기록, false : 기록 안함
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Diagnostics.FileLogger.IsExceptionLog">
+            <summary>
+            에러 로그 (Exception 에러) : 디폴트 true (기록)
+            true : 로그 기록, false : 기록 안함
+            </summary>
+        </member>
+    </members>
+</doc>

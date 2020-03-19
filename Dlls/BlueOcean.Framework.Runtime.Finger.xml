@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Runtime.Finger</name>
+    </assembly>
+    <members>
+        <member name="F:BlueOcean.Framework.Runtime.Finger.frmTest.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.frmTest.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.frmTest.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Scraping.ScrapHandler">
+            <summary>
+            기웅 자금관리용 객체 생성 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._axclsScrap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._ErrorColumnName">
+            <summary>
+            에러 컬럼 리스트
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._ErrorColumnList">
+            <summary>
+            에러 컬럼 추가 유무 체크 용도.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.InitializeComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.InitDataBaseOpen">
+            <summary>
+            기웅 자금관리 DB 오픈.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.InitDataBaseClose">
+            <summary>
+            기웅 자금관리 DB 연결 종료
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.InitDataBaseOpenExec">
+            <summary>
+            기웅 자금관리 DB 오픈.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.InitDataBaseCloseExec">
+            <summary>
+            기웅 자금관리 DB 연결 종료
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._str_VALUE">
+            <summary>
+            xmlnode 값 리턴 변수.  [alth,20150414]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.GetNodeInnerText(System.Xml.XmlNode,System.String)">
+            <summary>
+            XmlNode의 속성의 값을 리턴 한다.
+            </summary>
+            <param name="nodeList"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.GetValueToInt(System.Xml.XmlNode,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            Int32 타입으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 Int, 오류 이면 -1 반환</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.GetValueToDecimal(System.Xml.XmlNode,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 Decimal</returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._FileLogger_KWIC">
+            <summary>
+            FILE 로그생성
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.LogMessageKWIC(System.String)">
+            <summary>
+            파일 로그 생성. 기웅
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._IsaxclsScrap_SetInfo">
+            <summary>
+            SetInfo() 메소드 호출 여부.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._IsChangeBIZ_CD">
+            <summary>
+            true 변경된 사업장코드임.  [alth,20150413]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._str_MEMB_BUSNPERS_NO_BIZ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.TM_Call_TN_INFO_HelpForm(System.String,System.String)">
+            <summary>
+             최신거래내역 팝업창 호출. BlueOcean.Framework.Runtime.Container 에 객체를 생성해 놓는다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.TM_Call_Gubun_Date(System.String,System.String)">
+            <summary>
+             각 항목별 최신 거래 일자 값을 반환 한다.
+            </summary>
+            <param name="date_type">거래일자 타입</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.Set_TaxMate_Scraping_WorkDate(System.String,System.String)">
+            <summary>
+            업부구분별 최종수집일자체크. [20130621]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.TM_Call_Reg_Item_Count(System.String,System.String)">
+            <summary>
+             각 항목별 인증정보 등록 갯수를 리턴 한다.  [alth,20150424]
+            </summary>
+            <param name="strServiceName"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.ScrapHandler._str_SP_NAME">
+            <summary>
+            호출 프로시저 이름. [alth,20150416]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.axclsScrap_getxml(System.Object,AxTMDR_Scrap.__clsScrap_getxmlEvent)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.ScrapHandler.SAVE_XML_DATA_SINGLE(System.String,System.String,System.String)">
+            <summary>
+            자동장부 저장로직을 XML DATA 일괄 저장이 아닌 개별 저장으로 변경한 프로시저.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Scraping.IFT_HomeTaxLib">
+            <summary>
+            휴페업 조회 헬퍼 클래스.  [ALTH,20161123]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Scraping.IFT_HomeTaxLib._isLoadLibClass">
+            <summary>
+            true 레지스트리 등록됨. false 오류.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.IFT_HomeTaxLib.GetYmdTitle(System.String)">
+            <summary>
+            일자 변경.
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.IFT_HomeTaxLib.GetValueToBizCdString(System.Object)">
+            <summary>
+            사업자번호 구분자 추가.
+            </summary>
+            <param name="ymd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.IFT_HomeTaxLib.GetValidBizNo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="biz_no"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Scraping.IFT_HomeTaxLib.GetValidBizNoExec(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="biz_no"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Finger.FingerHandler">
+            <summary>
+            핑거 자금관리용 객체 생성 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Finger.FingerHandler._FODBController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Finger.FingerHandler._FOWSController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Finger.FingerHandler._FingerDBHandle">
+            <summary>
+             핑거 자금관리 관련 : DB OPEN 은 AutoWorks.EXE 는 1번만 발생해야함.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.FingerHandler.InitializeComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.FingerHandler.InitDataBaseOpen">
+            <summary>
+            핑거 자금관리 DB 오픈.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.FingerHandler.InitDataBaseClose">
+            <summary>
+            핑거 자금관리 DB 연결 종료
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.FingerHandler.InitDataBaseOpenExec">
+            <summary>
+            핑거 자금관리 DB 오픈.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.FingerHandler.InitDataBaseCloseExec">
+            <summary>
+            핑거 자금관리 DB 연결 종료
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Finger.FingerHandler._FileLogger_Finger">
+            <summary>
+            FILE 로그생성
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Finger.FingerHandler.LogMessageFinger(System.String)">
+            <summary>
+            파일 로그 생성. 핑거
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Finger.FingerHandler.FingerDBHandle">
+            <summary>
+             핑거 자금관리 관련 : DB OPEN 은 AutoWorks.EXE 는 1번만 발생해야함.
+            </summary>
+        </member>
+    </members>
+</doc>

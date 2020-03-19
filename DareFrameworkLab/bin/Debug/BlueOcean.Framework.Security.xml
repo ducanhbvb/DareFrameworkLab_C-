@@ -1,0 +1,2099 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Security</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.Security.CryptoRuntimeChecker">
+            <summary>
+            암호화 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoRuntimeChecker.InitCryptoRuntimeData(System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString)">
+            <summary>
+            
+            </summary>
+            <param name="type1"></param>
+            <param name="type2"></param>
+            <param name="type3"></param>
+            <param name="type4"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoRuntimeChecker.InitSecurityDataInfo(System.Security.SecureString)">
+            호출한 클래스 주소
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoRuntimeChecker.InitLicensesDataInfo(System.Security.SecureString)">
+            호출한 클래스 주소
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoRuntimeChecker.InitCryptoAESRuntimeData(System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString)">
+            <summary>
+            
+            </summary>
+            <param name="type1"></param>
+            <param name="type2"></param>
+            <param name="type3"></param>
+            <param name="type4"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoRuntimeChecker.InitAESSecurityDataInfo(System.Security.SecureString)">
+            호출한 클래스 주소
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoRuntimeChecker.InitAESLicensesDataInfo(System.Security.SecureString)">
+            호출한 클래스 주소
+        </member>
+        <member name="F:BlueOcean.Framework.Security.DecryptTransformer.initVec">
+            <summary>
+            벡터 키
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.DecryptTransformer.algorithmID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DecryptTransformer.#ctor(BlueOcean.Framework.Security.EncryptionAlgorithm)">
+            <summary>
+            
+            </summary>
+            <param name="deCryptId"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DecryptTransformer.GetCryptoServiceProvider(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytesKey"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.DecryptTransformer.IV">
+            <summary>
+            벡터 키
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.CryptoService.rsa_EncChunkSize">
+            <summary>
+            RSA 암호화의 경우, 한번에 암호화되는 블록의 크기를 지정
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoService.EncryptRSA(System.Byte[],System.String)">
+            <summary>
+            RSA 암호화를 합니다.
+            </summary>
+            <param name="byteText">암호화시킬 byte 모음</param>
+            <param name="szPubKey">RSA 공용키</param>
+            <returns>Base64 인코딩된 암호화 문자열</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoService.EncryptRSAExec(System.Byte[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="byteText"></param>
+            <param name="szPubKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoService.DecryptRSA(System.String,System.String,System.Int32)">
+            <summary>
+            문자열을 복호화시킵니다.
+            </summary>
+            <param name="strEncText">복호화시킬 문자열( Base64 인코딩 되어 있음 )</param>
+            <param name="szPrvKey">RSA 개인키</param>
+            <param name="decChunkSize"></param>
+            <returns>복호화된 원본 데이터</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoService.EncryptString(System.String,System.Byte[],System.Byte[])">
+            <summary>
+            DESCryptoServiceProvider 를 이용하여 암호화시킵니다.
+            </summary>
+            <param name="strText">암호화시킬 텍스트</param>
+            <param name="byteKey">Key byte 열</param>
+            <param name="byteIV">IV byte 열</param>
+            <returns>Base64 인코딩된 암호화 문자열</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoService.DecryptString(System.String,System.Byte[],System.Byte[])">
+            <summary>
+            DESCryptoServiceProvider 를 이용하여 복호화시킵니다.
+            </summary>
+            <param name="strText">복호화될 문자열( Base64 인코딩되어 있음 )</param>
+            <param name="byteKey">Key byte 열</param>
+            <param name="byteIV">IV byte 열</param>
+            <returns>복호화된 원본 데이터</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoService.GetMD5HashText(System.String)">
+            <summary>
+            단방향 해시 알고리즘인 MD5 를 이용해서 텍스트를 암호화 시킵니다.
+            </summary>
+            <param name="strText">Hash 될 텍스트</param>
+            <returns>Hash 된 텍스트</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.CryptoDataManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.CryptoDataManager._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Security.CryptoDataManager._isInit">
+            <summary>
+            첫번째 유효성 체크 후 설정: true 설정됨.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.CryptoDataManager._CALL_SCOPENAME">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoDataManager.InitSecurityDataInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.CryptoDataManager._CALL_LICENSES">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoDataManager.InitLicensesDataInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoDataManager.CheckValidation">
+            <summary>
+            호출을 한 곳의 위치의 유효성 여부 체크
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.CryptoDataManager.BaseEncodingServiceExec(System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.CryptoDataManager.CALL_SCOPENAME">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.CryptoDataManager.CALL_LICENSES">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.Decryptor">
+            <summary>
+            복호화 모듈 클래스 : 내부에서만 호출 한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.Decryptor.initVec">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.Decryptor.transformer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Decryptor.#ctor(BlueOcean.Framework.Security.EncryptionAlgorithm)">
+            <summary>
+            생성자
+            </summary>
+            <param name="algId"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Decryptor.Decrypt(System.Byte[],System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytesData"></param>
+            <param name="bytesKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Decryptor.DecryptExec(System.Byte[],System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytesData"></param>
+            <param name="bytesKey"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.Decryptor.IV">
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "T:BlueOcean.Framework.Security.Security_AES256_Helper" 멤버에 대해 무시됩니다. -->
+        <member name="F:BlueOcean.Framework.Security.Security_AES256_Helper.key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Security_AES256_Helper.EncryptString(System.String)">
+            <summary>
+            문자열을 암호화해서 반환 한다.
+            </summary>
+            <param name="InputText">암호화할 일반 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Security_AES256_Helper.EncryptStringExec(System.String)">
+            <summary>
+            문자열을 암호화해서 반환 한다.
+            </summary>
+            <param name="InputText">암호화할 일반 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Security_AES256_Helper.DecryptString(System.String)">
+            <summary>
+            암호화된 문자열을 복호화해서 반환 한다.
+            </summary>
+            <param name="InputText">복호화할 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Security_AES256_Helper.DecryptStringExec(System.String)">
+            <summary>
+            암호화된 문자열을 복호화해서 반환 한다.
+            </summary>
+            <param name="InputText">복호화할 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.SCP_AES256Cipher">
+            <summary>
+            Smartbill : 암호화 헬퍼 클래스  [alth,20140821]
+            
+            System.Web 참조 해야함.
+            string url = HttpUtility.UrlEncode(바꿀스트링, System.Text.Encoding.GetEncoding("euc-kr") );
+            
+            Security_AES256_Helper 와 로직은 동일하다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.SCP_AES256Cipher.key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SCP_AES256Cipher.AES_encrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SCP_AES256Cipher.AES_encrypt_Exec(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SCP_AES256Cipher.AES_decrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.EncryptionAlgorithm">
+            <summary>
+            암호화 알고리즘 타입
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.EncDataShow">
+            <summary>
+            데이타 설정 타입.  [alth,20150807]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.EncDataShow.UI_FORM">
+            <summary>
+            화면
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.EncDataShow.PRINT">
+            <summary>
+            출력물
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.ProtectUserAuth">
+            <summary>
+            개인정보보호 설정 권한:1 등록수정, 2:현황조회  [alth,20150807]
+            부서 및 사원상세설정 에서 : 개인정보설정 : 1.등록권한, 2.조회권한
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ProtectUserAuth.ENC_UPDATE">
+            <summary>
+            등록 수정권한 : 암호 데이타 복호화 해서 수정 가능.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ProtectUserAuth.ENC_SELECT">
+            <summary>
+            현황조회 : 암호 데이타 볼수 없음.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.ProtectType">
+            <summary>
+            개인정보보호 타입.  [alth,20150807]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ProtectType.RESIDENT_NO">
+            <summary>
+            주민/외국인등록번호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ProtectType.PASSPORT">
+            <summary>
+            여권번호
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.ItemCD">
+            <summary>
+            항목구분.  [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ItemCD.NONE">
+            <summary>
+            부양가족
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ItemCD.CEO">
+            <summary>
+            대표자
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ItemCD.CUST">
+            <summary>
+            거래처
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ItemCD.EMP">
+            <summary>
+            사원
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ItemCD.FAMILY">
+            <summary>
+            가족
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.ItemCD.SUP_FAMILY">
+            <summary>
+            부양가족
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.BingingType">
+            <summary>
+            데이타 설정 타입.  [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.BingingType.UI_DATASOURCE">
+            <summary>
+            화면 그리드 데이터 바인딩
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.BingingType.DB_SELECT">
+            <summary>
+            멀티 헤더 조회 : 디비 조회
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.StringBase64Helper">
+            <summary>
+            문자열을 base 형식 인코딩/디코딩을 제공 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.Serialize(System.String)">
+            <summary>
+            파일의 내용을 암호화후 문자열을 반환 한다.
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.SerializeExec(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.DeSerialize(System.String,System.String)">
+            <summary>
+            파일의 내용을 복호화 한다. 반환값 없음.
+            </summary>
+            <param name="fileName"></param>
+            <param name="serializedFile"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.DeSerializeExec(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fileName"></param>
+            <param name="serializedFile"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.Base64Encode(System.String)">
+            <summary>
+            문자열 Base64 암호화
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.Base64Decode(System.String)">
+            <summary>
+            문자열 Base64 복호화
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.Base64Encode(System.String,System.Text.Encoding)">
+            <summary>
+            - 암호화
+            </summary>
+            <param name="inputText"></param>
+            <param name="enc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.Base64EncodeExec(System.String)">
+            <summary>
+            문자열 Base64 암호화
+            </summary>
+            <param name="inputText"></param>
+            <param name="enc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.Base64Decode(System.String,System.Text.Encoding)">
+            <summary>
+            복호화
+            </summary>
+            <param name="inputText"></param>
+            <param name="enc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.StringBase64Helper.Base64DecodeExec(System.String)">
+            <summary>
+            암호화
+            </summary>
+            <param name="inputText"></param>
+            <param name="enc"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.RandomCharacter">
+            <summary>
+            암호화 모듈 클래스 : 내부에서만 호출 한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.RandomCharacter._DEFAULT_RANDOM_1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.RandomCharacter._DEFAULT_RANDOM_2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.RandomCharacter._DEFAULT_RANDOM_3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.RandomCharacter.InitFieldCharacter(System.String@,System.String@,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="str1"></param>
+            <param name="str2"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.RandomCharacter.GetRandomCharacter(System.Random,System.Int32)">
+            <summary>
+            랜덤 문자열 만드는 함수
+            </summary>
+            <param name="random"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.SCP_SHACryptography">
+            <summary>
+            Smartbill : Hash 암호화 헬퍼 클래스  [alth,20150729]
+            
+            비즈원샷 WEB 에서 회원가입시 암호값의 암호화 하는 로직이다. Hash 알로리즘만 사용함.
+            브라우저에서 로그인시에 암호 체크하기 위해서 사용함.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.PrivacyPolicyHelper">
+            <summary>
+            개인정보보호 관련 헬퍼 클래스. [alth,20150806]
+            
+            주민등록번호,여권번호
+            바이오정보 : 지문,얼굴,홍채,정맥,음성,필적 등 개인을 식별할 수 있는 신체적 또는 행동적 특징에 관한 정보.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ENC_DEC_CHECK_COLUMN_YN">
+            <summary>
+            암호화,복화화 설정 여부 : 동일 컬럼 식별코드 2개 존재시 제어 용도.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ENC_DEC_CHECK_COLUMNLIST">
+            <summary>
+            암호화,복화화 설정 여부 : 동일 컬럼 식별코드 2개 존재시 제어 용도.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._privacyList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_ENC_DATA_USE_YN">
+            <summary>
+            해당 식별코드 설정 여부. true 이면 해당 화면에서 보안설정을 사용자가 사용하겠다고 한것임.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._MENU_CD">
+            <summary>
+            보안설정 화면 코드.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_KEY">
+            <summary>
+            조회, 인쇄 등으로 구분되어 있을 경우 키값.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._SELECT_VALUE">
+            <summary>
+            호출된 데이터
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._APPLY_VALUE_FR">
+            <summary>
+            적용 데이터 : 앞부분 문자열
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._APPLY_VALUE_TO">
+            <summary>
+            적용 데이터 : 뒷부분 문자열
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._APPLY_VALUE_RANGE">
+            <summary>
+            적용 데이터 : * 표시 문자열
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_DATA_CHECK_YN">
+            <summary>
+            컬럼 데이타에 * 표시 적용 여부. true 이면 적용해야 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_SHOW_DEC_DATA_YN">
+            <summary>
+            1. 등록권한을 가진 사용자가 암호를 체크해서 * 표시 없이 데이타 설정 여부. true 이면 일반텍스트로 보여야 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ProtectUserAuth">
+            <summary>
+            개인정보보호 설정 권한:1 등록수정, 2:현황조회  [alth,20150807]
+            부서 및 사원상세설정 에서 : 개인정보설정 : 1.등록권한, 2.조회권한
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_GUBUN_COLUMN">
+            <summary>
+            적용 컬럼 하나에 2개의 식별유형이 존재하는 경우. : 체크용 구분컬럼  [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_GUBUN_ITEM_LIST">
+            <summary>
+            적용 컬럼 하나에 2개의 식별유형이 존재하는 경우. : 체크용 구분컬럼의 항목 값 리스트  [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_CHECK_GUBUN_VALUE">
+            <summary>
+            체크용 구분컬럼 값  [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_GUBUN_VALUE">
+            <summary>
+            체크용 구분컬럼 값  [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IDENT_CD">
+            <summary>
+            식별코드 : 1 주민,  2 여권번호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._SCREEN_PW_SET">
+            <summary>
+            메뉴별 F3 보안키 설정여부
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._SET_YN">
+            <summary>
+            메뉴별 설정여부 : 해당 식별코드의 보안설정 사용여부임. "1" 사용
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ITEM_CD">
+            <summary>
+            항목구분 : '0' '대표자','1' '거래처','2' '사원','3' '가족' ,'4' '부양가족'  [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ITEM_COLUMN_NAME">
+            <summary>
+            항목구분 : 컬럼이름 [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ITEM_COLUMN_LIST">
+            <summary>
+            항목구분 : 컬럼 값 리스트 예) "1,2,3,4"  [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_ITEM_COLUMN_LIST">
+            <summary>
+            항목구분 : 컬럼 값 리스트 예) "1,2,3,4"  [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_ITEM_CD">
+            <summary>
+            체크용도 항목구분
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._SC_SET_TP">
+            <summary>
+            화면 설정형태 : 0.전체, 1.사용자설정
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._SC_FR_LEN">
+            <summary>
+            화면 시작 인덱스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._SC_TO_LEN">
+            <summary>
+            화면 * 표시 갯수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._PR_SET_TP">
+            <summary>
+            인쇄 설정형태 : 0.전체, 1.사용자설정
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._PR_FR_LEN">
+            <summary>
+            인쇄 시작 인덱스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._PR_TO_LEN">
+            <summary>
+            인쇄 * 표시 갯수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_TOT_LEN">
+            <summary>
+            * 설정 문자열 길이
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IDX">
+            <summary>
+            * 설정 문자열 누적 길이
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._drsTemp">
+            <summary>
+            보안설정 테이블 임시 조회 용도.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper.STR_MSG_ENC_DATA">
+            <summary>
+            사용자 정의 메시지 1.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper.STR_MSG_DEC_DATA">
+            <summary>
+            사용자 정의 메시지 2.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper.STR_MSG_USER_USE_YN">
+            <summary>
+            사용자 정의 메시지 3.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper.STR_MSG_MENU_USE_YN">
+            <summary>
+            사용자 정의 메시지 4.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper.STR_MSG_KEYDOWN_ERROR">
+            <summary>
+            마스크 보안설정 걸려 있을 경우에 펑션키, 방향키 이외의 키는 제어 한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper.STR_MSG_DELETE_KEY_ERROR">
+            <summary>
+            DELETE, SPACE, BACK
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_NOT_ENC_DATA_COLUMNLIST">
+            <summary>
+            보안설정 되지 않은 전체 컬럼 리스트 : 해당 테이블의 컬럼은 암호화가 되어 있지 않지만 화면에는 출력설정을 적용해야 하는 컬럼  [alth,20150814]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._NOT_ENC_DATA_COLUMNLIST">
+            <summary>
+            보안설정 되지 않은 특정 키의 컬럼 리스트 : 해당 테이블의 컬럼은 암호화가 되어 있지 않지만 화면에는 출력설정을 적용해야 하는 컬럼  [alth,20150814]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._CHECK_ALLDATASHOW_SEC_COLUMNLIST">
+            <summary>
+            보안컬럼이지만 구분값에 따라서 * 를 표시하지 않아야 하는 컬럼 정보 [alth,20150821]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_NOT_ENC_DATA_COLUMN">
+            <summary>
+            암호화 적용되지 않은 컬럼 여부. true 이면 데이터 암호화 없지만 * 표시 제어만 하는 것이다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_SECURITY_HELPER_CALL">
+            <summary>
+            암호화, 복호화 로직 호출중 여부 체크 하기 위한 변수.  복호화, 암호화시 에러가 발생하면 메시지창 제어 용도 이다. true 호출중 [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ACTIVE_COLUMN_NAME">
+            <summary>
+            현재 작업이 진행되고 있는 컬럼명.  [alth,20150814]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_NEWROW_SAVE_CALL_INTERNAL">
+            <summary>
+            INTERNAL 신규행 호출 여부 : TRUE 이면 보안이 걸려 있어도 현재값을 이용해서 암호화를 진행한다.  [alth,20150819]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._IS_NEWROW_SAVE_CALL">
+            <summary>
+            신규행 호출 여부 : TRUE 이면 보안이 걸려 있어도 현재값을 이용해서 암호화를 진행한다.  [alth,20150819]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyPolicyHelper._ETC_VALUE_CHECK">
+            <summary>
+            저장시 암호화에 잘못된 값이 포함되어 잇는지를 체크용 변수.  [alth,20151201]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.Dispose">
+            <summary>
+            IDisposable 메소드 구현  [alth,20150814]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.AddItem(System.String,System.String,BlueOcean.Framework.Security.ProtectType)">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.AddItem(System.String,System.String,System.String,BlueOcean.Framework.Security.ProtectType)">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="columnName_sec"></param>
+            <param name="columnName_sec_org"></param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.AddItem(System.String,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String[])">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.AddItem(System.String,System.String,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String[])">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="columnName_sec"></param>
+            <param name="columnName_sec_org"></param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.AddItem(System.String,BlueOcean.Framework.Security.ItemCD,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String,System.String,System.String[])">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.AddItem(System.String,BlueOcean.Framework.Security.ItemCD,System.String,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String,System.String,System.String[])">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="columnName_sec"></param>
+            <param name="columnName_sec_org"></param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.Add_NotEncData_Column(System.String,System.String)">
+            <summary>
+            보안설정 되지 않은 컬럼 리스트 : 해당 테이블의 컬럼은 암호화가 되어 있지 않지만 화면에는 출력설정을 적용해야 하는 컬럼  [alth,20150814]
+            </summary>
+            <param name="check_key">키 값</param>
+            <param name="columnName">적용 컬럼 이름</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.Add_AllDataShow_SecColumn(System.String,System.String)">
+            <summary>
+            보안컬럼이지만 구분값에 따라서 * 를 표시하지 않고 모든 텍스트를 보여주는 컬럼 정보 [alth,20150821]
+            </summary>
+            <param name="check_key">키 값</param>
+            <param name="columnName">적용 컬럼 이름</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetDataTableSelectFilter(System.Data.DataTable,System.String)">
+            <summary>
+            데이터 소스를 필터링, 정렬해서 DataTable을 반환 한다.
+            </summary>
+            <param name="dt">데이터 소스</param>
+            <param name="filter">필터링 공식</param>
+            <param name="sort">정렬 공식</param>
+            <returns>필터링된 DataTable 반환. dt 가 null이면 null을 반환 한다. 그외는 무조건 DataTable 을 반환 하진 않는다. </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetItemInfo(BlueOcean.Framework.Security.ProtectType,BlueOcean.Framework.Security.ItemCD)">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetCodeHelp_SelectData(System.Data.DataTable,System.String)">
+            <summary>
+            ♣♣♣♣  1. 사용자 설정 보안등급으로 데이터를 설정 한다. 개인보호 필드가 존재하는 데이터소스에 컬럼 정보를 변환 한다.  ♣♣♣
+            </summary>
+            <param name="dtSource">데이터소스</param>
+            <param name="privacyList">개인보호필드 리스트</param>
+            <returns>개인보호필드 적용 데이터소스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetField_SelectData(System.Data.DataTable@,System.String)">
+            <summary>
+            ♣♣♣♣  1. 사용자 설정 보안등급으로 데이터를 설정 한다. 개인보호 필드가 존재하는 데이터소스에 컬럼 정보를 변환 한다.  ♣♣♣
+            </summary>
+            <param name="dtSource">데이터소스</param>
+            <param name="privacyList">개인보호필드 리스트</param>
+            <returns>개인보호필드 적용 데이터소스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetField_PrintData(System.Data.DataTable@,System.String)">
+            <summary>
+            ♣♣♣♣  1. 사용자 설정 보안등급으로 데이터를 설정 한다. 개인보호 필드가 존재하는 데이터소스에 컬럼 정보를 변환 한다.  ♣♣♣
+            </summary>
+            <param name="dtSource">데이터소스</param>
+            <param name="privacyList">개인보호필드 리스트</param>
+            <param name="bingingType">데이터 소스 디비 조회 여부</param>
+            <returns>개인보호필드 적용 데이터소스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetField_PrintData(System.Data.DataTable@,System.String,BlueOcean.Framework.Security.BingingType)">
+            <summary>
+            ♣♣♣♣  1. 사용자 설정 보안등급으로 데이터를 설정 한다. 개인보호 필드가 존재하는 데이터소스에 컬럼 정보를 변환 한다.  ♣♣♣
+            </summary>
+            <param name="dtSource">데이터소스</param>
+            <param name="privacyList">개인보호필드 리스트</param>
+            <param name="bingingType">데이터 소스 디비 조회 여부</param>
+            <returns>개인보호필드 적용 데이터소스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetField_Decrypt_Exec(System.Data.DataTable@,System.String,BlueOcean.Framework.Security.EncDataShow,BlueOcean.Framework.Security.BingingType)">
+            <summary>
+            개인보호 필드가 존재하는 데이터소스에 컬럼 정보를 변환 한다.
+            </summary>
+            <param name="dtSource">데이터소스</param>
+            <param name="privacyList">개인보호필드 리스트</param>
+            <param name="bingingType">데이터 소스 디비 조회 여부</param>
+            <returns>개인보호필드 적용 데이터소스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetField_SaveData(System.Data.DataTable@,System.String)">
+            <summary>
+            ◈◈◈◈ 데이터소스 개인보호필드 데이터 보안 형태로 설정. (암호화)  ◈◈◈◈
+            </summary>
+            <param name="dtSource">데이터소스</param>
+            <param name="privacyList">개인보호필드 리스트</param>
+            <returns>개인보호필드 적용 데이터소스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetField_Encrypt_Exec(System.Data.DataTable@,System.String)">
+            <summary>
+            개인보호 필드가 존재하는 데이터소스에 컬럼 정보를 변환 한다. (암호화)
+            </summary>
+            <param name="dtSource">데이터소스</param>
+            <param name="privacyList">개인보호필드 리스트</param>
+            <returns>개인보호필드 적용 데이터소스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetEncrypt(System.String)">
+            <summary>
+            문자열 암호화
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetDecrypt(System.String)">
+            <summary>
+            문자열 복호화
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetEncryptString(System.String)">
+            <summary>
+            문자열 암호화  [alth,20150820]
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetDecryptString(System.String)">
+            <summary>
+            문자열 복호화  [alth,20150820]
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetEncryptDataTable(System.Data.DataTable@,System.String[])">
+            <summary>
+            데이타 테이블 : 문자열 암호화  [alth,20150826]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetEncryptDataTableExec(System.Data.DataTable@,System.String[])">
+            <summary>
+            데이타 테이블 : 문자열 암호화  [alth,20150826]
+            </summary>
+            <param name="dtSource"></param>
+            <param name="columnNames"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetDecryptDataTable(System.Data.DataTable@,System.String[])">
+            <summary>
+            데이타 테이블 : 문자열 복호화  [alth,20150826]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetDecryptDataTableExec(System.Data.DataTable@,System.String[])">
+            <summary>
+            데이타 테이블 : 문자열 복호화  [alth,20150826]
+            </summary>
+            <param name="dtSource"></param>
+            <param name="columnNames"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.GetValueToString(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 "" 공백으로 아니면 문자열 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.SetNotEncColumnList(System.String)">
+            <summary>
+            보안설정 되지 않은 컬럼 리스트 : 해당 테이블의 컬럼은 암호화가 되어 있지 않지만 화면에는 출력설정을 적용해야 하는 컬럼  [alth,20150814]
+            </summary>
+            <param name="check_key">키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.Check_F3_KeyDown(System.Windows.Forms.Keys)">
+            <summary>
+            Ctrl + Shift + F3 : key 입력 여부 제어.  [alth,20150814]
+            </summary>
+            <param name="Key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyPolicyHelper.Check_Delete_KeyDown(System.Windows.Forms.Keys)">
+            <summary>
+            Delete, Space, Back : key 입력 여부 제어.  [alth,20150819]
+            </summary>
+            <param name="Key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyPolicyHelper.IS_ENC_DATA_USE_YN">
+            <summary>
+            해당 식별코드 설정 여부. true 이면 해당 화면에서 보안설정을 사용자가 사용하겠다고 한것임.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyPolicyHelper.USER_ENC_DATA_TP">
+            <summary>
+            로그인 사용자별 개인정보설정 타입 체크. 화면 로드시 설정 한다. this._HRCommon.GetUserEncDataTp() 설정.
+            </summary>
+            <param name="user_enc_data_tp"></param>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyPolicyHelper.IsProtectUserAuth">
+            <summary>
+            1. 등록권한을 가진 사용자가 암호를 체크해서 * 표시 없이 데이타 설정 여부. true 이면 일반텍스트로 보여야 함. 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyPolicyHelper.ProtectUserAuth">
+            <summary>
+            개인정보보호 설정 권한:1 등록수정, 2:현황조회  [alth,20150807]
+            부서 및 사원상세설정 에서 : 개인정보설정 : 1.등록권한, 2.조회권한
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyPolicyHelper.IS_SCREEN_PW_SET">
+            <summary>
+            메뉴별 F3 보안키 설정여부 : true 이면 설정 가능함.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyPolicyHelper.PrivacyFieldList">
+            <summary>
+            메뉴별 F3 보안키 설정여부 : true 이면 설정 가능함.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.DataProtection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DataProtection.RSAEncrypt(System.String,System.String)">
+            <summary>
+            CryptoService.EncryptRSA 를 이용해서 암호화 
+            </summary>
+            <param name="data">암호화할 데이터</param>
+            <param name="pubFilePath">공개키 위치</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DataProtection.Encrypt(System.String,BlueOcean.Framework.Security.DataProtection.Store)">
+            <summary>
+            encrypt the data using DPAPI, 
+            </summary>
+            <param name="data">암호화할 데이터</param>
+            <param name="store">암호화 방식지정(Machine,User)</param>
+            <returns>a base64-encoded encrypted string</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DataProtection.DecryptPP(System.String,BlueOcean.Framework.Security.DataProtection.Store)">
+            <summary>
+            decrypt the data using DPAPI
+            </summary>
+            <param name="data"></param>
+            <param name="store"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DataProtection.DecryptPP(System.String,System.String)">
+            <summary>
+            암호화된 데이터를 해독
+            </summary>
+            <param name="data"></param>
+            <param name="prvKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DataProtection.Decrypt(System.String,BlueOcean.Framework.Security.DataProtection.Store)">
+            <summary>
+            암호화된 데이터를 해독
+            </summary>
+            <param name="data"></param>
+            <param name="store"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DataProtection.LoadTextFile(System.String)">
+            <summary>
+            텍스트 파일 전체를 로드합니다. 내부적으로 LoadBinFile 메서드를 사용.
+            </summary>
+            <param name="strPath">읽어들일 텍스트 파일의 전체경로</param>
+            <returns>텍스트 파일의 내용 - string</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.DataProtection.LoadBinFile(System.String)">
+            <summary>
+            바이너리 파일 전체를 로드합니다.
+            </summary>
+            <param name="strPath">읽어들일 파일의 전체경로</param>
+            <returns>파일의 내용 - byte []</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.DataProtection.Store">
+            <summary>
+            암호화 방식 지정
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.DataProtection.Store.Machine">
+            <summary>
+            기본 Machine 설정값
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.DataProtection.Store.User">
+            <summary>
+            사용자 지정값
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.Encryptor">
+            <summary>
+            암호화 모듈 클래스 : 내부에서만 호출 한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.Encryptor.encKey">
+            <summary>
+            암호화 키 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.Encryptor.initVec">
+            <summary>
+            벡터 키
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.Encryptor.transformer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Encryptor.#ctor(BlueOcean.Framework.Security.EncryptionAlgorithm)">
+            <summary>
+            생성자
+            </summary>
+            <param name="algId"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Encryptor.Encrypt(System.Byte[],System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytesData"></param>
+            <param name="bytesKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Encryptor.EncryptExec(System.Byte[],System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytesData"></param>
+            <param name="bytesKey"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.Encryptor.IV">
+            <summary>
+            벡터 키
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.Encryptor.Key">
+            <summary>
+            암호화 키 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.PrivacyField">
+            <summary>
+            개인보호정책 필드 클래스. [20120814]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._CHECK_KEY">
+            <summary>
+            조회, 인쇄 등으로 구분되어 있을 경우 키값.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._COLUMN_NAME">
+            <summary>
+            적용 컬럼 이름 : 원본 컬럼명
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._COLUMN_NAME_SEC_ORG">
+            <summary>
+            적용 컬럼 이름 : _SEC_ORG : 암호화 되어서 복호화 안도니 컬럼명
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._ProtectType">
+            <summary>
+            개인보호정책 필드 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._CHECK_GUBUN_COLUMN">
+            <summary>
+            적용 컬럼 하나에 2개의 식별유형이 존재하는 경우. : 체크용 구분컬럼  [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._CHECK_GUBUN_ITEM_LIST">
+            <summary>
+            적용 컬럼 하나에 2개의 식별유형이 존재하는 경우. : 체크용 구분컬럼의 항목 값 리스트  [alth,20150813]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._SCREEN_PW_SET">
+            <summary>
+            메뉴별 F3 보안키 설정여부
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._SET_YN">
+            <summary>
+            메뉴별 설정여부 : 해당 식별코드의 보안설정 사용여부임. "1" 사용
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._ITEM_CD">
+            <summary>
+            항목구분 : '0' '대표자','1' '거래처','2' '사원','3' '가족' ,'4' '부양가족'  [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._ITEM_COLUMN_NAME">
+            <summary>
+            항목구분 : 컬럼이름 [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._ITEM_COLUMN_LIST">
+            <summary>
+            항목구분 : 컬럼 값 리스트 예) "1,2,3,4"  [alth,20150924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._SC_SET_TP">
+            <summary>
+            화면 설정형태 : 0.전체, 1.사용자설정
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._SC_FR_LEN">
+            <summary>
+            화면 시작 인덱스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._SC_TO_LEN">
+            <summary>
+            화면 * 표시 갯수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._PR_SET_TP">
+            <summary>
+            인쇄 설정형태 : 0.전체, 1.사용자설정
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._PR_FR_LEN">
+            <summary>
+            인쇄 시작 인덱스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.PrivacyField._PR_TO_LEN">
+            <summary>
+            인쇄 * 표시 갯수
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyField.#ctor(System.String,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String[])">
+            <summary>
+            생성자
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="columnName_sec"></param>
+            <param name="columnName_sec_org"></param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyField.#ctor(System.String,System.String,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String[])">
+            <summary>
+            생성자
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="columnName_sec"></param>
+            <param name="columnName_sec_org"></param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.CHECK_KEY">
+            <summary>
+            탭 등으로 구분되어 있을 경우 키값.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.COLUMN_NAME">
+            <summary>
+            적용 컬럼 이름
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.COLUMN_NAME_SEC_ORG">
+            <summary>
+            적용 컬럼 이름 : _SEC_ORG : 암호화 되어서 복호화 안도니 컬럼명
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.Protect_Type">
+            <summary>
+            개인보호정책 필드 타입
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.CHECK_GUBUN_COLUMN">
+            <summary>
+            적용 컬럼 하나에 2개의 식별유형이 존재하는 경우. : 체크용 구분컬럼  [alth,20150813]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.CHECK_GUBUN_ITEM_LIST">
+            <summary>
+            적용 컬럼 하나에 2개의 식별유형이 존재하는 경우. : 체크용 구분컬럼의 항목 값 리스트  [alth,20150813]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.SET_YN">
+            <summary>
+            탭 등으로 구분되어 있을 경우 키값.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.ITEM_CD">
+            <summary>
+            항목구분 : '0' '대표자','1' '거래처','2' '사원','3' '가족' ,'4' '부양가족'  [alth,20150924]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.ITEM_COLUMN_NAME">
+            <summary>
+            항목구분 : 컬럼이름 [alth,20150924]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.ITEM_COLUMN_LIST">
+            <summary>
+            항목구분 : 컬럼 값 리스트 예) "1,2,3,4"  [alth,20150924]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.SC_SET_TP">
+            <summary>
+            화면 설정형태 : 0.전체, 1.사용자설정
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.SC_FR_LEN">
+            <summary>
+            화면 시작 인덱스
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.SC_TO_LEN">
+            <summary>
+            화면 * 표시 갯수
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.PR_SET_TP">
+            <summary>
+            인쇄 설정형태 : 0.전체, 1.사용자설정
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.PR_FR_LEN">
+            <summary>
+            인쇄 시작 인덱스
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.PR_TO_LEN">
+            <summary>
+            인쇄 * 표시 갯수
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.PrivacyField.SCREEN_PW_SET">
+            <summary>
+            메뉴별 F3 보안키 설정여부
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.PrivacyFieldCollection">
+            <summary>
+            정보 클래스의 콜렉션 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyFieldCollection.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyFieldCollection.Contains(System.String)">
+            <summary>
+            코드 존재 유무 반환, true: 코드 있음, false: 코드 없음
+            </summary>
+            <param name="columnName">코드</param>
+            <returns>true: 코드 있음, false: 코드 없음</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyFieldCollection.FindByColumnName(System.String)">
+            <summary>
+            코드 이용해서 정보 클래스 를 반환 받는다.
+            </summary>
+            <param name="columnName">코드</param>
+            <returns>정보 클래스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyFieldCollection.Contains_SEC_ORG(System.String)">
+            <summary>
+            코드 존재 유무 반환, true: 코드 있음, false: 코드 없음
+            </summary>
+            <param name="columnName">코드</param>
+            <returns>true: 코드 있음, false: 코드 없음</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyFieldCollection.FindByColumnName_SEC_ORG(System.String)">
+            <summary>
+            코드 이용해서 정보 클래스 를 반환 받는다.
+            </summary>
+            <param name="columnName">코드</param>
+            <returns>정보 클래스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyFieldCollection.AddItem(System.String,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String[])">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.PrivacyFieldCollection.AddItem(System.String,System.String,System.String,BlueOcean.Framework.Security.ProtectType,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String[])">
+            <summary>
+            PrivacyField 항목을 추가 한다.
+            </summary>
+            <param name="columnName">적용 컬럼 이름</param>
+            <param name="columnName_sec"></param>
+            <param name="columnName_sec_org"></param>
+            <param name="protectType">개인보호정책 필드 타입</param>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.SecurityHelper">
+            <summary>
+            암호화 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityHelper.Hash(System.String)">
+            <summary>
+            문자열을 해싱해서 반환 한다.
+            128 비트 형식으로 사용한다.
+            </summary>
+            <param name="value">해싱 하기 위한 문자열</param>
+            <example>
+            string pw = "1234";
+            string pw = BlueOcean.Framework.Security.SecurityHelper.Hash(pw);
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityHelper.IsHashEqual(System.String,System.String)">
+            <summary>
+            입력 값과 해싱된 문자열이 같은지 여부를 비교한다.
+            </summary>
+            <param name="inputText">사용자 입력값</param>
+            <param name="hashText">해싱 반영된 값</param>
+            <example>
+            bool isEqu = BlueOcean.Framework.Security.SecurityHelper.IsHashEqual("1234","QTcIANtvYMT7QVQ==");
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityHelper.SymEncrypt(System.String)">
+            <summary>
+            문자열을 암호화해서 반환 한다.
+            </summary>
+            <param name="decText"></param>
+            <example>
+            string field = BlueOcean.Framework.Security.SecurityHelper.SymDecrypt("가나다라");
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityHelper.SymDecrypt(System.String)">
+            <summary>
+            암호화된 문자열을 복호화해서 반환 한다.
+            </summary>
+            <param name="encText"></param>
+            <example>
+            string field = BlueOcean.Framework.Security.SecurityHelper.SymDecrypt("가나다라");
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityHelper.EncryptionUtilityString(System.String)">
+            <summary>
+            문자열을 보안 형식의 클래스로 변환하여 반환 한다.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.EncryptionUtility">
+            <summary>
+            관리되지 않는 코드 : 내부에서 사용되는 클래스 유틸리티
+            </summary>
+            <remarks>
+             기밀로 유지되어야 하는 텍스트를 나타냅니다. 
+             이 텍스트는 사용될 때 기밀을 위해 암호화되고 더 이상 필요하지 않을 때 컴퓨터 메모리에서 삭제됩니다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.EncryptionUtility.EncryptString(System.String)">
+            <summary>
+            기밀이 유지되는 텍스트를 만들어서 반환 한다.
+            </summary>
+            <param name="inputText">일반 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.EncryptionUtility.DecryptSecureString(System.Security.SecureString)">
+            <summary>
+            기밀이 유지되던 텍스트를 일반 문자열로 변환 하여 반환 한다.
+            </summary>
+            <param name="inputText">기밀 텍스트</param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.CryptoInnerBaseClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.CryptoInnerBaseClass._CIPHER_KEY">
+            <summary>
+            유효성 체크 검사 키
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.CryptoInnerBaseClass._LICENS_KEY">
+            <summary>
+            유효성 체크 검사 키
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.AESCryptoInnerBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESCryptoInnerBase._1_IL_WP_652SEA">
+            <summary>
+            Y입E력K변환용 변수  PqrAbcwxDefYzMnojkLStuVGhiJ
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESCryptoInnerBase._2_IL_WP_652SEA">
+            <summary>
+            Y입E력K변환용 변수
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESCryptoInnerBase.GET_CODE_TYPE(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESCryptoInnerBase.GET_CODE_TYPE_EXEC(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESCryptoInnerBase._CIPHER_KEY">
+            <summary>
+            유효성 체크 검사 키
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESCryptoInnerBase._LICENS_KEY">
+            <summary>
+            유효성 체크 검사 키
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.SecUtilDataRow">
+            <summary>
+            DataRow 의 Column 정보에 대한 처리 Helper Class  [alth,20150807]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecUtilDataRow.GetValueToString(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 "" 공백으로 아니면 문자열 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecUtilDataRow.GetValueToZero(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 "0" 으로 아니면 문자열 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecUtilDataRow.GetValueToInt(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            Int32 타입으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 Int, 오류 이면 -1 반환</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.SecurityDataManager">
+            암호화 클래스 : 실행시 실제 작업을 진행하는 클래스 파일임.
+                            별도의 인증 절차를 거쳐야지만 메소드를 사용할 수 있음.
+                            SecurityHelper.cs 클래스를 호출후 실제 작업을 하는 클래스 파일이다.
+                            CryptoDataManager.cs 는 해당 클래스를 진행하기 위한 키 값을 가지고 있는 클래스 파일이다.
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.Hash(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.HashExec(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.IsHashEqual(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="hashText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.IsHashEqualExec(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="hashText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.SymEncrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="decText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.SymEncryptExec(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="decText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.SymDecrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="encText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.SecurityDataManager.SymDecryptExec(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="encText"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.Hashing">
+            <summary>
+            해슁 클래스로 스태틱 멤버만 있다. 외부에 공개해도 상관 없다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Hashing.Hash(System.String)">
+            <summary>
+            입력 텍스트를 해슁 알고리즘으로 암호화한다(해슁 알고리즘 MD5)
+            </summary>
+            <param name="inputText">암호화할 텍스트</param>
+            <returns>암호화된 텍스트</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Hashing.Hash(System.String,BlueOcean.Framework.Security.Hashing.HashingTypes)">
+            <summary>
+            입력 텍스트를 사용자가 지정한 해슁 알고리즘으로 암호화한다.
+            </summary>
+            <param name="inputText">암호화할 텍스트</param>
+            <param name="hashingType">해슁 알고리즘</param>
+            <returns>암호화된 텍스트</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Hashing.isHashEqual(System.String,System.String)">
+            <summary>
+            입력 텍스트와 해쉬된 텍스트가 같은지 여부를 비교한다.
+            </summary>
+            <param name="inputText">해쉬되지 않은 입력 텍스트</param>
+            <param name="hashText">해쉬된 텍스트</param>
+            <returns>비교 결과</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Hashing.isHashEqual(System.String,System.String,BlueOcean.Framework.Security.Hashing.HashingTypes)">
+            <summary>
+            사용자가 지정한 해쉬 알고리즘으로 입력 텍스트와 해쉬된 텍스트가 같은지 여부를 비교한다.
+            </summary>
+            <param name="inputText">해쉬되지 않은 입력 텍스트</param>
+            <param name="hashText">해쉬된 텍스트</param>
+            <param name="hashingType">사용자가 지정한 해슁 타입</param>
+            <returns>비교 결과</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Hashing.ComputeHash(System.String,BlueOcean.Framework.Security.Hashing.HashingTypes)">
+            <summary>
+            해쉬 코드를 계산해서 스트링으로 변환함
+            </summary>
+            <param name="inputText">해쉬코드로 변환할 스트링</param>
+            <param name="hashingType">사용할 해슁 타입</param>
+            <returns>hashed string</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.Hashing.getHashAlgorithm(BlueOcean.Framework.Security.Hashing.HashingTypes)">
+            <summary>
+            특정한 해슁 알고리즘을 리턴함
+            </summary>
+            <param name="hashingType">사용할 해슁 알고리즘</param>
+            <returns>HashAlgorithm</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.Hashing.HashingTypes">
+            <summary>
+            가능한 해슁 멤버
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.EncryptTransformer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.EncryptTransformer.algorithmID">
+            <summary> 
+            암호화 알고리즘 방식 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.EncryptTransformer.encKey">
+            <summary> 
+            암호화 키 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.EncryptTransformer.initVec">
+            <summary> 
+            벡터 키
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.EncryptTransformer.#ctor(BlueOcean.Framework.Security.EncryptionAlgorithm)">
+            <summary>
+            암호화 알고리즘 방식 
+            </summary>
+            <param name="algId"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.EncryptTransformer.GetCryptoServiceProvider(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytesKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.EncryptTransformer.GetCryptoServiceProviderExec(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytesKey"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.EncryptTransformer.IV">
+            <summary>
+            벡터 키
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.EncryptTransformer.Key">
+            <summary>
+            암호화 키 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.AESSecurityDataManager">
+            <summary>
+            암호화 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESSecurityDataManager._Encoding">
+            <summary>
+            로그 메시지 텍스트의 인코딩 : 949 ks_c_5601-1987 Korean
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESSecurityDataManager._YEK_WP_SEA">
+            <summary>
+            암호화 키 파일 : 32바이트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.GET_CODE_TYPE(System.String)">
+            <summary>
+            코드에 해당하는 키 값을 반환 한다.
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESSecurityDataManager._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESSecurityDataManager._isInit">
+            <summary>
+            첫번째 유효성 체크 후 설정: true 설정됨.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESSecurityDataManager._CALL_SCOPENAME">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.InitAESSecurityDataInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Security.AESSecurityDataManager._CALL_LICENSES">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.InitAESLicensesDataInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.CheckValidation">
+            <summary>
+            호출을 한 곳의 위치의 유효성 여부 체크
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.BaseEncodingServiceExec(System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.GetCryptoDataString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.InitSecureFieldString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.GET_CRYPT_DERIVE_KEY_INSTANCE(System.String)">
+            <summary>
+            PasswordDeriveBytes 클래스를 사용해서 SecretKey를 얻는다.
+            </summary>
+            <param name="password"></param>
+            <param name="salt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.EncryptString(System.String,System.String)">
+            <summary>
+            문자열을 암호화해서 반환 한다.
+            </summary>
+            <param name="InputText"></param>
+            <param name="Password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.EncryptStringExec(System.String,System.String)">
+            <summary>
+            문자열을 암호화해서 반환 한다.
+            </summary>
+            <param name="InputText"></param>
+            <param name="Password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.DecryptString(System.String,System.String)">
+            <summary>
+            암호화된 문자열을 복호화해서 반환 한다.
+            </summary>
+            <param name="InputText"></param>
+            <param name="Password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.DecryptStringExec(System.String,System.String)">
+            <summary>
+            암호화된 문자열을 복호화해서 반환 한다.
+            </summary>
+            <param name="InputText"></param>
+            <param name="Password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.EncryptFileStringConvert(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다. 변환한 파일을 DB의 TABLE 로 저장시 사용 한다.
+            </summary>
+            <param name="fileSource">원본 파일 전체주소</param>
+            <param name="fileTarget">대상 파일 전체주소</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.EncryptFileStringConvertExec(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다. 변환한 파일을 DB의 TABLE 로 저장시 사용 한다.
+            </summary>
+            <param name="fileSource">원본 파일 전체주소</param>
+            <param name="fileTarget">대상 파일 전체주소</param>
+            <param name="password">암호화 할때 사용할 키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.DecryptFileStringConvert(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다.
+            </summary>
+            <param name="fileSource">암호화 된 원본 파일 전체주소</param>
+            <param name="fileTarget">복호화 될 대상 파일 전체주소</param>
+            <param name="password">암호화 할때 사용할 키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.DecryptFileStringConvertExec(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다.
+            </summary>
+            <param name="fileSource">암호화 된 원본 파일 전체주소</param>
+            <param name="fileTarget">복호화 될 대상 파일 전체주소</param>
+            <param name="password">암호화 할때 사용할 키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.EncryptFileConvert(System.String,System.String,System.String)">
+            <summary>
+            파일 자체 암호화, 복호화
+            </summary>
+            <param name="fileSource"></param>
+            <param name="fileTarget"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.EncryptFileConvertExec(System.String,System.String,System.String)">
+            <summary>
+            파일 자체 암호화, 복호화
+            </summary>
+            <param name="fileSource"></param>
+            <param name="fileTarget"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.DecryptFileConvert(System.String,System.String,System.String)">
+            <summary>
+            파일 자체 암호화, 복호화
+            </summary>
+            <param name="fileSource"></param>
+            <param name="fileTarget"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityDataManager.DecryptFileConvertExec(System.String,System.String,System.String)">
+            <summary>
+            파일 자체 암호화, 복호화
+            </summary>
+            <param name="fileSource"></param>
+            <param name="fileTarget"></param>
+            <param name="password"></param>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.AESSecurityDataManager.CALL_SCOPENAME">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Security.AESSecurityDataManager.CALL_LICENSES">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.HappyCryptoChecker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.HappyCryptoChecker.HpChecker(System.String)">
+            <summary>
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.HappyCryptoChecker.HappyCheckerExec(System.String)">
+            <summary>
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.HappyCryptoChecker.HpDataChecker(System.String)">
+            <summary>
+            데이터 변형작업용 메소드 추가. [20120607,alth]
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.HappyCryptoChecker.HappyDataCheckerExec(System.String)">
+            <summary>
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Security.AESSecurityHelper">
+            <summary>
+            암호화 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.EncryptString(System.String)">
+            <summary>
+            문자열을 암호화해서 반환 한다.
+            </summary>
+            <param name="InputText">암호화할 일반 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.EncryptString(System.String,System.String)">
+            <summary>
+            문자열을 암호화해서 반환 한다.
+            </summary>
+            <param name="InputText">암호화할 일반 문자열</param>
+            <param name="Password">암호화 할때 사용할 키 값</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.EncryptStringExec(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="InputText"></param>
+            <param name="Password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.DecryptString(System.String)">
+            <summary>
+            암호화된 문자열을 복호화해서 반환 한다.
+            </summary>
+            <param name="InputText">복호화할 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.DecryptString(System.String,System.String)">
+            <summary>
+            암호화된 문자열을 복호화해서 반환 한다.
+            </summary>
+            <param name="InputText">복호화할 문자열</param>
+            <param name="Password">암호화 할때 사용할 키 값</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.MobileEncryptString(System.String)">
+            <summary>
+            모바일 전용 : 문자열을 암호화해서 반환 한다.  [alth,20150106]
+            </summary>
+            <param name="InputText">암호화할 일반 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.MobileEncryptString(System.String,System.String)">
+            <summary>
+            모바일 전용 : 문자열을 암호화해서 반환 한다.  [alth,20150106]
+            </summary>
+            <param name="InputText">암호화할 일반 문자열</param>
+            <param name="Password">암호화 할때 사용할 키 값</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.GetCheckPasswordEncyptString(System.String,System.String)">
+            <summary>
+            모바일 전용 : 문자열을 암호화해서 반환 한다.  [alth,20150106]
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.EncryptFileStringConvert(System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다. 변환한 파일을 DB의 TABLE 로 저장시 사용 한다.
+            </summary>
+            <param name="fileSource">원본 파일 전체주소</param>
+            <param name="fileTarget">대상 파일 전체주소</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.EncryptFileStringConvert(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다. 변환한 파일을 DB의 TABLE 로 저장시 사용 한다.
+            </summary>
+            <param name="fileSource">원본 파일 전체주소</param>
+            <param name="fileTarget">대상 파일 전체주소</param>
+            <param name="password">암호화 할때 사용할 키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.DecryptFileStringConvert(System.String,System.String)">
+            <summary>
+            암호화 한 파일을 일반 텍스트 파일을  복호화 생성 한다.
+            </summary>
+            <param name="fileSource">암호화 된 원본 파일 전체주소</param>
+            <param name="fileTarget">복호화 될 대상 파일 전체주소</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.DecryptFileStringConvert(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다.
+            </summary>
+            <param name="fileSource">암호화 된 원본 파일 전체주소</param>
+            <param name="fileTarget">복호화 될 대상 파일 전체주소</param>
+            <param name="password">암호화 할때 사용할 키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.EncryptFileConvert(System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다. 변환한 파일을 파일 자체로 이용시에만 사용 한다. DB에 저장시 오류 발생함.
+            </summary>
+            <param name="fileSource">원본 파일 전체주소</param>
+            <param name="fileTarget">대상 파일 전체주소</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.EncryptFileConvert(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다. 변환한 파일을 파일 자체로 이용시에만 사용 한다. DB에 저장시 오류 발생함.
+            </summary>
+            <param name="fileSource">원본 파일 전체주소</param>
+            <param name="fileTarget">대상 파일 전체주소</param>
+            <param name="password">암호화 할때 사용할 키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.DecryptFileConvert(System.String,System.String)">
+            <summary>
+            암호화 한 파일을 일반 텍스트 파일을  복호화 생성 한다.
+            </summary>
+            <param name="fileSource">암호화 된 원본 파일 전체주소</param>
+            <param name="fileTarget">복호화 될 대상 파일 전체주소</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Security.AESSecurityHelper.DecryptFileConvert(System.String,System.String,System.String)">
+            <summary>
+            일반 텍스트 파일을 암호화 한 파일을 생성 한다.
+            </summary>
+            <param name="fileSource">암호화 된 원본 파일 전체주소</param>
+            <param name="fileTarget">복호화 될 대상 파일 전체주소</param>
+            <param name="password">암호화 할때 사용할 키 값</param>
+        </member>
+    </members>
+</doc>

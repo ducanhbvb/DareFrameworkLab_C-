@@ -1,0 +1,666 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Runtime.ContainerService</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.SMS_Service">
+            <summary>
+            문자전송 핸들러 클래스.
+            
+            너나우리  
+            웹호스팅 전문업체, 웹, 서버, 웹메일, SMS 호스팅, 도메인 등 상담 안내. : 웹서비스> 웹호스팅 서비스 
+            www.nunauri.com 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.SMS_Service._mac_address">
+            <summary>
+            컴퓨터 랜카드 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.SMS_Service._IPAddress">
+            <summary>
+            컴퓨터 아이피 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.SMS_Service._smsService">
+            <summary>
+            너나우리 호스팅 업체 : 웹 서비스 인스턴스 생성.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.SMS_Service._isError">
+            <summary>
+            웹서비스 이용한 조회시 정상 유무 여부.  Error : 오류 발생함. Success : 정상 조회.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.SMS_Service.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.SMS_Service.GetRemainCount(System.String,System.String,System.String@)">
+            <summary>
+            SMS 전송 가능 건수를 조회 합니다.
+            </summary>
+            <param name="sms_id">아이디</param>
+            <param name="sms_pw">해쉬</param>
+            <param name="error_msg">에러 메시지</param>
+            <returns> SMS 전송 가능 건수를 조회 합니다.  -1 오류 </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.SMS_Service.GetRemainCountExec(System.String,System.String,System.String@)">
+            <summary>
+            SMS 전송 가능 건수를 조회 합니다.
+            </summary>
+            <param name="sms_id">아이디</param>
+            <param name="sms_pw">해쉬</param>
+            <param name="error_msg">에러 메시지</param>
+            <returns> SMS 전송 가능 건수를 조회 합니다.  -1 오류 </returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.SMS_Service.SendSMS(System.String,System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            SMS를 호출 즉시 발송합니다
+            </summary>
+            <param name="sms_id">아이디</param>
+            <param name="sms_pw">해쉬</param>
+            <param name="senderPhone">보내는이 번호</param>
+            <param name="receivePhone">받는이 번호</param>
+            <param name="sms_content">전문내용</param>
+            <param name="error_msg">에러 메시지</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.SMS_Service.SendSMSExec(System.String,System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            SMS를 호출 즉시 발송합니다
+            </summary>
+            <param name="sms_id">아이디</param>
+            <param name="sms_pw">해쉬</param>
+            <param name="senderPhone">보내는이 번호</param>
+            <param name="receivePhone">받는이 번호</param>
+            <param name="sms_content">전문내용</param>
+            <param name="error_msg">에러 메시지</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.SMS_Service.GetErrorCodeToMsg(System.String)">
+            <summary>
+            리턴값 에러 메시지 정의.
+            </summary>
+            <param name="error_code"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.SMS_Service.IsError">
+            <summary>
+            웹서비스 이용한 조회시 정상 유무 여부.  Error : 오류 발생함. Success : 정상 조회.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebLoginService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebLoginService._mac_address">
+            <summary>
+            컴퓨터 랜카드 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebLoginService._IPAddress">
+            <summary>
+            컴퓨터 아이피 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebLoginService._isError">
+            <summary>
+            웹서비스 이용한 조회시 정상 유무 여부.  Error : 오류 발생함. Success : 정상 조회.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebLoginService.GetAccessLoginInfo(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id_user"></param>
+            <param name="userpw"></param>
+            <param name="ipaddress"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebLoginService.GetConnectingLoginInfoExec(System.String)">
+            <summary>
+            사용자 연결중 체크 설정. 15분 단위.
+            </summary>
+            <param name="id_user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebLoginService.GetUserLoginValidationCheck(System.String,System.String)">
+            <summary>
+            인증 정보 유효성 체크 메소드
+            </summary>
+            <param name="id_user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebLoginService.GetWebLoginWebServiceDomain">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebLoginService.GetWebLoginWebServiceIP">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebLoginService.IsError">
+            <summary>
+            웹서비스 이용한 조회시 정상 유무 여부.  Error : 오류 발생함. Success : 정상 조회.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.HelloWorld">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.HelloWorldAsync">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.HelloWorldAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginAuthCheck(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginAuthCheckAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginAuthCheckAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserConnectingCheck(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserConnectingCheckAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserConnectingCheckAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginValidationCheck(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginValidationCheckAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginValidationCheckAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.HelloWorldCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginAuthCheckCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserConnectingCheckCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.WebLoginService.GetUserLoginValidationCheckCompleted">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.HelloWorldCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.HelloWorldCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.HelloWorldCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserLoginAuthCheckCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserLoginAuthCheckCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserLoginAuthCheckCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserConnectingCheckCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserConnectingCheckCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserConnectingCheckCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserLoginValidationCheckCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserLoginValidationCheckCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.AutoWorksLoginService.GetUserLoginValidationCheckCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.HelloWorld">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.HelloWorldAsync">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.HelloWorldAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.ReturnDirectory">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.ReturnDirectoryAsync">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.ReturnDirectoryAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.CreateDirectory(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.CreateDirectoryAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.CreateDirectoryAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.EqualsFile(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.EqualsFileAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.EqualsFileAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFile(System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFileAsync(System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFileAsync(System.Byte[],System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFileReName(System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFileReNameAsync(System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFileReNameAsync(System.Byte[],System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.DeleteFile(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.DeleteFileAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.DeleteFileAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.HelloWorldCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.ReturnDirectoryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.CreateDirectoryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.EqualsFileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.WebUploadFileReNameCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebFileUpload.DeleteFileCompleted">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.HelloWorldCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.HelloWorldCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.HelloWorldCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.ReturnDirectoryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.ReturnDirectoryCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.ReturnDirectoryCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.CreateDirectoryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.CreateDirectoryCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.CreateDirectoryCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.EqualsFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.EqualsFileCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.EqualsFileCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebUploadFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebUploadFileCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebUploadFileCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebUploadFileReNameCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebUploadFileReNameCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.WebUploadFileReNameCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.DeleteFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.DeleteFileCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WebFileManagerService.DeleteFileCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMS(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSwnc(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSwncAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSwncAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSReserve(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSReserveAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSReserveAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBack(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBackAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBackAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBackReserve(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBackReserveAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBackReserveAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.ReserveCancle(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.ReserveCancleAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.ReserveCancleAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.GetRemainCount(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.GetRemainCountAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.GetRemainCountAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSwncCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSReserveCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBackCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.SendSMSCallBackReserveCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.ReserveCancleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ServiceSMS.GetRemainCountCompleted">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSwncCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSwncCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSwncCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSReserveCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSReserveCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSReserveCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCallBackCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCallBackCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCallBackCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCallBackReserveCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCallBackReserveCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.SendSMSCallBackReserveCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ReserveCancleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ReserveCancleCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.ReserveCancleCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.GetRemainCountCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.GetRemainCountCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.WE_SMS_WebService.GetRemainCountCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.WebServiceInfo">
+            <summary>
+            웹 인증 서버 주소 정보 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebServiceInfo.AUTH_URL_ONLINE_DOMAIN">
+            <summary>
+            인증서버 도메인 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebServiceInfo.AUTH_URL_ONLINE_IP">
+            <summary>
+            인증서버 IP 주소
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebServiceInfo.AUTH_URL_TEST_DOMAIN">
+            <summary>
+            인증서버 도메인 주소 : 배포 테스트 서버
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebServiceInfo.AUTH_URL_TEST_IP">
+            <summary>
+            인증서버 IP 주소 : 배포 테스트 서버
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebServiceInfo.AUTH_URL_DEV_DOMAIN">
+            <summary>
+            인증서버 도메인 주소 : 배포 테스트 서버
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.WebServiceInfo.AUTH_URL_DEV_IP">
+            <summary>
+            인증서버 IP 주소 : 배포 테스트 서버
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager">
+            <summary>
+            Http 통신 이용 : 윈폼에서 파일 업로드.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager._webFileUpload_ONLINE">
+            <summary>
+            배포 서버 웹 서비스 인스턴스 생성.  온라인 서버
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager._isError">
+            <summary>
+            웹서비스 이용한 조회시 정상 유무 여부.  Error : 오류 발생함. Success : 정상 조회. 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.ReturnDirectory">
+            <summary>dkdle
+            저장 경로 반환
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.CreateDirectory(System.String)">
+            <summary>
+            디렉토리를 생성
+            </summary>
+            <param name="dir"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.EqualsFile(System.String)">
+            <summary>
+            파일 여부 체크
+            </summary>
+            <param name="fname">저장폴더와 함께 파일명</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.WebUploadFile(System.Byte[],System.String,System.String)">
+            <summary>
+            파일을 저장 - 파일이 있을 경우 같은 이름으로 저장
+            </summary>
+            <param name="fileInfo"></param>
+            <param name="dir"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.WebUploadFileReName(System.Byte[],System.String,System.String)">
+            <summary>
+            파일을 저장 - 파일이 있을 경우 새이름으로 저장 한다.
+            </summary>
+            <param name="fileInfo"></param>
+            <param name="dir"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.DeleteFile(System.String,System.String)">
+            <summary>
+            파일을 삭제한다.
+            </summary>
+            <param name="DirPath">디렉토리 절대경로</param>
+            <param name="FileName">파일명</param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerService.HttpFileManager.IsError">
+            <summary>
+            웹서비스 이용한 조회시 정상 유무 여부.  Error : 오류 발생함. Success : 정상 조회.
+            </summary>
+        </member>
+    </members>
+</doc>

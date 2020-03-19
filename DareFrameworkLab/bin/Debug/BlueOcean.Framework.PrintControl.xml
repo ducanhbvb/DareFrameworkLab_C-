@@ -1,0 +1,1536 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.PrintControl</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.PrintControl.ReportPrintInfo">
+            <summary>
+            리포트 인쇄 정보
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._RPT_EXT">
+            <summary>
+            리포트 확장자 형식
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_GB_CD">
+            <summary>
+            리포트 구분코드
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_GB_NM">
+            <summary>
+            리포트 구분명
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_CD">
+            <summary>
+            리포트 코드   (상세 테이블)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_NM">
+            <summary>
+            리포트 명칭 (상세 테이블)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_STYLE_CODE">
+            <summary>
+            리포트 스타일코드
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._IS_USER_REPORT">
+            <summary>
+            리포트 형식 : 0: 시스템고정, 1:사용자정의가능, 2:사용자추가 (별도컬럼구성)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_INDEX">
+            <summary>
+            리포트 항목 인덱스 : 미리보기 버튼 클릭시 점에 사용할 인덱스 순서.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._PAPER_DIRECTION">
+            <summary>
+            용지방향 : 1 가로, 2 세로
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._IS_DEFAULT">
+            <summary>
+            기본 리포트, 정렬순서보다 우선 순위가 높다.  가장 최상위로 항목 올림.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._SORT">
+            <summary>
+            리포트  정렬 순서
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._USE_YN">
+            <summary>
+            리포트 사용 여부.  true:사용, false:미사용 (안보임)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._PRINT_RATE">
+            <summary>
+            인쇄 비율
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._COLUMN_LEFT_LOC">
+            <summary>
+            컬럼 왼쪽 좌표 값
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._PAPER_TITLE_TEXT">
+            <summary>
+            리포트 타이틀 텍스트
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._TITLE_LEFT_LOC_1">
+            <summary>
+            타이틀 세로 좌표
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._TITLE_LEFT_LOC_2">
+            <summary>
+            타이틀 가로 좌표 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_FILE_FULLPATH">
+            <summary>
+            리포트 파일 전체 경로.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._REPORT_USER_FILE_FULLPATH">
+            <summary>
+            사용자 정의 리포트 파일 전체 경로.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._IS_COMMON_REPORT">
+            <summary>
+            공용리포트 여부 1 사용 :  [alth,20150423]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportPrintInfo._IS_SETTLEMENT">
+            <summary>
+            출력물의 매 페이지마다 결제란이  나와야 하는지 여부: 1 페이지별 표시, 0 첫 페이지만 표시 [alth,20150526]
+            StampFullPage(bool bValue) 속성에 TRUE 값을 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportPrintInfo.#ctor(System.String,System.Int32,System.Data.DataRow)">
+            <summary>
+            생성자.
+            </summary>
+            <param name="report_gb_cd">리포트 구분코드</param>
+            <param name="drReportInfo">리포트 상세 리스트 정보</param>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_GB_CD">
+            <summary>
+            리포트 구분 코드
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_GB_NM">
+            <summary>
+            리포트 구분명
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_CD">
+            <summary>
+            리포트 코드
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_NM">
+            <summary>
+            리포트 이름
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_STYLE_CODE">
+            <summary>
+            리포트 스타일코드
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.IS_USER_REPORT">
+            <summary>
+            리포트 형식 : 0: 시스템고정, 1:사용자정의가능, 2:사용자추가 (별도컬럼구성)
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_INDEX">
+            <summary>
+            리포트 항목 인덱스 : 미리보기 버튼 클릭시 점에 사용할 인덱스 순서.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.PAPER_DIRECTION">
+            <summary>
+            용지방향 : 1 가로, 2 세로
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.IS_DEFAULT">
+            <summary>
+            기본 리포트, 정렬순서보다 우선 순위가 높다.  가장 최상위로 항목 올림.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.SORT">
+            <summary>
+            리포트  정렬 순서
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.USE_YN">
+            <summary>
+            리포트 사용 여부.  true:사용, false:미사용 (안보임)
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.PRINT_RATE">
+            <summary>
+            인쇄 비율
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.COLUMN_LEFT_LOC">
+            <summary>
+            컬럼 왼쪽 좌표 값
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.PAPER_TITLE_TEXT">
+            <summary>
+            리포트 타이틀 텍스트 : 파라미터로 넘겨 준다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.TITLE_LEFT_LOC_1">
+            <summary>
+            타이틀 세로 좌표
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.TITLE_LEFT_LOC_2">
+            <summary>
+            타이틀 가로 좌표 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_FILE_FULLPATH">
+            <summary>
+            리포트 파일 전체 경로. get, set 가능.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_USER_FILE_FULLPATH">
+            <summary>
+            사용자 정의 리포트 임시 파일 : 리포트 파일 전체 경로. get, set 가능.
+            </summary>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "P:BlueOcean.Framework.PrintControl.ReportPrintInfo.IS_COMMON_REPORT" 멤버에 대해 무시됩니다. -->
+        <!-- 잘못된 형식의 XML 주석은 "P:BlueOcean.Framework.PrintControl.ReportPrintInfo.IS_SETTLEMENT" 멤버에 대해 무시됩니다. -->
+        <member name="P:BlueOcean.Framework.PrintControl.ReportPrintInfo.REPORT_EXT">
+            <summary>
+            리포트 파일 확장자 형식.  ex) .txf 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.ReportPrintInfoCollection">
+            <summary>
+            리포트 인쇄 정보 클래스의 콜렉션 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportPrintInfoCollection.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportPrintInfoCollection.Contains(System.Int32)">
+            <summary>
+            리포트 인덱스 순서 이용해서 인쇄 정보 클래스 존재 유무 반환
+            </summary>
+            <param name="report_index">리포트 인덱스 순서</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportPrintInfoCollection.Contains(System.String)">
+            <summary>
+            리포트 구분코드 이용해서 인쇄 정보 클래스 존재 유무 반환
+            </summary>
+            <param name="report_gb_cd">리포트 구분코드</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportPrintInfoCollection.FindByPrintInfo(System.Int32)">
+            <summary>
+            리포트 인덱스 순서 이용해서 인쇄 정보 클래스를 반환 받는다.
+            </summary>
+            <param name="report_index">리포트 인덱스 순서</param>
+            <returns>리포트 인쇄 정보 클래스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportPrintInfoCollection.FindByPrintInfo(System.String)">
+            <summary>
+            리포트 구분코드 이용해서 인쇄 정보 클래스를 반환 받는다.
+            </summary>
+            <param name="report_gb_cd">리포트 구분코드</param>
+            <returns>리포트 인쇄 정보 클래스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ConvertADO.ConvertToRecordset(System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="inTable"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.ReportColumnItem">
+            <summary>
+            리포트 컬럼 정보
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._REPORT_GB_CD">
+            <summary>
+            리포트 구분코드
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._REPORT_CD">
+            <summary>
+            리포트 코드   (상세 테이블)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._REPORT_STYLE_CODE">
+            <summary>
+            리포트 스타일코드
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_INDEX">
+            <summary>
+            컬럼번호_기본값
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_RE_INDEX">
+            <summary>
+            컬럼번호_기본값 : 재설정 인덱스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_SORT">
+            <summary>
+            컬럼순서 : 사용자 정의 항목
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_NM_KOR">
+            <summary>
+            컬럼명칭_한글
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_NM_ENG">
+            <summary>
+            컬럼명칭_영문
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_LEFT_LOC">
+            <summary>
+            컬럼 왼쪽 좌표 값 : 계산된 값
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_RIGHT_LOC">
+            <summary>
+            컬럼 오른쪽 좌표 값 : 계산된 값
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_WIDTH">
+            <summary>
+            컬럼너비
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_USE_YN">
+            <summary>
+            컬럼 사용 여부.  true:사용, false:미사용 (안보임)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_UPDATE_YN">
+            <summary>
+            컬럼변경가능여부
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_MERGE_YN">
+            <summary>
+            컬럼머지여부
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItem._COLUMN_MERGE_LIST">
+            <summary>
+            컬럼머지리스트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportColumnItem.#ctor(System.String,System.Int32,System.Data.DataRow)">
+            <summary>
+            생성자.
+            </summary>
+            <param name="report_gb_cd">리포트 구분코드</param>
+            <param name="before_column_pos_loc">이전 컬럼 좌표 값</param>
+            <param name="drColumnInfo">리포트 상세 리스트 정보</param>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.REPORT_GB_CD">
+            <summary>
+            리포트 구분 코드
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.REPORT_CD">
+            <summary>
+            리포트 코드
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.REPORT_STYLE_CODE">
+            <summary>
+            리포트 스타일코드
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_INDEX">
+            <summary>
+            컬럼번호_기본값
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_RE_INDEX">
+            <summary>
+            컬럼번호_기본값 : 재설정 인덱스
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_SORT">
+            <summary>
+            컬럼순서 : 사용자 정의 항목
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_NM_KOR">
+            <summary>
+            컬럼명칭_한글
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_NM_ENG">
+            <summary>
+            컬럼명칭_영문
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_LEFT_LOC">
+            <summary>
+            컬럼 왼쪽 좌표 값 : 계산된 값
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_RIGHT_LOC">
+            <summary>
+            컬럼 오른쪽 좌표 값 : 계산된 값
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_WIDTH">
+            <summary>
+            기본 리포트, 정렬순서보다 우선 순위가 높다.  가장 최상위로 항목 올림.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_USE_YN">
+            <summary>
+            컬럼 사용 여부.  true:사용, false:미사용 (안보임)
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_UPDATE_YN">
+            <summary>
+            컬럼변경가능여부
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_MERGE_YN">
+            <summary>
+            컬럼머지여부
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItem.COLUMN_MERGE_LIST">
+            <summary>
+            컬럼머지리스트
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.ReportColumnItemCollection">
+            <summary>
+            리포트별 상세 컬럼 정보 클래스의 콜렉션 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItemCollection._first_column_index">
+            <summary>
+            보여지는 첫번째 컬럼 인덱스 : COL 인덱스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportColumnItemCollection._last_column_index">
+            <summary>
+            보여지는 마지막 컬럼 인덱스 : COL 인덱스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportColumnItemCollection.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportColumnItemCollection.InitFistLastIndex(System.Int32,System.Int32)">
+            <summary>
+            첫번째, 마지막 으로 보여지는 컬럼 인덱스를 설정 한다.
+            </summary>
+            <param name="first_col"></param>
+            <param name="last_col"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportColumnItemCollection.Contains(System.Int32)">
+            <summary>
+            컬럼번호 이용해서 컬럼 정보 클래스 존재 유무 반환
+            </summary>
+            <param name="column_index">컬럼번호</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportColumnItemCollection.FindByItem(System.Int32)">
+            <summary>
+            컬럼번호 이용해서 컬럼 정보 클래스를 반환 받는다.
+            </summary>
+            <param name="column_index">컬럼번호</param>
+            <returns>리포트 컬럼 정보 클래스</returns>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItemCollection.First_column_index">
+            <summary>
+            보여지는 첫번째 컬럼 인덱스 : COL 인덱스
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportColumnItemCollection.Last_column_index">
+            <summary>
+            보여지는 마지막 컬럼 인덱스 : COL 인덱스
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.CellAttr1">
+            <summary>
+            Cell 속성1
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.CellAttr2">
+            <summary>
+            Cell 속성2
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.CellAttr3">
+            <summary>
+            Cell 속성3
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.ReportCallType">
+            <summary>
+            리포트 항목 정의 타입 : 2가지 제공. [20111226]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportCallType.SYSTEM_REPORT">
+            <summary>
+            시스템 제공 리포트만 가능.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportCallType.USER_REPORT">
+            <summary>
+            사용자 정의 리포트 가능.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.RunPrintingEventHandler">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="nSelectForm"></param>
+            <param name="objEvent"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.OnPrintGroupDataEventHandler">
+            <summary>
+            
+            </summary>
+            <param name="dt"></param>
+            <param name="dataRowIndex"></param>
+            <param name="id"></param>
+            <param name="var"></param>
+            <param name="row"></param>
+            <param name="dataIndex"></param>
+            <param name="page"></param>
+            <param name="value"></param>
+            <param name="format"></param>
+            <param name="bkColor"></param>
+            <param name="textColor"></param>
+            <param name="textAlign"></param>
+            <param name="lineWidth"></param>
+            <param name="lineType"></param>
+            <param name="lineAttr"></param>
+            <param name="fontWeight"></param>
+            <param name="cellattr"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.OnPrinterEventHandler">
+            <summary>
+            인쇄창의 인쇄 버튼 클릭 이벤트.  [alth,20150904]
+            </summary>
+            <param name="sender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.OutsideValue.#ctor(System.String,System.String,System.Object[])">
+            <summary>
+            OutsideStringValue 의 값
+            </summary>
+            <param name="key">키값</param>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.OutsideValue.SetValue(System.String,System.String,System.Object[])">
+            <summary>
+            OutsideStringValue 의 값
+            </summary>
+            <param name="key">키값</param>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.PrintInfoHandler">
+            <summary>
+            리포트 인쇄, 컬럼 정보 Handler 클래스.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.PrintInfoHandler._PrintInfoCollection">
+            <summary>
+            1. 시스템 제공 리포트 인쇄 정보.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.Set_Print_Column_Info(System.String,System.Boolean)">
+            <summary>
+            DB 정의 : 리포트 인쇄 정보. 컬럼 정보 조회.
+            </summary>
+            <param name="p_report_gb_cd">리포트 구분코드</param>
+            <param name="is_exch_yn_exchange_unit_yn">환종, 환산단위 사용여부 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.AddItem_PrintInfo(System.String,System.Data.DataTable)">
+            <summary>
+            1. 인쇄 정보 항목 리스트에 추가.  _PrintInfoCollection
+            </summary>
+            <param name="p_report_gb_cd">리포트구분코드 : 키</param>
+            <param name="dt_Print_Source"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.AddItem_ColumnInfo(System.String,System.String,System.String,System.Data.DataTable,System.Boolean)">
+            <summary>
+            2. 컬럼 정보 항목 리스트에 추가.  _PrintColumnItemCollection
+            </summary>
+            <param name="p_report_gb_cd"></param>
+            <param name="p_report_cd"></param>
+            <param name="p_report_style_code"></param>
+            <param name="dt_Column_Source"></param>
+            <param name="isCallMethod">인쇄창 메소드 이용 방식 true, 임시 파일 형식, false</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.RemoveItem_PrintInfo(System.String)">
+            <summary>
+            3. 인쇄 정보 항목 리스트에서 제거.  _PrintInfoCollection
+            </summary>
+            <param name="p_report_gb_cd"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.GetItem_PrintInfo(System.String)">
+            <summary>
+            5. 인쇄 정보 항목 리스트에서 찾아서 반환 한다.  _PrintInfoCollection
+            </summary>
+            <param name="p_report_gb_cd"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.GetItem_Print_Is_SettleMent(System.String,System.String,System.Boolean)">
+            <summary>
+            6. 선택된 출력물의 결제란 표시 여부값 리턴 한다.  [alth,20150526]
+            </summary>
+            <param name="p_report_gb_cd"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.GetItem_ColumnInfo(System.String,System.String,System.String)">
+            <summary>
+            6. 컬럼 정보 항목 리스트에서 찾아서 반환 한다.  _PrintColumnItemCollection
+            </summary>
+            <param name="p_report_gb_cd"></param>
+            <param name="p_report_cd"></param>
+            <param name="p_report_style_code"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintInfoHandler.GetActiveMenuCode">
+            <summary>
+            현재 활성화된 페이지의 메뉴 코드 값을 반환 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.ReportHelper">
+            <summary>
+            Interop.PrintManagerAtlLib.dll 을 이용한 인쇄 모듈.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_prnDlg">
+            <summary>
+            PrintManager 인스턴스 전역 변수.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._pp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._objEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._listPrintItem">
+            <summary>
+            리포트 출력 항목 : 콤보박스 표시용도.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._listReportCDItem">
+            <summary>
+            리포트 출력 항목 : 미리보기 출력 선택시 리포트코드 세팅용 [20120808]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._REPORT_GB_CD">
+            <summary>
+            리포트 구분코드 : 리포트코드를 가지고 있는 부모 코드임.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._MEMB_BIZ_CORP_CODE">
+            <summary>
+            이미지추가 설정용도 : 문자열을 하나로해서 넘기기로 협의함. : 사업자번호__회사코드  [ALTH,20150826]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_dt">
+            <summary>
+            데이터 소스 : 단일 테이블
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_ds">
+            <summary>
+            데이터 소스 : 여러개 테이블
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_flexVarDataColumn">
+            <summary>
+            동적인 데이터 변수명 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_flexVarTitle">
+            <summary>
+            동적 타이틀 변수명
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_startDataColumnIndex">
+            <summary>
+            동적인 colomn 시작 index
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_endDataColumnIndex">
+            <summary>
+            동적인 colomn 끝 index
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_flexTitle">
+            <summary>
+            동적타이틀
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_flexSum">
+            <summary>
+            동적데이터의 합계
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_firstDataCnt">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_secondDataCnt">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_bUserPrint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_dataRowIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper.m_dtOnPrint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._ReportCallType">
+            <summary>
+            리포트 항목 정의 타입 : 2가지 제공. [20111226]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._IsCheck">
+            <summary>
+            리포트 헬퍼 사용 여부  [20120629]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._ISPDF_SaveFile">
+            <summary>
+            PDF 파일 생성 여부. 기본갑 FALSE [20150211]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._str_FILE_PATH">
+            <summary>
+            리포트 파일 경로.  [alth,20150831]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._str_PRT_TITLE">
+            <summary>
+            리포트 타이틀명.  [alth,20150909]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._empty">
+            <summary>
+            공백 전역변수.  [alth,20150909]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._titleLength">
+            <summary>
+            타이클 길이. [alth,20150909]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._TitleTextList">
+            <summary>
+            타이틀 @@변수 정의 리스트.  [alth,20150916]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.#ctor(System.String)">
+            <summary>
+            txf 출력의 생성자. 이벤트 RunPrintingEventHandler 가 등록되어 있으면 그것이 실행되고 그렇지 않으면 디폴트가 실행됨
+            </summary>
+            <param name="시스템코드">리포트관리등록의 시스템코드</param>
+            <param name="오브젝트명">디폴트로 사용할 오브젝트명</param>
+            <param name="가로여부">가로출력일때 true</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.#ctor(System.String,System.Object)">
+            <summary>
+            txf 출력의 생성자. 이벤트 RunPrintingEventHandler 가 등록되어 있으면 그것이 실행되고 그렇지 않으면 디폴트가 실행됨
+            </summary>
+            <param name="시스템코드">리포트관리등록의 시스템코드</param>
+            <param name="오브젝트명">디폴트로 사용할 오브젝트명</param>
+            <param name="가로여부">가로출력일때 true</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.#ctor(System.String,System.Object,System.Boolean)">
+            <summary>
+            txf 출력의 생성자. 이벤트 RunPrintingEventHandler 가 등록되어 있으면 그것이 실행되고 그렇지 않으면 디폴트가 실행됨
+            </summary>
+            <param name="시스템코드">리포트관리등록의 시스템코드</param>
+            <param name="runEvents">디폴트로 사용할 오브젝트명</param>
+            <param name="runEvents">가로출력일때 true</param>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._active_report_item_index">
+            <summary>
+            선택된 콤보박스 항목의 인덱스 번호. [20120808]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.m_prnDlg_OnRunPrinting(System.Object)">
+            <summary>
+            인쇄 창 화면에서  미리보기 버튼, 인쇄 버튼 실행시 호출되는 이벤트임.
+            UI 에 정의된 이벤트를 호출해서 데
+            </summary>
+            <param name="obj_report_item_index">인쇄 항목의 선택 인덱스 번호 : 리포트구분에따라서 추가한 리포트코드의 인덱스와 동일 하다. index는 0 부터 시작.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.m_prnDlg_OnUserReplace(System.Int32,System.Object,System.Int32,System.Int32,System.Int32,System.String,System.String@,System.String@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="lpRecord"></param>
+            <param name="id"></param>
+            <param name="var"></param>
+            <param name="row"></param>
+            <param name="dataIndex"></param>
+            <param name="page"></param>
+            <param name="value"></param>
+            <param name="format"></param>
+            <param name="bkColor"></param>
+            <param name="textColor"></param>
+            <param name="textAlign"></param>
+            <param name="lineWidth"></param>
+            <param name="lineType"></param>
+            <param name="lineAttr"></param>
+            <param name="fontWeight"></param>
+            <param name="cellattr"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.GetSystemReportDetailList(System.String)">
+            <summary>
+            타입 1 : 시스템 정의 리포트 리스트 항목 설정 : 시스템 제공 리포트만 출력 가능.
+            </summary>
+            <param name="report_gb_cd">리포트 마스터 코드</param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._reportPrintList">
+            <summary>
+            1. 리포트 구분코드에 해당하는 인쇄 정보 항목 리스트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.GetUserReportDetailList(System.String)">
+            <summary>
+            타입 2 : 사용자 정의 리포트 리스트 항목 설정 : 사용자 정의 형식의 리포트 추가 가능. [20111226]
+            </summary>
+            <param name="p_report_gb_cd">리포트 마스터 코드</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetReportColumnInfo(System.Int32)">
+            <summary>
+            사용자 정의 컬럼 설정 메소드. [20111226,alth]
+            </summary>
+            <param name="report_item_index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.AddGroupIn(System.String)">
+            <summary>
+            리포트관리등록에서 읽어서 그룹셋팅을 자동적으로 한다.
+            인쇄 팝업창에 인쇄 항목 콤보박스에 넣을 항목을 정의 한다.
+            
+            ==> 리포트구분코드에 따라서 여러개의 리포트를 정의 가능 하다.
+            </summary>
+            <param name="REPORT_GB_CD">리포트 구분 코드</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.Check">
+            <summary>
+            값을 셋팅할때 그룹이 추가 되었는지 체크한다. 추가적으로 타이틀이랑 출력양식도 체크.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.Check(System.Int32)">
+            <summary>
+            값을 셋팅할때 그룹이 추가 되었는지 체크한다. 추가적으로 타이틀이랑 출력양식도 체크.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._IS_EXCH_YN_EXCHANGE_UNIT_YN">
+            <summary>
+            환종, 환산단위 여부. [20130806]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.GetEnvData(System.String)">
+            <summary>
+            환경설정 값 가져오기
+            </summary>
+            <param name="strMngmCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.Print">
+            <summary>
+            ★★ 인쇄시 값 셋팅 후 마지막에 호출. 페이지 ID를 이용하여 리포트관리등록의 시스템코드를 생성.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.GetEmptyValue(System.Int32)">
+            <summary>
+            머지셀에 대해서 공백값을 넣어주도록 한다.
+            </summary>
+            <param name="cnt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.Reset_PrintInfoHandler_Items">
+            <summary>
+            static 전역 리포트 변수의 항목을 모두 초기화 한다. [20111226]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.Clear_PrintInfoHandler_ActiveMenu_Items">
+            <summary>
+            static 전역 리포트 변수의 특정 활성화 되어 있다 닫기 되는 메뉴의 항목을 초기화 한다. [20111226]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.GetStartDataPosition(System.String,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            ★ SetPageIndex에서 설정한 시작 데이터Index, 컬럼Index를 얻는다
+            </summary>
+            <param name="dataTableID">데이터 테이블</param>
+            <param name="page">현재페이지</param>
+            <param name="dataIndex">데이터 Index를 받는다</param>
+            <param name="columnIndex">컬럼 Index를 받는다</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetPageIndex(System.String,System.Data.DataTable,System.String[],System.String[],System.String[],System.String[],System.Int32,System.Int32)">
+            <summary>
+            ★사용자가 페이지 구성을 한다 (CrossTable 같은 Column 동적인 곳에서 사용)
+            </summary>
+            <param name="dataTableID">테이블 ID</param>
+            <param name="dt">DataSource (DataTable)</param>
+            <param name="strGroup">Grouping 정보, 없을경우-null</param>
+            <param name="varTitleColumn">동적 Title 컬럼변수</param>
+            <param name="varFixedColumn">매 페이지마다 항상 고정되는 컬럼 정보, 없을경우-null</param>
+            <param name="varDataColumn">동적인 페이지 정보, 없을경우-null</param>
+            <param name="startDataColumnIndex">DataTable 상의 시작 컬럼위치</param>
+            <param name="endDataColumnIndex">DataTable 상의 끝 컬럼위치</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetPageIndexTitle(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="title"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.AddContentsString(System.String,System.String,System.String,System.String)">
+            <summary>
+            ★프린트 다이얼로그의 인쇄항목에 추가한다
+            </summary>
+            <param name="contents">내용</param>
+            <param name="fileName">rdf화일명</param>
+            <param name="type">용지방향</param>
+            <param name="printratio">인쇄비율</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetDataTable(System.Data.DataTable)">
+            <summary>
+            DataTable을 셋팅합니다.
+            </summary>
+            <param name="dt">출력하고자 하는 DataTable을 넘깁니다.</param>
+            <param name="row">row 지정시 사용.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetDataTableFromIndex(System.Data.DataTable,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="dt"></param>
+            <param name="idx"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetDataTable(System.Data.DataTable,System.Int32)">
+            <summary>
+            DataTable을 Setting 합니다.
+            </summary>
+            <param name="dt">DataTable</param>
+            <param name="nSheet">Sheet</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetDataTable(System.Data.DataTable,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="dt"></param>
+            <param name="nSheet"></param>
+            <param name="tableID"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetDataRow(System.Data.DataRow)">
+            <summary>
+            DataRow을 셋팅합니다.
+            </summary>
+            <param name="dr">출력하고자 하는 DataRow을 넘깁니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetDataRow(System.Data.DataRow[])">
+            <summary>
+            DataRow[]을 셋팅합니다.
+            </summary>
+            <param name="drs">출력하고자 하는 DataRow[]을 넘깁니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.ConvertSetDataTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.PrintRatio(System.Int32)">
+            <summary> 
+            인쇄 비율 : 최대 100  [20111222]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.OutputNotMove(System.Boolean)">
+            <summary>
+            결재란 추가시 원본양식 안밀리게하는 메소드
+            </summary>
+            <param name="sheetNo"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.OutputCount(System.Int32)">
+            <summary>
+            출력물 한페이지에 추가할수있는 결재란 개수
+            </summary>
+            <param name="iCnt"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.StampFullPage(System.Boolean)">
+            <summary>
+            출력물의 매 페이지마다 결제란이  나와야 하는지 여부.  true 이면 매 페이지마다 출력됨. [20120817]
+            </summary>
+            <param name="iCnt"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.OutputNotApproval(System.Boolean)">
+            <summary>
+            결재란 무조건 안보임..
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.OutsideStringValue(System.Int32,System.String)">
+            <summary>
+            테이블외의 값을 입력
+            </summary>
+            <param name="sheetNo"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.OutsideStringValue(System.Int32,BlueOcean.Framework.PrintControl.OutsideValue[])">
+            <summary>
+            테이블외의 값을 입력
+            </summary>
+            <param name="sheetNo"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.AddSubScriptPath(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="scriptPath"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.RecordsetRange(System.Int32,System.Data.DataTable,System.Int32,System.Int32)">
+            <summary>
+            UI 화면에서 rptHelper_RunPrinting 이벤트에서 호출하는 메소드임.
+            </summary>
+            <param name="sheetNo"></param>
+            <param name="dt"></param>
+            <param name="firstRow"></param>
+            <param name="rowCount"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._ActiveReportItem">
+            <summary>
+            선택된 리포트 항목 정보 클래스. [20120325]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetSelectedReportItem(System.Int32)">
+            <summary>
+            리포트 인덱스 순서 이용해서 활성화 인쇄 정보 클래스를 설정 한다.
+            </summary>
+            <param name="report_item_index">선택된 리포트 인덱스</param>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._str_REPORT_CD">
+            <summary>
+            /// 선택된 리포트 항목 리포트 코드 : 상세 등록 화면에서 등록한 코드임.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportHelper._str_PRINT_RATE">
+            <summary>
+            선택된 리포트 항목 인쇄 비율  [alth,20150831]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.PutSecurity(System.String)">
+            <summary>
+            필드 암호화.
+            </summary>
+            <param name="scriptPath"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SaveFile(System.String,System.String,System.String,System.String)">
+            <summary>
+            PDF 파일로 암호화를 해서 저장 한다.
+            </summary>
+            <param name="scriptPath"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetStartPrinter(System.String)">
+            <summary>
+            출력물을 미리보기 없이 출력 한다.  기본프린터, 1장씩 출력 [20141204]
+            </summary>
+            <param name="tableID">테이블 번호</param>
+            <param name="strColumn">컬럼 포맷 문자열</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.GetPrintType">
+            <summary>
+            get_PrintType  여기서 1 리턴하면  프린트고요 0이면 미리보기 입니다 [20150106]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.ColumnHide(System.String,System.String)">
+            <summary>
+            출력물 컬럼 숨기기 string TableID, string Column
+            rptHelper.ColumnHide("17", "2;12;13;14;15");
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.ColumnHide(System.Int32,System.String)">
+            <summary>
+            출력물 컬럼 숨기기 int TableID, string Column
+            rptHelper.ColumnHide("17", "2;12;13;14;15");
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetVisibleColumn_HIDDEN(System.Object,System.String)">
+            <summary>
+            출력물 컬럼 숨김 처리 한다.  [20130723]
+            rptHelper.SetVisibleColumn_HIDDEN("17", "2;12;13;14;15");
+            </summary>
+            <param name="tableID">테이블 번호</param>
+            <param name="strColumn">컬럼 문자열</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetVisibleColumn_SHOW(System.Object,System.String)">
+            <summary>
+            출력물 컬럼을 보임 처리 한다. [20130723]
+            rptHelper.SetVisibleColumn_SHOW("17", "2;12;13;14;15");
+            </summary>
+            <param name="tableID">테이블 번호</param>
+            <param name="strColumn">컬럼 문자열</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetVisibleColumn(System.Object,System.String,System.Boolean)">
+            <summary>
+            출력물 컬럼 숨김 기능입니다  [20130723]
+            rptHelper.SetVisibleColumn("17", "2;12;13;14;15", false);
+            </summary>
+            <param name="tableID">테이블 번호</param>
+            <param name="strColumn">컬럼 문자열</param>
+            <param name="isShow">false 숨김,  true 보임</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetExchangeMaskFormat(System.Object,System.String)">
+            <summary>
+            출력물의 숫자 타입의 마스크 포맷을 재정의 합니다. [20131227]
+            </summary>
+            <param name="tableID">테이블 번호</param>
+            <param name="strColumn">컬럼 포맷 문자열</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetTableColumnWidth(System.Object,System.String)">
+            <summary>
+            출력물 컬럼너비 설정  [alth,20150914]
+            </summary>
+            <param name="tableID"></param>
+            <param name="strColumn"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetTableColumnTitle(System.Object,System.String)">
+            <summary>
+            출력물 컬럼 타이틀 설정  [alth,20150914]
+            </summary>
+            <param name="tableID"></param>
+            <param name="strColumn"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetImageInterSects(System.Object)">
+            <summary>
+            출력물의 이미지를 포함할 테이블 ID 설정 합니다. [20150204]
+            rptHelper_RunPrinting 이벤트에서 호출을 해야 정상적으로 기능이 작동함.
+            </summary>
+            <param name="tableID">테이블 번호</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.StampModuleWrite(System.Boolean)">
+            <summary>
+            출력물의 결제란을 개별 설정 여부.
+            true 이면 개별 결제란. 기본값 false (통합)  [alth,20150702]
+            </summary>
+            <param name="tableID">테이블 번호</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.Close">
+            <summary>
+            인쇄 버튼 클릭시 이벤트.   [alth,20150904]
+            </summary>
+            <param name="nType"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.SetMakeFormStyle(System.Object)">
+            <summary>
+            멀티 출력물 관련 세팅 : 기본값 0
+            SCYM10170000-근로소득원천징수영수증_2014 관련 세팅값 40 설정 요청됨.  [alth,20150907]
+            </summary>
+            <param name="tableID">테이블 번호</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.m_prnDlg_OnPrinter">
+            <summary>
+            인쇄 버튼 클릭시 이벤트.   [alth,20150904]
+            </summary>
+            <param name="nType"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportHelper.GetReportCodeToModuleCd">
+            <summary>
+            출력물_모듈_소수점시 정수 0 표시여부. 기본값0, 1표시 :9041  [alth,20160621] [alth,20160621]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:BlueOcean.Framework.PrintControl.ReportHelper.RunPrinting">
+            <summary>
+            이벤트 RunPrinting : UI 에 정의된 이벤트
+            </summary>
+        </member>
+        <member name="E:BlueOcean.Framework.PrintControl.ReportHelper.OnPrintGroupData">
+            <summary>
+            이벤트 OnPrintGroupData  : UI 에 정의된 이벤트
+            </summary>
+        </member>
+        <member name="E:BlueOcean.Framework.PrintControl.ReportHelper.OnClickPrinter">
+            <summary>
+            이벤트 OnWritePrinter  : UI 에 정의된 이벤트  [alth,20150904]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportHelper.IS_EXCH_YN">
+            <summary> 
+            환율 사용여부 (환경설정) true = 사용, false = 미사용 [20130806]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportHelper.IS_EXCHANGE_UNIT_YN">
+            <summary>
+            환산단위사용여부(환경설정) true = 사용, false = 미사용 [20130806]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportHelper.IS_STAMP_MODULE_WRITE">
+            <summary>
+            출력물의 결제란을 개별 설정 여부. 1.별도 설정 [alth,20150702]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportHelper.ActiveReportItem">
+            <summary>
+            선택된 리포트 항목 정보 클래스. [20120325]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportHelper.REPORT_CD">
+            <summary>
+            선택된 리포트 항목 리포트 코드 : 상세 등록 화면에서 등록한 코드임.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.ReportHelper.PRINT_RATE">
+            <summary>
+            선택된 리포트 항목 인쇄 비율  [alth,20150831]
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.TOKEN">
+            <summary>
+            ReportHelper에서 사용하는 클래스로 한 그룹의 내용들을 가진다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.TOKEN._dt">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.TOKEN._tableMapList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.TOKEN._Title">
+            <summary>
+            레포트명
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.TOKEN._Style">
+            <summary>
+            레포트ID
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.TOKEN._Type">
+            <summary>
+            가로세로 구분(1.세로, 2.가로)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.TOKEN._Printratio">
+            <summary>
+            인쇄비율
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.TOKEN.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.TOKEN.GetTableMapList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.TOKEN.AddTableMap(BlueOcean.Framework.PrintControl.DataTableMap)">
+            <summary>
+            
+            </summary>
+            <param name="map"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.TOKEN.AddTitle(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="title">항목이름</param>
+            <param name="style">파일주소</param>
+            <param name="rtype">용지방향</param>
+            <param name="printratio">인쇄비율</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.TOKEN.SetDataTable(System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="adt"></param>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.TOKEN.DataTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.TOKEN.TITLE">
+            <summary>
+            항목 이름
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.TOKEN.STYLE">
+            <summary>
+            파일 주소
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.TOKEN.TYPE">
+            <summary>
+            용지방향
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.TOKEN.Printratio">
+            <summary>
+            인쇄비율
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintPara.#ctor">
+            <summary>
+            생성자.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintPara.GetModulePath">
+            <summary>
+            모듈 위치.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.PrintPara.list">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintPara.AddPrintFile(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.PrintPara.PrintPath">
+            <summary>
+            리포트 파일 제공 폴더.  모듈별 위치 변동 됨 : 기본 폴더 위치.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.PrintPara.PrintUserFilePath">
+            <summary>
+            리포트 파일 제공 폴더. 모듈별 위치 변동 됨 : 사용자 정의 리포트 임시 파일 폴더. [20111228]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.PrintPara.CurrentPageCode">
+            <summary>
+            현재 페이지 코드 세팅
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.PrintPara.ExecuteDir">
+            <summary>
+            브라우저 실행 경로.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.PrintTableCellInfo">
+            <summary>
+            리포트 XML 파일에서 테이블 셀 영역 값 설정 용도 클래스.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintTableCellInfo.#ctor(BlueOcean.Framework.PrintControl.ReportPrintInfo,System.String)">
+            <summary>
+            생성자.
+            </summary>
+            <param name="report_line_string">리포트 파일에서 읽은 정보</param>
+            <param name="reportColumnItem">DB 에 사용자가 설정한 항목 정보</param>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.PrintTableCellInfo._printItem">
+            <summary>
+            인쇄 정보 객체
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.PrintTableCellInfo._reportColumnItem">
+            <summary>
+            리포트 코드별 컬럼 상세 설정 정보.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.PrintTableCellInfo._report_line_string">
+            <summary>
+            리포트 행별 구문 정보.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.PrintTableCellInfo._IsCheck">
+            <summary>
+            Success : 테이블용 셀 영역, Error : 그외 영역.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintTableCellInfo.ContentsGenerator">
+            <summary>
+            테이블 셀 영역 문자열 구문 분석.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintTableCellInfo.SetReportColumnInfo">
+            <summary>
+            사용자 정의 컬럼 설정 메소드. [20111226,alth]
+            </summary>
+            <param name="report_item_index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.PrintTableCellInfo.GetLineString">
+            <summary>
+            XML 리포트 파일에서 읽은 현재 행의 정보를 ==>> 사용자 설정 정보로 변경된 행 정보를 반환 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.PrintTableCellInfo.ReportColumnItem">
+            <summary>
+            리포트 코드별 컬럼 상세 설정 정보.  컬럼 사용 여부를 설정 하기 위해서 속성 노출 함.
+            COLUMN_USE_YN : 컬럼 사용 여부.  true:사용, false:미사용 (안보임)
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.PrintControl.PrintTableCellInfo.IsChecking">
+            <summary>
+            Success : 테이블용 셀 영역, Error : 그외 영역.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.PrintControl.ReportFileGenerator">
+            <summary>
+            리포트 출력 파일의 임시 파일을 설정 클래스. [20111228]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportFileGenerator._printItem">
+            <summary>
+            인쇄 정보 객체
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportFileGenerator._fileName_FullPath">
+            <summary>
+            리포트 파일 전체 주소. 원본 파일.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportFileGenerator._report_Contents">
+            <summary>
+            리포트 파일 전체 내용을 담는 변수.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportFileGenerator._Report_Contents_List">
+            <summary>
+            리포트 파일 구문 문자열 배열 ( 행번호, 구문 문자열)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.PrintControl.ReportFileGenerator._Encoding">
+            <summary>
+            로그 메시지 텍스트의 인코딩 : 949 ks_c_5601-1987 Korean
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.#ctor(System.String,BlueOcean.Framework.PrintControl.ReportPrintInfo)">
+            <summary>
+            생성자.
+            </summary>
+            <param name="filename">원본 : 리포트 파일 전체 주소</param>
+            <param name="printInfo">인쇄 정보 객체</param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.ContentsGenerator">
+            <summary>
+            리포트 파일의 구문을 분석 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.ReadReportXmlFile(System.String,System.String@)">
+            <summary>
+            파일을 문자열을 읽어 온다.
+            텍스트의 인코딩 : 949 ks_c_5601-1987 Korean :: Encoding.GetEncoding(949);
+            </summary>
+            <param name="sFileName"></param>
+            <param name="sOutput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.ReadReportXmlFile(System.String,System.String@,System.Text.Encoding)">
+            <summary>
+            파일을 문자열을 읽어 온다.
+            </summary>
+            <param name="sFileName"></param>
+            <param name="sOutput"></param>
+            <param name="encodin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.WriteReportXmlFile(System.String,System.String)">
+            <summary>
+            문자열 데이터를 가진 파일을 생성 한다.
+            텍스트의 인코딩 : 949 ks_c_5601-1987 Korean :: Encoding.GetEncoding(949);
+            </summary>
+            <param name="sFileName">파일 전체경로</param>
+            <param name="sData">내용</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.WriteReportXmlFile(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            문자열 데이터를 가진 파일을 생성 한다.
+            </summary>
+            <param name="sFileName">파일 전체경로</param>
+            <param name="sData">내용</param>
+            <param name="encodin">인코딩 방식</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.DeleteReportXmlFile(System.String)">
+            <summary>
+            사용자 정의 임시 리포트 파일을 삭제 한다.
+            </summary>
+            <param name="sFileName"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.PrintControl.ReportFileGenerator.SetFileAttributes_ReadOnly_Reset(System.String)">
+            <summary>
+            파일의 읽기 속성을 해제 한다.
+            </summary>
+            <param name="strFilePath">파일 경로.</param>
+        </member>
+    </members>
+</doc>

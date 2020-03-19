@@ -1,0 +1,981 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.CMControls</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.CMControls.ProgressBarStyle">
+            <summary>
+            미니 메시지 창에 제공되는 메시지 Enum
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.ProgressBarStyle.TYPE_A">
+            <summary>
+            주황색 진행바 : 시계 방향
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.ProgressBarStyle.TYPE_B">
+            <summary>
+            주황색 진행바 : 반 시계 방향
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.CMProgressBar">
+            <summary>
+            진행바 클래스. 일반 UI 에서 사용할 수 있도록 public 으로 설정함. [20101217]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBar._Timer">
+            <summary>
+            이미지 변경 타이머
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBar._CurPosition">
+            <summary>
+            이미지 순서
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBar._MaxPosition">
+            <summary>
+            마지막 이미지 인덱스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBar._ProgressBarStyle">
+            <summary>
+            진행바 타입 설정 : 시계 방향, 반시계 방향
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBar._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar.InitImageStep">
+            <summary>
+            타입별 이미지 객체 인스턴스를 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar._Timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar.InitCurPosition">
+            <summary>
+            순서 포지션을 초기화 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar.Start">
+            <summary>
+            진행바 시작 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBar.Stop">
+            <summary>
+            진행바 작동을 중지 한다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.CMProgressBar.IntervalTime">
+            <summary>
+            타이머 Ivterval Time 설정 : 1000  1초임.  기본값 : 80
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.DISPID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.CMPanelEx">
+            <summary>
+            UltraPanel 확장 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.CMSplitContainerEx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMSplitContainerEx.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMSplitContainerEx.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMSplitContainerEx.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMSplitContainer.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMSplitContainer.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMSplitContainer.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.UtilWebFileDown">
+            <summary>
+            static 방식이 아닌 인스턴스 생성 방식으로 클래서 생성함.  [alth,20140924]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.UtilWebFileDown._isDownLoadSuccess">
+            <summary>
+            true 파일 다운 성공, false 파일 다운 실패.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.UtilWebFileDown.DownLoadFile(System.String,System.String)">
+            <summary>
+            웹 서버에서 파일을 다운로드 한다.
+            </summary>
+            <param name="webURI">다운로드 전체 주소</param>
+            <param name="filename">기본 파일명</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.UtilWebFileDown.DownLoadFile(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            웹 서버에서 파일을 다운로드 한다.  
+            </summary>
+            <param name="webURI">다운로드 전체 주소</param>
+            <param name="filename">기본 파일명</param>
+            <param name="isMsgShow">파일 완료시 메시지 표시 여부</param>
+            <param name="isRunExe">파일 자동 실행 여부</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.UtilWebFileDown.DownLoadFile(System.String,System.String,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            웹 서버에서 파일을 다운로드 한다.   [alth,20160823]
+            </summary>
+            <param name="webURI">다운로드 전체 주소</param>
+            <param name="filename">기본 파일명</param>
+            <param name="isMsgShow">파일 완료시 메시지 표시 여부</param>
+            <param name="isRunExe">파일 자동 실행 여부</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.UtilWebFileDown.WebFile_DownLoadFile(System.String,System.String,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            웹 서버에서 파일을 다운로드 한다.
+            </summary>
+            <param name="webURI">다운로드 전체 주소</param>
+            <param name="filename">기본 파일명</param>
+            <param name="isMsgShow">완료 메시지 표시 여부</param>
+            <param name="isRunExe">자동 실행 여부</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.UtilWebFileDown.WebFile_DownLoadFileExec(System.String,System.String,System.String@)">
+            <summary>
+            웹 서버에서 파일을 다운로드 한다.
+            </summary>
+            <param name="url">xml 파일을 받을 url 주소</param>
+            <param name="xmlName">생성할 파일 전체 주소.  ex)c:\temp\asdf.zip</param>
+            <param name="errorMsg">에러 메시지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.UtilWebFileDown.ShowMsg(System.String)">
+            <summary>
+            에러 메시자창 표시 정의.
+            </summary>
+            <param name="errorMsg"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.UtilWebFileDown.ShowErrorMsg(System.String)">
+            <summary>
+            에러 메시자창 표시 정의.
+            </summary>
+            <param name="errorMsg"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.KwicEventArgs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KwicEventArgs.IsCancel">
+            <summary>
+            true 이면 화면에서 필수 항목 값 설정을 못한 경우임. 메시지창 출력함. 기본값 false
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KwicEventArgs.ServiceName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KwicEventArgs.BIZ_CD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.CMTaxMateCall">
+            <summary>
+            최신거래내역, 최종수신일자 정보 클래스. 일반 UI 에서 사용할 수 있도록 public 으로 설정함. [20130718]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMTaxMateCall.lbl_DATE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMTaxMateCall.btn_NEW_DATA">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMTaxMateCall._strServiceName">
+            <summary>
+            서비스 호출 업무구분 [20130621]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMTaxMateCall._strBIZ_CD">
+            <summary>
+            서비스 호출 사업장코드  [alth,20150413]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.InitializeComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.btn_NEW_DATA_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            최신자료 업데이트 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.SetCallType(System.String)">
+            <summary>
+            NEW_DATA : 버튼 이미지만 보인다. 텍스트 라벨 숨김.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.ClearDate">
+            <summary>
+            this.lbl_DATE.Text = "최종수집일자 : ";  상태로 만든다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.Set_TaxMate_Date_Type(System.String,System.String)">
+            <summary>
+            최종수집일자 설정.
+            </summary>
+            <param name="strServiceName">호출 서비스명</param>
+            <param name="strBIZ_CD">호출 사업장코드</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.Set_TaxMate_Date_TypeExec(System.String,System.String)">
+            <summary>
+            최종수집일자 설정.
+            </summary>
+            <param name="strServiceName">호출 서비스명</param>
+            <param name="strBIZ_CD">호출 사업장코드</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.Set_TaxMate_Scraping_WorkDate(System.String,System.String)">
+            <summary>
+            업부구분별 최종수집일자체크. [20130621]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMTaxMateCall._FileLogger_KWIC">
+            <summary>
+            FILE 로그생성
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTaxMateCall.LogMessageKWIC(System.String)">
+            <summary>
+            파일 로그 생성. 핑거
+            </summary>
+        </member>
+        <member name="E:BlueOcean.Framework.CMControls.CMTaxMateCall.KwicEventArgsHandlerClick">
+            <summary>
+            화면 오류 발생시 Screen 화면의 이미지를 캡쳐해서 LOG 폴더에 저장 이벤트 [20101214]
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.CMTaxMateCall.KwicEventArgsHandler">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMTreeViewEx.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTreeViewEx.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMTreeViewEx.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.CMProgressBarEx">
+            <summary>
+            진행바 클래스. 일반 UI 에서 사용할 수 있도록 public 으로 설정함. [20120718]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBarEx._Timer">
+            <summary>
+            이미지 변경 타이머
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBarEx._CurPosition">
+            <summary>
+            이미지 순서
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBarEx._MaxPosition">
+            <summary>
+            마지막 이미지 인덱스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMProgressBarEx._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.InitImageStep">
+            <summary>
+            타입별 이미지 객체 인스턴스를 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx._Timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.InitCurPosition">
+            <summary>
+            순서 포지션을 초기화 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.Start">
+            <summary>
+            진행바 시작 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.CMProgressBarEx.Stop">
+            <summary>
+            진행바 작동을 중지 한다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.CMProgressBarEx.IntervalTime">
+            <summary>
+            타이머 Ivterval Time 설정 : 1000  1초임.  기본값 : 80
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.CMComButtonEx._ButtonImageType">
+            <summary>
+            버튼 이미지 타입 : 블루, 화이트
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.CMComButtonEx.ButtonSize">
+            <summary>
+            공통 이미지의 타입을 선언 한다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.CMComButtonEx.TypeButtonImage">
+            <summary>
+            공통 이미지의 타입을 선언 한다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.KWebBrowser">
+            <summary>
+            System.Windows.Forms.WebBrowser 는 
+            세션관리, 팝업문제 때문에 ActiveX WebBrowser 의 기능을 구현했다. 
+            
+            System.Windows.Forms.WebBrowser를 확장한 Browser 입니다.
+            툴팁에는 보여주지 않음.  디자인시 이상하게 오류가 발생 했음. [2010121]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.KWebBrowser.#ctor">
+            <summary>
+            KWebBrowser의 인스턴스를 초기화 합니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.KWebBrowser.DetachSinkExec">
+            <summary>
+            세션 쿠키 제거.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.KWebBrowser.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser._cmdKeyData">
+            <summary>
+            ProcessCmdKey 이벤트 KeyData 체크용 전역 변수.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants">
+            <summary>
+            Contains values used by the IWebBrowser2::Navigate and IWebBrowser2::Navigate2 methods.
+            ms-help://MS.MSDNQTR.v90.ko/ieext/workshop/browser/webbrowser/reference/enums/browsernavconstants.htm
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navOpenInNewWindow">
+            <summary>
+            Open the resource or file in a new window.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navNoHistory">
+            <summary>
+            Do not add the resource or file to the history list. The new page replaces the current page in the list.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navNoReadFromCache">
+            <summary>
+            Do not consult the Internet cache; retrieve the resource from the origin server (implies BINDF_PRAGMA_NO_CACHE and BINDF_RESYNCHRONIZE). 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navNoWriteToCache">
+            <summary>
+            Do not add the downloaded resource to the Internet cache. See BINDF_NOWRITECACHE. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navAllowAutosearch">
+            <summary>
+            If the navigation fails, the autosearch functionality attempts to navigate common root domains (.com, .edu, and so on). If this also fails, the URL is passed to a search engine.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navBrowserBar">
+            <summary>
+            Causes the current Explorer Bar to navigate to the given item, if possible. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navHyperlink">
+            <summary>
+            Microsoft Internet Explorer 6 for Microsoft Windows XP Service Pack 2 (SP2) and later. If the navigation fails when a hyperlink is being followed, this constant specifies that the resource should then be bound to the moniker using the BINDF_HYPERLINK flag.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navEnforceRestricted">
+            <summary>
+            Internet Explorer 6 for Windows XP SP2 and later. Force the URL into the restricted zone.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navNewWindowsManaged">
+            <summary>
+            Internet Explorer 6 for Windows XP SP2 and later. Use the default Popup Manager to block pop-up windows. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navUntrustedForDownload">
+            <summary>
+            Internet Explorer 6 for Windows XP SP2 and later. Block files that normally trigger a file download dialog box. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navTrustedForActiveX">
+            <summary>
+            Internet Explorer 6 for Windows XP SP2 and later. Prompt for the installation of Microsoft ActiveX controls. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navOpenInNewTab">
+            <summary>
+            Windows Internet Explorer 7. Open the resource or file in a new tab. Allow the destination window to come to the foreground, if necessary. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navOpenInBackgroundTab">
+            <summary>
+            Internet Explorer 7. Open the resource or file in a new background tab; the currently active window and/or tab remains open on top. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.KWebBrowser.BrowserNavConstants.navKeepWordWheelText">
+            <summary>
+            Internet Explorer 7. Maintain state for dynamic navigation based on the filter string entered in the search band text box (wordwheel). Restore the wordwheel text when the navigation completes. 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.TreeViewHelper">
+            <summary>
+            TREE NODE 바인딩 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._PARENT_KEY">
+            <summary>
+            부모 코드 컬럼
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._KEY">
+            <summary>
+            코드 컬럼
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._NAME">
+            <summary>
+            코드 명칭 컬럼
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._TYPE">
+            <summary>
+            타입 컬럼
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._LEVEL">
+            <summary>
+            레벨 컬럼
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._SORT">
+            <summary>
+            소트 컬럼
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._ROOT_NODE_TEXT">
+            <summary>
+            최상위 루트 노드 명칭
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._IMG_FOLDER_FILE">
+            <summary>
+            폴더 이미지 파일명, ex) ico_org_folder_close
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._IMG_ITEM_FILE">
+            <summary>
+            화면 이미지 파일명, ex) ico_org_list_unchecked
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._treeView">
+            <summary>
+            트리뷰 인스턴스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._nodeStyle">
+            <summary>
+            노드 형식
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._dtSource">
+            <summary>
+            데이터 소스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._NodeImageType">
+            <summary>
+            이미지 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._image_folder">
+            <summary>
+            폴더 이미지
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.TreeViewHelper._image_item">
+            <summary>
+            항목 이미지
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.#ctor(BlueOcean.Framework.CMControls.CMTreeViewEx)">
+            <summary>
+            TreeViewHelper 이용해서 노드를 생성 한다.
+            </summary>
+            <param name="tree">트리 객체</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.#ctor(BlueOcean.Framework.CMControls.CMTreeViewEx,System.String)">
+            <summary>
+            TreeViewHelper 이용해서 노드를 생성 한다.
+            </summary>
+            <param name="tree">트리 객체</param>
+            <param name="rootNodeCaption">최상위 루트 노드 텍스트,생성안하면 공백으로 설정</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.#ctor(BlueOcean.Framework.CMControls.CMTreeViewEx,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            TreeViewHelper 이용해서 노드를 생성 한다.
+            </summary>
+            <param name="tree">트리 객체</param>
+            <param name="rootNodeCaption">최상위 루트 노드 텍스트, 생성안하면 공백으로 설정</param>
+            <param name="key">노드 키 컬럼 ex)NODE_KEY</param>
+            <param name="name">노드 명칭 컬럼 ex)NODE_NAME</param>
+            <param name="type">노드 타입 컬럼 ex)NODE_TYPE</param>
+            <param name="sort">노드 정렬 컬럼 ex)NODE_SORT</param>
+            <param name="level">노드 레벨 컬럼 ex)NODE_LEVEL</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.#ctor(BlueOcean.Framework.CMControls.CMTreeViewEx,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            TreeViewHelper 이용해서 노드를 생성 한다.
+            </summary>
+            <param name="tree">트리 객체</param>
+            <param name="rootNodeCaption">최상위 루트 노드 텍스트, 생성안하면 공백으로 설정</param>
+            <param name="key">노드 키 컬럼 ex)NODE_KEY</param>
+            <param name="parent_key">부모 노드 키 컬럼 ex)PARENT_KEY</param>
+            <param name="name">노드 명칭 컬럼 ex)NODE_NAME</param>
+            <param name="type">노드 타입 컬럼 ex)NODE_TYPE</param>
+            <param name="sort">노드 정렬 컬럼 ex)NODE_SORT</param>
+            <param name="level">노드 레벨 컬럼 ex)NODE_LEVEL</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.InitilalizeTree">
+            <summary>
+            트리 노드 초기화
+            1. 트리 초기화
+            2. 데이터 소스 컬럼 유효성 체크
+            3. 이미지 설정
+            4. 이벤트 설정
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.CreateTreeNode">
+            <summary>
+            트리 노드 생성
+            </summary>
+            <remarks>
+            프로시저 쿼리 조건
+            SELECT 시에 LEVEL, SORT 로 정렬해야 한다.
+            ex) ORDER BY DEPT_LEVEL, NODE_SORT
+            </remarks>
+            <param name="dtSource">노드 생성 데이터 소스</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.NodesClear">
+            <summary>
+            노드에 바인딩된 모든 항목을 제거 한다.
+            treeView.Nodes.Clear()
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.GetColumnValue(System.Data.DataRow,System.String)">
+            <summary>
+            DataRow 의 컬럼 값을 반환 한다.
+            </summary>
+            <param name="dr"></param>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.VerifyColumnContins">
+            <summary>
+            컬럼 존재 유무 체크
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.SetNodeImage(Infragistics.Win.UltraWinTree.UltraTreeNode@,System.String)">
+            <summary>
+            노드 이미지 설정
+            </summary>
+            <param name="node">노드</param>
+            <param name="nodeFileName">이미지 파일명</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.SetNodeLeftImage(Infragistics.Win.UltraWinTree.UltraTreeNode,System.String)">
+            <summary>
+            노드 레프트 이미지 설정
+            </summary>
+            <param name="node">노드</param>
+            <param name="nodeFileName">이미지 파일명</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.InitImageFile">
+            <summary>
+            이미지 파일 설정.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.SetNodeImageField">
+            <summary>
+            노드의 이미지를 타입에 따라 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.CheckAllChildNodes(Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            해당 노드의 모든 자식 노드를 체크 한다.
+            </summary>
+            <param name="treeNode"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.UnCheckAllChildNodes(Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            해당 노드의 모든 자식 노드를 해제 한다.
+            </summary>
+            <param name="treeNode"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.AddCheckEvent">
+            <summary>
+            노드 체크 자동 설정
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.treeView_AfterCheck(System.Object,Infragistics.Win.UltraWinTree.NodeEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.SetChildNodeCheckedState(Infragistics.Win.UltraWinTree.UltraTreeNode,System.Windows.Forms.CheckState)">
+            <summary>
+             체크된노드의정보를 해쉬테이블로 반환합니다.
+            </summary>
+            <param name="tree">트리컨트롤</param>
+            <returns>체크된 노드정보의 해쉬테이블</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.SetParentNodeCheckedState(Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+             체크된노드의정보를 해쉬테이블로 반환합니다.
+            </summary>
+            <param name="tree">트리컨트롤</param>
+            <returns>체크된 노드정보의 해쉬테이블</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.RemoveNode(System.String)">
+            <summary>
+            선택된 키에 해당하는 노드를 트리에서 제거 한다.
+            </summary>
+            <param name="node_key">삭제할 노드 키 값</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.RemoveNode(Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            선택된 노드를 트리에서 제거 한다.
+            </summary>
+            <param name="node">선택한 노드</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.AddNode(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            노드를 추가 한다.
+            </summary>
+            <param name="node_key">노드 키</param>
+            <param name="node_text">노드 표시 텍스트</param>
+            <param name="node_type">F:폴더, W:항목</param>
+            <param name="parent_key">부모 키</param>
+            <param name="level">레벨</param>
+            <param name="sort">순서</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.AddActiveNode(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            노드를 추가 한다.
+            </summary>
+            <param name="node_key">노드 키</param>
+            <param name="node_text">노드 표시 텍스트</param>
+            <param name="node_type">F:폴더, W:항목</param>
+            <param name="parent_key">부모 키</param>
+            <param name="level">레벨</param>
+            <param name="sort">순서</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.TreeViewHelper.IsFolderNode(Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            폴더 노드 여부를 판단 한다.
+            </summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.TreeViewHelper.TreeNodeStyle">
+            <summary>
+            노드 형식 : 일반, 체크박스 등
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.TreeViewHelper.DataTable">
+            <summary>
+            데이터 소스
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.TreeViewHelper.IMG_FOLDER_FILE">
+            <summary>
+            폴더 이미지 파일명을 설정 하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.TreeViewHelper.IMG_ITEM_FILE">
+            <summary>
+            항목 이미지 파일명을 설정 하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.TreeViewHelper.NodeImageType">
+            <summary>
+            노드 이미지 설정.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.TreeViewHelper.FillDataSource">
+            <summary>
+            트리 노드 구성을 위한 데이터소스를 바인딩 한다.
+            </summary>
+            <param name="dtCode"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.NodeCategory">
+            <summary>
+            트리를 구성하는 트리노드 객체를 가지는 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.NodeCategory._PARENT_KEY">
+            <summary>
+            타입 1: 
+            부모 키를 설정 한다.
+            
+            타입 2: 
+            부모 키를 노드키 이용해서 생성 한다.
+            현재 메뉴의 부모 노드의 위치 값
+            _NODE_KEY에서 -2 만큼 길이를 뺀 값이다.
+            </summary>
+            <remarks>
+            ex)
+            _NODE_KEY   = 'SYAM1010' 이면
+            _PARENT_KEY = 'SYAM10'   이 된다.
+            _NODE_KEY 의 뒤에서 부터 2자리를 뺀 값이 부모 노드의 값이다.
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.NodeCategory._NODE_KEY">
+            <summary>
+            노드 키 정보
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.NodeCategory._NODE_NAME">
+            <summary>
+            노드 명칭 정보
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.NodeCategory._NODE_TYPE">
+            <summary>
+            노드 타입 : 'F':폴더, 'W':페이지
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.NodeCategory._NODE_SORT">
+            <summary>
+            노드 순서
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.NodeCategory._NODE_LEVEL">
+            <summary>
+            노드 레벨
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.CMControls.NodeCategory._TreeNode">
+            <summary>
+            트리 노드 객체
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.NodeCategory.#ctor(System.String,System.String,System.String,System.String,System.String,Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            생성자
+            부모노드의 키를 자동으로 생성 한다.
+            자신의 메뉴 위치에서 2자리 만큼 빼면 부모의 위치이다.
+            </summary>
+            <param name="node_key">노드 코드</param>
+            <param name="node_name">노드 명칭</param>
+            <param name="node_type">트리 노드 객체</param>
+            <param name="node_level">노드 타입</param>
+            <param name="node_sort">노드 순서</param>
+            <param name="treeNode">트리노드 객체</param>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.NodeCategory.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            생성자
+            </summary>
+            <param name="node_key">노드 코드</param>
+            <param name="parent_node_key">부모 노드 코드</param>
+            <param name="node_name">노드 명칭</param>
+            <param name="node_type">트리 노드 객체</param>
+            <param name="node_level">노드 타입</param>
+            <param name="node_sort">노드 순서</param>
+            <param name="treeNode">트리노드 객체</param>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.NodeCategory.PARENT_KEY">
+            <summary>
+            부모 노드 키 정보
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.NodeCategory.NODE_KEY">
+            <summary>
+            노드 키 정보
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.NodeCategory.NODE_NAME">
+            <summary>
+            노드 명칭 정보
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.NodeCategory.NODE_TYPE">
+            <summary>
+            노드 타입
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.NodeCategory.NODE_SORT">
+            <summary>
+            노드 순서
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.NodeCategory.NODE_LEVEL">
+            <summary>
+            노드 레벨
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.CMControls.NodeCategory.TreeNode">
+            <summary>
+            트리 객체
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.CMControls.NodeCategoryCollection">
+            <summary>
+            트리 정보 클래스의 콜렉션 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.NodeCategoryCollection.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.NodeCategoryCollection.Contains(System.String)">
+            <summary>
+            노드 위치에 해당하는 정보 클래스 존재 유무 반환
+            </summary>
+            <param name="menu_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.CMControls.NodeCategoryCollection.FindByNodeCode(System.String)">
+            <summary>
+            NODE_KEY 값을 이용해서 트리 정보 클래스를 반환 받는다.
+            </summary>
+            <param name="NODE_KEY">노드 코드 위치 정보</param>
+            <returns>트리 노드 정보 클래스</returns>
+        </member>
+    </members>
+</doc>

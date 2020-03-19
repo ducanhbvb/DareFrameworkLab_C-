@@ -1,0 +1,1760 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.MsgBox</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase">
+            <summary>
+            Data Loading, Data Processing : 2가지를 표현하는 메시지 미니 표시 화면 클래스. [20101220]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase._ProgressBarAuto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase._CallType">
+            <summary>
+            true: 운영용 호출 (동영상 그림) , false : 개발용 호출 (정지 그림)
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase.MsgLoadType">
+            <summary>
+            Message 박스 글자 타입 : 로드, 처리
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase.ProgressBar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxBase.CallType">
+            <summary>
+            true: 운영용 호출 (동영상 그림) , false : 개발용 호출 (정지 그림)
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.MessageBox_Type5_CLOUD">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_PRO_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_PRO_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_PRO_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_CLOUD_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_CLOUD_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_CLOUD_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageBoxNormal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageBoxBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase.WM_KEYDOWN">
+            <summary>
+            The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem 
+            key is pressed. A nonsystem key is a key that is pressed when the ALT key is not pressed.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase.WM_KEYUP">
+            <summary>
+            The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem 
+            key is released. A nonsystem key is a key that is pressed when the ALT key is not pressed, 
+            or a keyboard key that is pressed when a window has the keyboard focus.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase.WM_SYSKEYDOWN">
+            <summary>
+            The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user 
+            presses the F10 key (which activates the menu bar) or holds down the ALT key and then 
+            presses another key. It also occurs when no window currently has the keyboard focus; 
+            in this case, the WM_SYSKEYDOWN message is sent to the active window. The window that 
+            receives the message can distinguish between these two contexts by checking the context 
+            code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase.WM_SYSKEYUP">
+            <summary>
+            The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user 
+            releases a key that was pressed while the ALT key was held down. It also occurs when no 
+            window currently has the keyboard focus; in this case, the WM_SYSKEYUP message is sent 
+            to the active window. The window that receives the message can distinguish between 
+            these two contexts by checking the context code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase._IsExpendDlg">
+            <summary>
+            에러 페이지 확장 여부
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase.lbl_Message">
+            <summary>
+            에러 페이지 표시 컨트롤
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxBase.SetMsg(System.String)">
+            <summary>
+            에러 메시지 정의
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxBase.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxBase.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxBase.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxBase._cmdKeyData">
+            <summary>
+            ProcessCmdKey 이벤트 KeyData 체크용 전역 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxBase.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            ProcessCmdKey
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageBoxBase.IconType">
+            <summary>
+            아이콘 타입을 설정한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxNormal.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxNormal._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxNormal.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxNormal.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxNormal.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxNormal._msg_text">
+            <summary>
+            1줄자리 메시지 문자열.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxNormal._msg_list">
+            <summary>
+            list 문자열 체크.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxNormal.OnLoad(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_PRO_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_PRO_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_PRO_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.MessageBox_Type3_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MsgHandler">
+            <summary>
+            메시지 핸들러 클래스.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMiniMsg(System.String)">
+            <summary>
+            미니 메세지 창을 호출한다.
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMiniMsgExec(System.String)">
+            <summary>
+            미니 메세지 창을 호출한다.
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.CloseMiniMsg">
+            <summary>
+            호출된 미니 메세지 창을 닫는다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.CloseMiniMsg_NoSleep_Exec">
+            <summary>
+            호출된 미니 메세지 창을 닫는다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.CloseMiniMsgExec">
+            <summary>
+            호출된 미니 메세지 창을 닫는다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.NoDoEvents_CloseMiniMsg">
+            <summary>
+            호출된 미니 메세지 창을 닫는다.  [20130823]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.CloseMiniMsg_NoDoEvents_Exec">
+            <summary>
+            호출된 미니 메세지 창을 닫는다. [20130823]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMiniDefaultMsg">
+            <summary>
+            미리 정의된 미니 메세지 창을 호출 한다. 디폴트 : 조회 중입니다. 잠시만 기다려 주세요.
+            (호출 후에는 반드시 UI에서 Close 해줘야 함.)
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMiniDefaultMsg(BlueOcean.Framework.MsgBox.MsgSysTP)">
+            <summary>
+            미리 정의된 미니 메세지 창을 호출한다.
+            (호출 후에는 반드시 UI에서 Close 해줘야 함.)
+            </summary>
+            <param name="msg">미니 메시지 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMiniDefaultMsgExec(BlueOcean.Framework.MsgBox.MsgSysTP)">
+            <summary>
+            미리 정의된 미니 메세지 창을 호출한다.
+            (호출 후에는 반드시 UI에서 Close 해줘야 함.)
+            </summary>
+            <param name="msgSysTP">미니 메시지 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMsgProgress(System.String)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.CloseMsgProgress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMsg(System.String)">
+            <summary>
+            메세지 박스를 출력한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgHandler._IsESCKeyUseYN">
+            <summary>
+            ESC 키를 사용 가능하게 할지 여부. 사용여부를 반대로 물어봐야 하는 질문이 생겨서 기능 추가함. true 이면 ESC 키로 화면 닫기 안됨. 일회성임.[20131113]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgHandler._MsgForeColor">
+            <summary>
+            질문 메시지의 내용에 색상을 설정해 준다. 일회성임. [20131113]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgHandler._ButtonLabelList">
+            <summary>
+            질문 메시지창의 버튼에 대한 텍스트를 재설정한다. 최대 3개 까지 가능함. 일회성임. [20131113]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowQuestionMsg(System.String)">
+            <summary>
+            질문 확인 MessageBox를 호출하는 메서드 : 버튼별 결과 리턴값 DialogResult(Yes, No)
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <returns>YES, NO</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowQuestionMsgOKCancel(System.String)">
+            <summary>
+            질문 확인 MessageBox를 호출하는 메서드 : 버튼별 결과 리턴값 DialogResult(OK, Cancel)
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <returns>YES, NO</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowQuestionMsgYesNoCancel(System.String)">
+            <summary>
+            질문 확인 MessageBox를 호출하는 메서드 : 버튼별 결과 리턴값 DialogResult(Yes, No, Cancel)
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <returns>YES, NO</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowWarningMsg(System.String)">
+            <summary>
+            경고 MessageBox를 호출하는 메서드
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <returns>Ok</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowError(System.String)">
+            <summary>
+            경고 MessageBox를 호출하는 메서드
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <returns>Ok</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowExceptionExec(System.Exception,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ex"></param>
+            <param name="msg"></param>
+            <param name="errorNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowError(System.Exception)">
+            <summary>
+            에러 메세지 박스를 출력한다.
+            </summary>
+            <param name="ex">Exception 객체</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowError(System.Exception,System.String)">
+            <summary>
+            에러 메세지 박스를 출력한다.
+            </summary>
+            <param name="ex">Exception 객체</param>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowError(System.Exception,System.String,System.String)">
+            <summary>
+            에러 메세지 박스를 출력한다.
+            </summary>
+            <param name="ex">Exception 객체</param>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <param name="errorNo">발생한 에러 번호</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.SendException(System.String)">
+            <summary>
+            에러 정보를 디비에 기록 한다. DB 적용 [20140918,alth]
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.SendException(System.String,System.Boolean)">
+            <summary>
+            에러 정보를 디비에 기록 한다. DB 적용 [20140918,alth]
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <param name="isUserScreenImageSave">사용자 화면을 이미지로 저장할지 여부 : 기본값 true 저장</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.SendException(System.Exception)">
+            <summary>
+            에러 정보를 디비에 기록 한다. DB 적용 [20110627,alth]
+            </summary>
+            <param name="ex">Exception 객체</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.SendException(System.Exception,System.Boolean)">
+            <summary>
+            에러 정보를 디비에 기록 한다. DB 적용, 이미지 저장 유무 체크. [alth,20140724]
+            </summary>
+            <param name="ex">Exception 객체</param>
+            <param name="isUserScreenImageSave">사용자 화면을 이미지로 저장할지 여부 : 기본값 true 저장</param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgHandler._analyzer">
+            <summary>
+             [alth,20160704]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.SendExceptionExec(System.Exception,System.Boolean)">
+            <summary>
+            에러 정보를 디비에 기록 한다. DB 적용, 이미지 저장 유무 체크. [alth,20140724]
+            </summary>
+            <param name="ex">Exception 객체</param>
+            <param name="isUserScreenImageSave">사용자 화면을 이미지로 저장할지 여부 : 기본값 true 저장</param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgHandler.MsgDebug">
+            <summary>
+            개발시에는 풀어놓고 운영시에는 false 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMsgDebug(System.String)">
+            <summary>
+            디버깅을 위한 메세지 박스 출력
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMsgDebug2(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowLoadMiniMsg(BlueOcean.Framework.AppBase.MsgLoadType)">
+            <summary>
+            미니 메세지 창을 호출한다.
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowLoadMiniMsg(BlueOcean.Framework.AppBase.MsgLoadType,BlueOcean.Framework.AppBase.DefaultBoolean)">
+            <summary>
+            미니 메세지 창을 호출한다.  [20111216]
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <param name="isCallLoadType">true 움직이는 그림 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowLoadMiniMsgExec(BlueOcean.Framework.AppBase.MsgLoadType)">
+            <summary>
+            미니 메세지 창을 호출한다.
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowLoadMiniMsgExec(BlueOcean.Framework.AppBase.MsgLoadType,BlueOcean.Framework.AppBase.DefaultBoolean)">
+            <summary>
+            미니 메세지 창을 호출한다.
+            </summary>
+            <param name="msg">메세지 창에 보여지는 메세지 </param>
+            <param name="isCallLoadType">true 움직이는 그림 </param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.CloseLoadMiniMsg">
+            <summary>
+            호출된 미니 메세지 창을 닫는다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.InitCloseLoadMiniMsgInner">
+            <summary>
+            호출된 미니 메세지 창을 닫는다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.CloseLoadMiniMsgExec">
+            <summary>
+            호출된 미니 메세지 창을 닫는다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowLoadMiniDefaultMsg">
+            <summary>
+            미리 정의된 미니 메세지 창을 호출 한다. 디폴트 : 조회 중입니다. 잠시만 기다려 주세요.
+            (호출 후에는 반드시 UI에서 Close 해줘야 함.)
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.ShowMiniDefaultMsg(BlueOcean.Framework.AppBase.MsgLoadType)">
+            <summary>
+            미리 정의된 미니 메세지 창을 호출한다.
+            (호출 후에는 반드시 UI에서 Close 해줘야 함.)
+            </summary>
+            <param name="msg">미니 메시지 타입</param>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgHandler._Is_Handle_Memory_Error_Registry">
+            <summary>
+            MEMORY, HANDLE 관련 오류 발생 후에 레지스트리에 값을 설정 했는지 여부 상태. : true 설정함 [20130429]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgHandler._System_Memory_Info">
+            <summary>
+            시스템의 메모리 상세 정보.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Set_Handle_Memory_Error_Registry">
+            <summary>
+            에러 발생한 컴퓨터에 에러 발생이 안되도록 해줄수 있는 레지스트리 해당하는 값을 강제 설정해 준다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Set_Handle_Memory_Error_Registry_Exec">
+            <summary>
+            에러 발생한 컴퓨터에 에러 발생이 안되도록 해줄수 있는 레지스트리 해당하는 값을 강제 설정해 준다.
+            </summary>
+            <param name="msg">미니 메시지 타입</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Get_System_Total_Physical_Memory">
+            <summary>
+            1.1 Total Physical Memory : 8,182 MB : 전체 메모리 사이즈
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Get_System_Free_Physical_Memory">
+            <summary>
+            1.2 Free  Physical Memory : 6,302 MB : 사용 가능한 메모리 사이즈
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Get_System_Total_Page_File_Size">
+            <summary>
+            2.1 Total Page File   Size : 8,088 MB 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Get_System_Free_Space_in_Page_File">
+            <summary>
+            2.2 Free Space in Page File: 7,414 MB 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Get_System_Drive_Disk_Free_Size">
+            <summary>
+            4.  System Drive Disk Free Size : 59,735 MB 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Get_Handle_Memory_SystemInfo_Exec(System.String)">
+            <summary>
+            4.  System Drive Disk Free Size : 59,735 MB 
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Init_Handle_Memory_SystemInfo">
+            <summary>
+            메모리 관련된 정보를 전역 변수에 넣어 준다.  로그인 시점에 한번만 설정해 준다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgHandler.Init_Handle_Memory_SystemInfo_Exec">
+            <summary>
+            메모리 관련된 정보를 전역 변수에 넣어 준다.  로그인 시점에 한번만 설정해 준다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.MessageBox_Type4_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_CLOUD_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_CLOUD_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_CLOUD_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.MessageBox_Type1_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageBoxError">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError.btn_OK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxError.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxError.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxError.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.MessageBox_Type4_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.MessageBox_Type2_ERP">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.MessageBox_Type1_CLOUD">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageBoxError2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError2.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError2._BtnArrow">
+            <summary>
+            자세히 보기 이미지
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError2._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxError2.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxError2.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxError2.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError2._ErrorReSolveCode">
+            <summary>
+            에러 페이지 코드.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxError2._DefaultHeight">
+            <summary>
+            기본 높이
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxError2.OnBtnArrow_Click(System.Object,System.EventArgs)">
+            <summary>
+            Arrow_Click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx">
+            <summary>
+            움직이는 아이콘을 보여지는 둥근원 또는 화살표 진행바 클래스.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.components">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.InitializeControls(BlueOcean.Framework.AppBase.MsgLoadType)">
+            <summary>
+            
+            </summary>
+            <param name="msgLoadType">데이터 타입</param>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.InitializeComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.SetLoadType(BlueOcean.Framework.AppBase.MsgLoadType)">
+            <summary>
+            
+            </summary>
+            <param name="msgLoadType"></param>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageMiniLoadBoxEx.CallLoadType">
+            <summary>
+            true: 운영용 호출 (동영상 그림) , false : 개발용 호출 (정지 그림)
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.MessageBox_Type2_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageMiniBoxBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.WM_KEYDOWN">
+            <summary>
+            The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem 
+            key is pressed. A nonsystem key is a key that is pressed when the ALT key is not pressed.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.WM_KEYUP">
+            <summary>
+            The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem 
+            key is released. A nonsystem key is a key that is pressed when the ALT key is not pressed, 
+            or a keyboard key that is pressed when a window has the keyboard focus.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.WM_SYSKEYDOWN">
+            <summary>
+            The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user 
+            presses the F10 key (which activates the menu bar) or holds down the ALT key and then 
+            presses another key. It also occurs when no window currently has the keyboard focus; 
+            in this case, the WM_SYSKEYDOWN message is sent to the active window. The window that 
+            receives the message can distinguish between these two contexts by checking the context 
+            code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.WM_SYSKEYUP">
+            <summary>
+            The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user 
+            releases a key that was pressed while the ALT key was held down. It also occurs when no 
+            window currently has the keyboard focus; in this case, the WM_SYSKEYUP message is sent 
+            to the active window. The window that receives the message can distinguish between 
+            these two contexts by checking the context code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxBase._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxBase._cmdKeyData">
+            <summary>
+            ProcessCmdKey 이벤트 KeyData 체크용 전역 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            ProcessCmdKey
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageMiniBoxBase.IconType">
+            <summary>
+            아이콘 타입을 설정한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxEx.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageMiniBoxEx._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniBoxEx.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniBoxEx.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageMiniBoxEx.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.MessageBox_Type5_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.MessageBox_Type4_CLOUD">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_BRONZE_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_BRONZE_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_BRONZE_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.MessageBox_Type3_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.MessageBox_Type3_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.MessageBox_Type1_ERP">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_BRONZE_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_BRONZE_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_BRONZE_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_SILVER_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_SILVER_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_SILVER_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_CLOUD_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_CLOUD_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_CLOUD_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.MessageBox_Type4_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_BRONZE_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_BRONZE_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_BRONZE_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageBoxQuestion2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion2._IsESCKeyUseYN">
+            <summary>
+            ESC 키를 사용 가능하게 할지 여부. 사용여부를 반대로 물어봐야 하는 질문이 생겨서 기능 추가함. true 이면 ESC 키로 화면 닫기 안됨. [20131113]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion2.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion2._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion2.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion2.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion2.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion2._msg_text">
+            <summary>
+            1줄자리 메시지 문자열.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion2._msg_list">
+            <summary>
+            list 문자열 체크.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion2.OnLoad(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageImg">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageImg.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MessageImg.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageBoxQuestion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion._IsCancelButton">
+            <summary>
+            취소 버튼 사용 유무. [20120814]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion._IsESCKeyUseYN">
+            <summary>
+            ESC 키를 사용 가능하게 할지 여부. 사용여부를 반대로 물어봐야 하는 질문이 생겨서 기능 추가함. true 이면 ESC 키로 화면 닫기 안됨. [20131113]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion._msg_text">
+            <summary>
+            1줄자리 메시지 문자열.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageBoxQuestion._msg_list">
+            <summary>
+            list 문자열 체크.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion.OnLoad(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion.GetTextLengthToWidth(System.String)">
+            <summary>
+            버튼 텍스트에 따른 너비 사이즈 반환. [20131113]
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageBoxQuestion.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.MessageBox_Type5_ERP">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.MessageBox_Type5_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_CLOUD_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_CLOUD_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_CLOUD_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_SILVER_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_SILVER_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_SILVER_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.DlalogLocation">
+            <summary>
+            컨테이너 및 일반 시스템정보 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.DlalogLocation.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.DlalogLocation.IsCursor">
+            <summary>
+            커서 상태 변경 여부
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.DlalogLocation.CenterPoint">
+            <summary>
+            메인화면의 중앙 포인트 위치
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.DlalogLocation.GetDlalogLocation(System.Drawing.Size,System.Boolean)">
+            <summary>
+            다이얼로그의 크기를 넘겨주면 활성화될 위치를 얻을 수 있다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.DlalogLocation.GetDlalogLocation2(System.Drawing.Size,System.Boolean)">
+            <summary>
+            다이얼로그의 크기를 넘겨주면 활성화될 위치를 얻을 수 있다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MsgSysTP">
+            <summary>
+            미니 메시지 창에 제공되는 메시지 Enum
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgSysTP.Searching">
+            <summary>
+            조회 중입니다. 잠시만 기다려 주세요.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgSysTP.Working">
+            <summary>
+            작업 중입니다. 잠시만 기다려 주세요.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.IconType">
+            <summary>
+            Message 박스 아이콘 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.IconType.Notice">
+            <summary>
+            공지
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.IconType.General">
+            <summary>
+            일반
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.IconType.Question">
+            <summary>
+            질문
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.IconType.Error">
+            <summary>
+            에러
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.IconType.Warning">
+            <summary>
+            경고
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.IconType.Progress">
+            <summary>
+            진행바
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_BRONZE_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_BRONZE_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_BRONZE_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_SILVER_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_SILVER_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_SILVER_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.MessageBox_Type3_CLOUD">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.MessageBox_Type2_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_ERP_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_ERP_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_ERP_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_ERP_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_ERP_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_ERP_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_CLOUD_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_CLOUD_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_CLOUD_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_BRONZE_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_BRONZE_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_BRONZE_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_SILVER_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_SILVER_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_SILVER_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_ERP_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_ERP_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_ERP_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.ExceptionType">
+            <summary>
+            Exception Type
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.ExceptionType.Normal">
+            <summary>
+            일반적인 Exception
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.ExceptionType.ProcCommon">
+            <summary>
+            일반적인 프로시저 Exception
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.ExceptionType.ProcUser">
+            <summary>
+            사용자 정의 프로시저 Exception
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer">
+            <summary>
+            Exception 내용을 분석 해서 에러 메시지를 사용자 친숙하게 정의 한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._MsgString">
+            <summary>
+            디폴트 에러 메시지
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._Ex">
+            <summary>
+            Exception
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._IsCustomError">
+            <summary>
+            사용자 정의 에러 여부 : true 사용자 정의 DB 에러  [20121031]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._Msg">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._SP_NAME">
+            <summary>
+            프로시저 이름  [alth,20140821]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._ErrorNo">
+            <summary>
+            에러 번호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._ErrorNoMsg">
+            <summary>
+            에러 번호 메세지
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._ExceptionType">
+            <summary>
+            Exception Type
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._ErrorReSolveCode">
+            <summary>
+            에러 해결 방법 코드. 코드는 4자리로 구성 한다. ex) ERROR_P_1000.htm  [20110511,alth]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._Is_MemoryAndHandle_Error">
+            <summary>
+            MEMORY, HANDLE 관련 오류 발생시에 체크해서 사용자 컴퓨터를 제어할 수 있게 한다. : true 관련 에러 [20130429]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._Is_Checking_Log_Error">
+            <summary>
+            개발 디버깅 용도의 체크용 에러. : true 디버깅 에러 [20140102]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._Is_Checking_ErrorMsgBoxShow">
+            <summary>
+            사용자 한테 보여주지 않아도 되는 에러 창은 숨기도록 한다. : true 에러창 표시 안함 [20140115]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._Is_Checking_SendException_Direct_Call">
+            <summary>
+            에러 로그를 SendException 직접 호출해서 저장을 했는지 여부를 체크하기 위한 메시지 제어. : true 직접 호출 [20140115]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._Is_Checking_UserScreenImageSave">
+            <summary>
+            사용자 화면을 이미지로 저장할지 여부 : 기본값 true 저장   [alth,20140724]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer._IS_AFTER_SPLIST_SELECT_CALL">
+            <summary>
+            프로시저가 로그인 이후에 변경이 되어서 사용자 화면 dll 이 이전화면이라서 파라미터를 제공하지 못해서 오류가 나는 경우 
+            사용자에게 현재 상황을 공지해 주기 위해서 체크용 이다.  [alth,20140821]
+            
+            프로시저 또는 함수 'USP_PMSL10210000_SALES_MASTER_SELECT_TEST'에 매개 변수 '@SEL_VALUE_2'이(가) 필요하지만 제공되지 않았습니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.#ctor(System.Exception)">
+            <summary>
+            Construct
+            </summary>
+            <param name="ex">에러 Exception 객체</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.#ctor(System.Exception,System.Boolean)">
+            <summary>
+            Construct
+            </summary>
+            <param name="ex">에러 Exception 객체</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.#ctor(System.Exception,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ex">에러 Exception 객체</param>
+            <param name="msg">에러 문자열</param>
+            <param name="msgErrorNo">에러 번호</param>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.AnalysisException">
+            <summary>
+            Exception 분석
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.SendException">
+            <summary>
+            에러 정보를 디비에 기록 한다. DB 적용 [20101207,alth]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.SendExceptionExec">
+            <summary>
+            에러 정보를 디비에 기록 한다. DB 적용 [20101207,alth]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.GetUserNoticeCheck">
+            <summary>
+            사용자의 긴급공지 내용을 체크해서 보여준다. [20130708]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.SetErrorMsgPlus(System.String)">
+            <summary>
+            에러 메시지 문자열을 재정의 한다.  [alth,20140917]
+            </summary>
+            <param name="error_msg">추가할 에러 메시지.</param>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.Exception">
+            <summary>
+            Exception
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.Is_MemoryAndHandle_Error">
+            <summary>
+            MEMORY, HANDLE 관련 오류 발생시에 체크해서 사용자 컴퓨터를 제어할 수 있게 한다. : true 관련 에러 [20130429]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.IsCustomError">
+            <summary>
+            사용자 정의 에러 여부 : true 사용자 정의 DB 에러  [20121031]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.Msg">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.SP_NAME">
+            <summary>
+            프로시저 이름  [alth,20140821]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.ErrorNo">
+            <summary>
+            에러 번호
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.ErrorNoMsg">
+            <summary>
+            에러 번호 메세지
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.ExceptionType">
+            <summary>
+            ExceptionType
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.MsgExceptionAnalyzer.ErrorReSolveCode">
+            <summary>
+            에러 해결 방법 코드. 코드는 4자리로 구성 한다. ex) ERROR_P_1000.htm  [20110511,alth]
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_ERP_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_ERP_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.Type4_ERP_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_4.MessageBox_Type4_ERP">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.MessageBox_Type1_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_SILVER_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_SILVER_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_SILVER_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_ERP_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_ERP_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.Type5_ERP_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_PRO_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_PRO_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.Type1_PRO_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_1.MessageBox_Type1_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.MessageIcon">
+            <summary>
+            Message 박스 아이콘 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.MsgBox.MessageIcon._alreadyDisposed">
+            <summary>
+            IDisposable 사용 유부 변수.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageIcon.Dispose">
+            <summary>
+            IDisposable 메소드 구현 [20130502]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.MsgBox.MessageIcon.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_PRO_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_PRO_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.Type2_PRO_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.MessageBox_Type2_CLOUD">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_5.MessageBox_Type5_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_PRO_MessageBox_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_PRO_MessageBox_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.Type3_PRO_MessageBox_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_3.MessageBox_Type3_ERP">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.MsgBox.Image_Skin.skin_type_2.MessageBox_Type2_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+    </members>
+</doc>

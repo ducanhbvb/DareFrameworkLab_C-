@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.BaseControlsResource</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.ImageItemInfoCollection">
+            <summary>
+            이미지 항목 객체 리스트 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageItemInfoCollection.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageItemInfoCollection.Add(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType)">
+            <summary>
+            이미지 항목 추가
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageItemInfoCollection.Add(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            이미지 항목 추가
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+            <param name="imageskinstyle">이미지 스킨 스타일</param>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageItemInfoCollection.Contains(System.String,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            이미지 객체 항목의 존재 유무를 체크 합니다.
+            </summary>
+            <param name="imageFileName">이미지 파일명</param>
+            <param name="imageSkinStyle">이미지 스킨 스타일</param>
+            <returns>true:이미지 존재, false:이미지 없음</returns>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfoCollection.Item(System.String,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            이미지 객체 항목의 인스턴스를 리턴 합니다.
+            </summary>
+            <param name="imageFileName">이미지 파일명</param>
+            <param name="imageSkinStyle">이미지 스킨 스타일</param>
+            <returns>이미지 항목 인스턴스, 없으면 null 리턴함.</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.ModuleCD_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ModuleCD_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ModuleCD_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.Type5_Popup_Style_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.Type5_Popup_Style_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.Type5_Popup_Style_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.Type2_Newform_popup_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.Type2_Newform_popup_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.Type2_Newform_popup_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.Popup_Style_Image_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.SMSSend_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.SMSSend_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.SMSSend_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Calculator_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Calculator_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Calculator_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.TabControl_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.TabControl_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.TabControl_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.Type4_Popup_Style_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.Type4_Popup_Style_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.Type4_Popup_Style_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.Type3_Popup_Style_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.Type3_Popup_Style_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.Type3_Popup_Style_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.newform_popup_Image_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.Type2_Popup_Style_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.Type2_Popup_Style_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.Type2_Popup_Style_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.Popup_Style_Image_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.Type1_Newform_popup_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.Type1_Newform_popup_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.Type1_Newform_popup_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.Type1_Popup_Style_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.Type1_Popup_Style_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.Type1_Popup_Style_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Grid_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Grid_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Grid_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Other_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Other_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Other_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.NoticeSite">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.NoticeSite.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.NoticeSite.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Calendar_image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Calendar_image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Calendar_image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.button_image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.button_image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.button_image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.ImageManager">
+            <summary>
+            이미지 및 아이콘 객체를 Bitmap, ICon 객체로 리턴 한다.
+            아이콘 및 이미지는 포함리소스로 해당 프로젝트에 추가되어 있다.
+            별도로 이미지 파일을 배포 안한다. dll 안에 포함되어 있다.
+            Class which serves bitmaps created from icons embedded as resources.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageManager._BitmapList">
+            <summary>
+            Bitmap 객체인 경우에는 중복 호출 제어를 위해서 해당 객체 만큼 배열을 생성 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageManager.GetIcon(BlueOcean.Framework.BaseControlsResource.ImageItemInfo)">
+            <summary>
+            Returns the Icon corresponding to the specified IconName constant.
+            Note that the caller is responsible for maintaining the
+            lifetime of the returned icon, i.e., must dispose of it
+            when it is no longer needed.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>ICon 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageManager.GetIconExec(BlueOcean.Framework.BaseControlsResource.ImageItemInfo)">
+            <summary>
+            아이콘 이미지를 체크 해서 리턴 한다.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>ICon 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageManager.GetBitmap(BlueOcean.Framework.BaseControlsResource.ImageItemInfo)">
+            <summary>
+            이미지 객체를 불러와서 리턴 한다.
+            로드한 이미지는 전역 변수에 추가 한다.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>bitmap 이미지 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageManager.GetBitmapExec(BlueOcean.Framework.BaseControlsResource.ImageItemInfo)">
+            <summary>
+            이미지 객체를 불러와서 리턴 한다.
+            로드한 이미지는 전역 변수에 추가 한다.
+            </summary>
+            <param name="iteminfo">이미지 항목 정보</param>
+            <returns>bitmap 이미지 객체</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageManager.GetLoadingBitmapCheck(System.String)">
+            <summary>
+            한번 로드한 이미지 인지를 체크 한다.
+            </summary>
+            <param name="imgKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageManager.System#IDisposable#Dispose">
+            <summary>
+            Implements the IDisposable interface's Dispose method.
+            Disposes of all Bitmaps created by this instance.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.pagebase_titleicon">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.pagebase_titleicon.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.pagebase_titleicon.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_2.newform_popup_Image_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.CodeHelper_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.CodeHelper_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.CodeHelper_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.Popup_Style_Image_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.WinAppBase_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.WinAppBase_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.WinAppBase_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.newform_popup_Image_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper">
+            <summary>
+            이미지 타입에 따른 리스트를 가지는 클래스를 전역으로 생성 하는 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper._ImageCollection">
+            <summary>
+            이미지 정보 클래스 전역 변수.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper._ImageManager">
+            <summary>
+            이미지 파일 객체 생성 인스턴스.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper.#cctor">
+            <summary>
+            static 생성자 : 호출하는 시점에서 가장 먼저 수행 된다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper.InitUserSkinType">
+            <summary>
+            사용자 정의 스킨 타입별 이미지 항목을 추가 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper.GetBitmapImage(System.Drawing.Bitmap,System.String)">
+            <summary>
+            선언된 버튼 타입에 해당하는 이미지 정보 클래스를 반환 한다.
+            </summary>
+            <param name="bitmap">이미지 리소스 객체</param>
+            <param name="imageFileName">이미지 파일명</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper.GetImageItemInfo(System.Drawing.Bitmap,System.String)">
+            <summary>
+            선언된 버튼 타입에 해당하는 이미지 정보 클래스를 반환 한다.
+            </summary>
+            <param name="imageFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper.ImageItemListAdd">
+            <summary>
+            이미지 항목을 리스트에 추가 한다.
+            각 스킨 별로 별도 작업 한다.
+            Default 는 무조건 모두다 추가를 하고, 현재 브라우저 스킨이 Default 가 아니면
+            해당 스킨만 별도로 추가해서 사용할수 있도록 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageResourceHelper.ImageItemList_SkinStyle_Add">
+            <summary>
+            각 스킨별 이미지 항목을 추가 한다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.SpContainer_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.SpContainer_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.SpContainer_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.ImageItemInfo">
+            <summary>
+            이미지 항목 정보 클래스.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageItemInfo._ImageFileName">
+            <summary>
+            이미지 이름을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageItemInfo._ImageExt">
+            <summary>
+            이미지 파일 확장자를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageItemInfo._FolderPath">
+            <summary>
+            이미지 파일의 폴더 위치를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageItemInfo._Key">
+            <summary>
+            이미지 파일의 항목 키 값 설정. 형식 : 스킨폴더 +_+ 폴더경로 +_+ 파일이름 +_+ 확장자  ex) default_
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageItemInfo._ImageType">
+            <summary>
+            이미지 타입(이미지, 아이콘)을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.BaseControlsResource.ImageItemInfo._ImageSkinStyle">
+            <summary>
+            이미지 스킨 스타일 : 브라우저 테마
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.#ctor(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType)">
+            <summary>
+            생성자
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+        </member>
+        <member name="M:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.#ctor(System.String,System.String,BlueOcean.Framework.AppBase.ExtType,BlueOcean.Framework.AppBase.ImageType,BlueOcean.Framework.AppBase.IMAGE_STYLE)">
+            <summary>
+            생성자
+            </summary>
+            <param name="folderpath">이미지 폴더 경로</param>
+            <param name="imagefilename">이미지 파일이름</param>
+            <param name="imageext">이미지 확장자</param>
+            <param name="imagetype">이미지 타입:아이콘,이미지</param>
+            <param name="imageskinstyle">이미지 스킨 스타일</param>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.ImageFileName">
+            <summary>
+            이미지 이름을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.ImageExtType">
+            <summary>
+            이미지 파일 확장자를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.ExtType">
+            <summary>
+            이미지 파일 확장자를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.FolderPath">
+            <summary>
+            이미지 파일의 폴더 위치를 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.Key">
+            <summary>
+            이미지 파일의 항목 키 값 설정. 형식 : 스킨폴더 +_+ 폴더경로 +_+ 파일이름 +_+ 확장자  ex) default_
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.ImageType">
+            <summary>
+            이미지 타입(이미지, 아이콘)을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ImageItemInfo.IMAGE_STYLE">
+            <summary>
+            이미지 스킨 스타일 : 브라우저 테마
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.newform_popup_Image_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.TaxMate_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.TaxMate_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.TaxMate_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Panel_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Panel_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Panel_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.Type5_Newform_popup_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.Type5_Newform_popup_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_5.Type5_Newform_popup_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_1.Popup_Style_Image_Type1">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.buttonbase_image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.buttonbase_image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.buttonbase_image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Icon_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Icon_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Icon_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.ProgressBar">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ProgressBar.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.ProgressBar.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.Type4_Newform_popup_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.Type4_Newform_popup_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.Type4_Newform_popup_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.Popup_Style_Image_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_4.newform_popup_Image_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Product_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Product_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Product_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.MessageBox_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.MessageBox_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.MessageBox_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.Type3_Newform_popup_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.Type3_Newform_popup_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Image_Skin.skin_type_3.Type3_Newform_popup_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.BaseControlsResource.Arrow_Image">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Arrow_Image.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.BaseControlsResource.Arrow_Image.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+    </members>
+</doc>

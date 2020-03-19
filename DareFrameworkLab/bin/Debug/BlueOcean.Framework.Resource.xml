@@ -1,0 +1,1147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Resource</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_StatusBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_StatusBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_StatusBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Silver">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Silver.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Silver.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Login_Img_Type_ERP_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.StatusBar_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Product_BI_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Login_Img_Type_ERP_Gold">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Toolbar_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Login_Img_Type_ERP_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Product_BI_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Product_BI_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Product_BI_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Login_Img_Type_ERP_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_TitleBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_TitleBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_TitleBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.ModuleCD_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.BrowserMain_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Toolbar_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.TitleBar_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_ModuleCD_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_ModuleCD_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_ModuleCD_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Func_popup_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Product_BI_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Product_BI_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Product_BI_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.StatusBar_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Login_Img_Type_ERP_Gold">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Toolbar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Toolbar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Toolbar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Bronze">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Bronze.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Bronze.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_StatusBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_StatusBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_StatusBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.TabControl_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.BrowserMain_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.IConHelper">
+            <summary>
+            Class which serves bitmaps created from icons embedded as resources.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Resource.IConHelper.iconCount">
+            <summary>
+            아이콘 전체 갯수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Resource.IConHelper.iconFolderName">
+            <summary>
+            아이콘 저장 폴더
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Resource.IConHelper.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="!:IconManager"/> class.
+            </summary>
+            <param name="form">The form which contains the embedded icon resources.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Resource.IConHelper.GetIcon(BlueOcean.Framework.Resource.IconName)">
+            <summary>
+            Returns the Icon corresponding to the specified IconName constant.
+            Note that the caller is responsible for maintaining the
+            lifetime of the returned icon, i.e., must dispose of it
+            when it is no longer needed.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Resource.IConHelper.GetBitmap(BlueOcean.Framework.Resource.IconName)">
+            <summary>
+            Returns the Bitmap corresponding to the specified IconName.
+            If no icon exists in the associated form's resources, null is returned.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Resource.IConHelper.System#IDisposable#Dispose">
+            <summary>
+            Implements the IDisposable interface's Dispose method.
+            Disposes of all Bitmaps created by this instance.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Login_Img_Type_ERP_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Login_Img_Type_ERP_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Product_BI_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.StatusBar_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Login_Img_Type_ERP_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Toolbar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Toolbar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Toolbar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Bronze">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Bronze.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Bronze.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.TitleBar_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Login_Img_Type_ERP_Cloud">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_ModuleCD_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_ModuleCD_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_ModuleCD_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Cloud">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Cloud.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Cloud.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Product_BI_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.BrowserMain_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_TabControl_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_TabControl_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_TabControl_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Login_Img_Type_ERP_Cloud">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_BrowserMain_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_BrowserMain_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_BrowserMain_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Func_popup_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_StatusBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_StatusBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_StatusBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Pro">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Pro.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Pro.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Login_Img_Type_ERP_Gold">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Func_popup_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Func_popup_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Func_popup_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Silver">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Silver.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Silver.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Pro">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Pro.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Pro.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Cloud">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Cloud.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Cloud.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_BrowserMain_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_BrowserMain_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_BrowserMain_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Func_popup_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Func_popup_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Func_popup_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_TabControl_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_TabControl_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_TabControl_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Toolbar_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Func_popup_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_BrowserMain_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_BrowserMain_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_BrowserMain_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.ModuleCD_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_TitleBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_TitleBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_TitleBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Pro">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Pro.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Pro.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Silver">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Silver.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Silver.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Pro">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Pro.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Pro.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.TabControl_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_BrowserMain_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_BrowserMain_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_BrowserMain_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_ModuleCD_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_ModuleCD_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_ModuleCD_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Toolbar_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Login_Img_Type_ERP_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Cloud">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Cloud.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Cloud.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Login_Img_Type_ERP_Gold">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Gold">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Gold.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Gold.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.TabControl_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Login_Img_Type_ERP_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Product_BI_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Product_BI_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Product_BI_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Gold">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Gold.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Login_Img_ERP_Gold.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Product_BI_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Product_BI_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Product_BI_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.ModuleCD_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_TitleBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_TitleBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_TitleBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Gold">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Gold.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Gold.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Login_Img_Type_ERP_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Product_BI_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Cloud">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Cloud.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Cloud.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.IconName">
+            <summary>
+            포함리소스에 추가하는 이미지의 경우 파일의 대/소문자를 구분하므로
+            이름 및 확장자를 정확하게 주어야 한다.  확장자 ICO 는 대문자로 준다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Gold">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Gold.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Gold.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Toolbar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Toolbar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Toolbar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.TitleBar_Img_Type4">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Login_Img_Type_ERP_Silver">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_StatusBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_StatusBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_StatusBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Bronze">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Bronze.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Type4_Login_Img_ERP_Bronze.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_4.Login_Img_Type_ERP_Bronze">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Func_popup_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_TabControl_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_TabControl_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_TabControl_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.TabControl_Img_Type3">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Login_Img_Type_ERP_Cloud">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Login_Img_Type_ERP_Pro">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Bronze">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Bronze.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Login_Img_ERP_Bronze.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Toolbar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Toolbar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_Toolbar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_TitleBar_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_TitleBar_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.Type2_TitleBar_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.TitleBar_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.StatusBar_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Func_popup_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Func_popup_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Func_popup_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Silver">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Silver.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Type5_Login_Img_ERP_Silver.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.ModuleCD_Img_Type5">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_5.Login_Img_Type_ERP_Cloud">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Func_popup_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Func_popup_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_Func_popup_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_TabControl_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_TabControl_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_TabControl_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_ModuleCD_Img">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_ModuleCD_Img.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Resource.Image_Skin.skin_type_3.Type3_ModuleCD_Img.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Resource.Image_Skin.skin_type_2.BrowserMain_Img_Type2">
+            <summary>
+            이미지 스킨 타입 생성 클래스.
+            </summary>
+        </member>
+    </members>
+</doc>

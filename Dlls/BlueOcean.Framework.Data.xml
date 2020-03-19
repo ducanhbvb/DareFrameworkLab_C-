@@ -1,0 +1,3395 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Data</name>
+    </assembly>
+    <members>
+        <member name="F:BlueOcean.Framework.Data.InfoOrder._FILENAME">
+            <summary>
+            파일 명칭 : USER BANK ACCOUNT INFO FILE
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.InfoOrder.GetFileName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter">
+            <summary>
+            DBHelper 사용을 하기 위한 연결 문자열 설정 클래스.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter._EXECUTE_FOLDER">
+            <summary>
+            정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter._CALL_SCOPENAME">
+            <summary>
+            정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter._DatFileFullPath">
+            <summary>
+            .DAT 파일 전체 경로
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.InitCallInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.SetBankAccountFilePath(System.String,System.String)">
+            <summary>
+            회사코드별 은행 계좌 파일 주소를 설정 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.CheckFileExists">
+            <summary>
+            파일 존재 유무 상태 리턴.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.CheckFileExistsExec">
+            <summary>
+            파일 존재 유무 상태 리턴.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.OpenFileInfo">
+            <summary>
+            파일 정보를 조회 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.ReadDatFile">
+            <summary>
+            Dat Log File Read
+            </summary>
+            <param name="fullFilePath">파일 전체 주소</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.SaveFileInfo(System.Data.DataTable)">
+            <summary>
+            파일을 생성 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.WriteDatFile(System.Data.DataTable)">
+            <summary>
+            파일을 생성 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.CheckValidation">
+            <summary>
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.FileDelete">
+            <summary>
+            파일 삭제 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.GetDataRowValueToString(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 "" 공백으로 아니면 문자열 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.DATFILE_FULLPATH">
+            <summary>
+            .DAT 파일 전체 경로
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityOrderBinaryFormatter.EXECUTE_FOLDER">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecurityBusinessHandler">
+            <summary>
+            SecurityBusinessHandler : DataBase 연결 문자열용 외부 공개용.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBusinessHandler.Get_PLM_DB_MNG_DB_IP">
+            <summary>
+            DARE_PLM :: 37 서버:: SERVER IP 정보를 생성 한다.  [alth,20151014]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBusinessHandler.Get_PLM_DB_MNG_USER_INFO">
+            <summary>
+            DARE_PLM :: 계정을 별도로 생성 한다.  [alth,20151014]  PW에서 ___ 제거 한다.  MA_FW_ERROR_LOG 테이블에 대한 CRUD 권한만 가진다.
+            암호 : SMART_PLM_WORKS!@3$%
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBusinessHandler.Get_PLM_DB_MNG_USER_ACCESS_LOG">
+            <summary>
+            PLM DB : 에서 각각의 디비에 접속이력을 조회하기 위한 용도 이다. [alth,20151014]
+            암호는 기존거랑 동일함. : 2중으로 암호화를 했음.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBusinessHandler.OpenDatabaseInfo">
+            <summary>
+            데이터베이스 파일 정보를 조회 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBusinessHandler.SaveDatabase(System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString)">
+            <summary>
+            바이너리 파일로 저장을 한다.
+            dataset 형식으로 저장을 한다.  [20120613]
+            </summary>
+            <param name="datasource"></param>
+            <param name="catalog"></param>
+            <param name="loginID"></param>
+            <param name="password"></param>
+            <param name="port"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBusinessHandler.InitSecurityBusinessHandler(System.Security.SecureString,System.String)">
+            <summary>
+            데이터베이스 연결 설정 유효성 체크
+            </summary>
+            <param name="value"></param>
+            <param name="folder"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBusinessHandler.InitSecurityBusinessHandlerExec(System.Security.SecureString,System.String)">
+            <summary>
+            데이터베이스 연결 설정 유효성 체크
+            </summary>
+            <param name="value"></param>
+            <param name="folder"></param>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.LOGIN_ADMIN_ID">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.LOGIN_ADMIN_PW">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.LOGIN_STUDIO_ID">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.LOGIN_STUDIO_PW">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.LOGIN_CORP_ID">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.LOGIN_CORP_PW">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.PLM_DB_MNG_DB_IP">
+            <summary> 
+            DARE_PLM :: SERVER IP 정보를 생성 한다.  [alth,20151014]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.PLM_DB_MNG_USER_INFO">
+            <summary> 
+            PLM DB : DARE_PLM :: 계정의 암호이다.  [alth,20151014]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBusinessHandler.PLM_DB_MNG_USER_ACCESS_LOG">
+            <summary> 
+            PLM DB : 에서 각각의 디비에 접속이력을 조회하기 위한 용도 이다. [alth,20151014]
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecureConnectionString">
+            <summary>
+            데이터베이스 연결 문자열 정보 클래스
+            .Data 프로젝트 내부에서만 호출 가능 하다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._IsCheckConnect">
+            <summary>
+            연결 문자열 설정 상태 값 [20120612]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._connectionString">
+            <summary>
+            연결문자열
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._datasource">
+            <summary>
+            데이터 소스 : 서버명 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._catalog">
+            <summary>
+            데이터베이스 명 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._loginID">
+            <summary>
+            사용자아이디 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._word">
+            <summary>
+            암호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._port">
+            <summary>
+            포트
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureConnectionString._dataprovider">
+            <summary>
+            MS-SQL 프로바이더 정의
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureConnectionString.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureConnectionString.InitConnectionString(System.Security.SecureString)">
+            <summary>
+            연결 문자열 정보 생성.
+            </summary>
+            <param name="connectionString">연결 문자열</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureConnectionString.InitConnectionString(System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString)">
+            <summary>
+            연결 문자열 정보 생성. 
+            </summary>
+            <param name="datasource">데이터소스</param>
+            <param name="catalog">데이터베이스명</param>
+            <param name="loginID">로그인 아이디</param>
+            <param name="password">암호</param>
+            <param name="port">포트</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureConnectionString.CheckDataProvider(System.String)">
+            <summary>
+            DB PROVIDER 속성을 반환 받는다.
+            현재는 MS-SQL 한가지만을 지원 한다.
+            </summary>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureConnectionString.GetDecrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.IsCheckingConnect">
+            <summary>
+            연결 문자열 설정 상태 값
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.ConnectionString">
+            <summary> 
+            연결문자열 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.DataSource">
+            <summary> 
+            데이터 소스 : 서버명 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.Catalog">
+            <summary> 
+            데이터베이스 명 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.LoginID">
+            <summary> 
+            사용자아이디 :: .dat 파일 환경 설정 때문에 어쩔수가 없이 공개 해야함. [20101110]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.Word">
+            <summary> 
+            .dat 파일 환경 설정 때문에 어쩔수가 없이 공개 해야함. [20101110]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.Port">
+            <summary> 
+            포트 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureConnectionString.DataProvider">
+            <summary> 
+            디비 프로바이더 유형 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecureETAXConnectionString">
+            <summary>
+            bill4you 사용안함. 메뉴 제거 [20110630]
+            
+            
+            
+            데이터베이스 연결 문자열 중에서 특정 컬럼 2가지만을 가지고 있는다.
+            .Data 프로젝트 내부에서만 호출 가능 하다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecureBoardConnectionString">
+            <summary>
+            데이터베이스 연결 문자열 중에서 특정 컬럼 2가지만을 가지고 있는다.
+            .Data 프로젝트 내부에서만 호출 가능 하다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureBoardConnectionString._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureBoardConnectionString._CALL_SCOPENAME">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureBoardConnectionString._str_datasource">
+            <summary>
+            데이터베이스 이름 : 고정값 변경 무  [alth,20151014]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureBoardConnectionString._db_name">
+            <summary>
+            데이터베이스 이름 : 고정값 변경 무 : SMART_NOTICE
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureBoardConnectionString._db_id">
+            <summary>
+            데이터베이스 ID  : 고정값 변경 무
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureBoardConnectionString._str_Conn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureBoardConnectionString.InitCallInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureBoardConnectionString.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureBoardConnectionString.CheckValidation">
+            <summary>
+            호출을 한 곳의 위치의 유효성 여부 체크
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureBoardConnectionString.GetDecrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureBoardConnectionString.STRING_CONN">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SqlConnectionHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ParameterBuilder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.CreateParameters(System.String,System.String,System.Object[])">
+            <summary>
+            파라미터에 값을 설정해서 파라미터 객체 생성해서 반환 한다.
+            </summary>
+            <param name="connectionString">연결문자열</param>
+            <param name="procedureName">프로시저명</param>
+            <param name="parameterValues">파라미터 값 배열</param>
+            <returns></returns>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Data.ParameterBuilder.CreateParameters_MSSQL(System.String,System.String,System.Object[])" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.CreateParameter_MSSQL(System.String,System.Data.SqlDbType,System.Int32,System.Int32,System.Int32,System.Data.ParameterDirection,System.Object)">
+            <summary>
+            파라미터의 세부 정보를 설정한다.
+            </summary>
+            <param name="name">파라미터 이름</param>
+            <param name="dbtype">데이터 타입</param>
+            <param name="size"> 매개 변수의 크기</param>
+            <param name="precision">숫자 매개 변수의 전체 자릿수</param>
+            <param name="scale">숫자 매개 변수의 소수 자릿수</param>
+            <param name="direction">파라미터 유형(입력 전용, 출력 전용, 양방향)</param>
+            <param name="value">매개 변수의 값</param>
+            <remarks>
+            size, precision, scale 값이 0 이면 실제 SqlParameter 파라미터 생성시 값을 설정 안한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetProcedureSchema(System.String,System.String)">
+            <summary>
+            프로시저에서 사용되는 컬럼의 스키마 정보를 조회 해서 반환 한다.
+            </summary>
+            <param name="connectionString">연결문자열</param>
+            <param name="procedureName">프로시저명</param>
+            <returns>스키마 정보 DataTable</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetProcedureSchemaExec(System.String,System.String)">
+            <summary>
+            프로시저에서 사용되는 컬럼의 스키마 정보를 조회 해서 반환 한다.
+            </summary>
+            <param name="connectionString">연결문자열</param>
+            <param name="procedureName">프로시저명</param>
+            <returns>스키마 정보 DataTable</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetStoredProcedureSchema_MSSQL(System.String,System.String)">
+            <summary>
+            해당 프로시저의 컬럼의 스키마 정보를 설정한다.
+            </summary>
+            <param name="connectionString">연결문자열</param>
+            <param name="procedureName">프로시저명</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetSqlDbType(System.Int32)">
+            <summary>
+            MS-SQL 타입
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetDbType(System.Int32)">
+            <summary>
+            MS-SQL 타입
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetParameterDirection(System.String)">
+            <summary>
+            MS-SQL ParameterDirection 타입 반환
+            </summary>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetMSSqlDirection(System.Int32)">
+            <summary>
+            MS-SQL ParameterDirection 타입 반환
+            </summary>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetOracleDirection(System.String)">
+            <summary>
+            오라클 ParameterDirection 타입 반환
+            </summary>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetColumnValueToString(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 "" 공백으로 아니면 문자열 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "" 공백 아니면 문자열값</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ParameterBuilder.GetColumnValueToInt(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼이 값이 null 이면 0 으로 아니면 숫자 값으로 반환 한다.
+            </summary>
+            <param name="row">데이터 행</param>
+            <param name="columnName">컬럼명</param>
+            <returns>null이면 "0" 아니면 문자열값</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.Configuration">
+            <summary>
+            연결문자열을 생성 한다.
+            exe.config, web.config 타입의 파일을 이용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.Configuration.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.Configuration.SetUp">
+            <summary>
+            환경설정 파일로 부터 테이터베이스에 관한 환경설정 정보를 읽어들인다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.Configuration.SetUpExec">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.Configuration.SetUp(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="connString"></param>
+            <param name="provider"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.Configuration.GetValue(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="_path"></param>
+            <param name="_key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.Configuration.GetConnectionString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.Configuration.GetConfigFilePath(System.String)">
+            <summary>
+            실행하고 있는 유형에 따라서 환경 파일명을 반환 한다.
+            </summary>
+            <param name="assemblyLocation"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.Configuration.IsInit">
+            <summary>
+            연결문자열 설정 여부 : 한번만 수행 한다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.Configuration.ConnectionString">
+            <summary>
+            연결문자열  Configuration.ConnectionString
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.DataProvider">
+            <summary>
+             데이터베이스 공급자를 나타냅니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ConnectionOwnerShip">
+            <summary>
+            데이터베이스의 연결을 호출자에서 닫을것인지 라이브러리 내부에서 닫을것인지의 여부를 나타낸다.
+            </summary>
+            <remarks>
+            Reader 형식으로 조회시 사용 한다.
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ConnectionOwnerShip.Internal">
+            <summary>
+            데이터베이스 연결을 내부에서 닫습니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ConnectionOwnerShip.External">
+            <summary>
+            데이터베이스 연결을 외부에서 닫습니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ConnectFileDirection">
+            <summary>
+             데이터베이스 연결 문자열 제공 파일 유형
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ConnectFileDirection.XML">
+            <summary>
+            exe.config, web.config 파일
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ConnectFileDirection.WEB">
+            <summary>
+            IDC Web Server : 연결 문자열 인증시 받기.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ConnectFileDirection.DAT">
+            <summary>
+            BLUEOCEAN_DB.DAT 파일
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ValueMode">
+            <summary>
+            파라미터 존재 유형
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ValueMode.DataTable">
+            <summary>
+            DataTable 에 파라미터 존재
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ValueMode.List">
+            <summary>
+            Key, Value 쌍으로 리스트에 존재
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.DataCallType">
+            <summary>
+            서버 연결 타입.
+            </summary>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "F:BlueOcean.Framework.Data.DataCallType.AUTH" 멤버에 대해 무시됩니다. -->
+        <member name="F:BlueOcean.Framework.Data.DataCallType.AUTH_BACKUP">
+            <summary>
+            111 번 인증 백업서버 : 105번 호출해서 오류 난 경우에 호출 한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataCallType.ETAX">
+            <summary>
+            전자세금계산서
+            </summary>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "F:BlueOcean.Framework.Data.DataCallType.NOTICE_BOARD" 멤버에 대해 무시됩니다. -->
+        <member name="T:BlueOcean.Framework.Data.IsCheckConnect">
+            <summary>
+            파라미터 존재 유형
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.IsCheckConnect.Success">
+            <summary>
+            연결 설정 성공.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.IsCheckConnect.Fail">
+            <summary>
+            연결 설정 실패 : DAT TYPE : 파일이 없음, WEB : 연결 문자열이 설정 안되어 있는 상태.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.Connection.DataInnerBaseClass._CHECK_KEY">
+            <summary>
+            유효성 체크 검사 키 : 프레임웤 정보.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecureWebConnectionString">
+            <summary>
+            데이터베이스 연결 문자열 중에서 특정 컬럼 2가지만을 가지고 있는다.
+            .Data 프로젝트 내부에서만 호출 가능 하다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._datasource">
+            <summary>
+            데이터 소스 : 서버 IP
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._catalog">
+            <summary>
+            데이터베이스 명 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._loginID">
+            <summary>
+            사용자아이디 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._password">
+            <summary>
+            암호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._port">
+            <summary>
+            포트
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._db_name">
+            <summary>
+            데이터베이스 이름 : 고정값 변경 무
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._db_id">
+            <summary>
+            데이터베이스 ID  : 고정값 변경 무
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureWebConnectionString._db_port">
+            <summary>
+            데이터베이스 PORT  : 고정값 변경 무
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureWebConnectionString.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureWebConnectionString.InitStringConnect">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureWebConnectionString.InitStringConnectExec(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="stra"></param>
+            <param name="strb"></param>
+            <param name="strc"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureWebConnectionString.InitStringConnect(System.String,System.String,System.String)">
+            <summary>
+            웹 형식의 연결 문자열 설정 방식.  연결문자열 결과물 리턴 함.
+            </summary>
+            <param name="stra"> 서버 아이피</param> 
+            <param name="strb"> 암호 </param>
+            <param name="strc"> 디비 명</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureWebConnectionString.InitLocalInfoString(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="stra"></param>
+            <param name="strb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureWebConnectionString.InitLocalInfoStringExec(System.String,System.String)">
+            <summary>
+            웹 형식의 연결 문자열 설정 방식.  연결문자열 결과물 리턴 함.
+            데이터베이스 아이피가 다른 경우를 위해서 연결문자열을 리턴 한다.
+            </summary>
+            <param name="stra">데이터베이스 아이피</param>
+            <param name="strb">암호</param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureWebConnectionString.LoginID">
+            <summary> 
+            사용자아이디 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureWebConnectionString.Port">
+            <summary> 
+            포트 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecurityBinaryFormatter">
+            <summary>
+            DBHelper 사용을 하기 위한 연결 문자열 설정 클래스.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityBinaryFormatter._EXECUTE_FOLDER">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityBinaryFormatter._CALL_SCOPENAME">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityBinaryFormatter._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityBinaryFormatter._DatFileFullPath">
+            <summary>
+            .DAT 파일 전체 경로
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecurityBinaryFormatter._isInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.InitCallInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.InitDatFilePath">
+            <summary>
+            추가작업 : 개발시점에서만 사용함.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.OpenDatabaseInfo">
+            <summary>
+            데이터베이스 파일 정보를 조회 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.ReadDatFile">
+            <summary>
+            Dat Log File Read
+            </summary>
+            <param name="fullFilePath">파일 전체 주소</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.SaveDatabase(System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString,System.Security.SecureString)">
+            <summary>
+            바이너리 파일로 저장을 한다.
+            dataset 형식으로 저장을 한다. [20120613]
+            </summary>
+            <param name="datasource"></param>
+            <param name="catalog"></param>
+            <param name="loginID"></param>
+            <param name="password"></param>
+            <param name="port"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.WriteDatFile(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            바이너리 파일로 저장을 한다.
+            dataset 형식으로 저장을 한다.
+            </summary>
+            <param name="datasource"></param>
+            <param name="catalog"></param>
+            <param name="loginID"></param>
+            <param name="password"></param>
+            <param name="port"></param>
+            <param name="runlog"></param>
+            <param name="sqllog"></param>
+            <param name="exceptionlog"></param>
+            <param name="gridstyle"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.GetEncrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.GetDecrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.CheckValidation">
+            <summary>
+            호출을 한 곳의 위치의 유효성 여부 체크
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecurityBinaryFormatter.MakeDataTableSchema">
+            <summary>
+            Dat 파일이 없는 경우 컬럼 구조를 생성 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBinaryFormatter.EXECUTE_FOLDER">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBinaryFormatter.IsChecked">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecurityBinaryFormatter.IsInit">
+            <summary>
+            환경 설정 설정 여부
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ProcedureInfoHelper">
+            <summary>
+            프로시저 파라미터 정보 콜렉션 클래스 입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfoHelper._ListProcedureInfoCollection">
+            <summary>
+            ProcedureInfoCollection 클래스의 리스트 인스턴스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfoHelper.#cctor">
+            <summary>
+            생성자 : 디폴트로 100개 정도의 항목 영역을 생성 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfoHelper.CreateParameter(System.String,System.Data.DataTable)">
+            <summary>
+            프로시저 파라미터 콜렉션 추가
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="procedureInfoList">파라미터 리스트 정보</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfoHelper.ContainsSPName(System.String)">
+            <summary>
+            프로시저 파라미터 콜렉션 존재 유무 체크
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <returns>true : 존재, false : 없음</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfoHelper.GetProcedureInfoList(System.String)">
+            <summary>
+            스키마 테이블 이용 ProcedureInfoCollection 생성해서 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <returns>이미지 버튼 정보 클래스</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfoHelper.CreateParameterExec(System.String,System.Data.DataTable)">
+            <summary>
+            스키마 테이블 이용 ProcedureInfoCollection 생성해서 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dtSchema">파라미터 스키마 테이블</param>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.DBHelper">
+            <summary>
+            데이터베이스 핸들링 Helper 클래스
+            </summary>
+            <remarks>
+            추가작업 :: 파라미터 사용 방법에 대한 샘플 코드를 정의 한다. [20101122]
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DBHelper._DBHandler">
+            <summary>
+            데이터베이스 핸들링 Helper 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.#ctor">
+            <summary>
+             데이터베이스 연결문자열을 설정한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.InitConnection">
+            <summary>
+            서버 인스턴스를 설정 한다.
+            </summary>
+            <param name="server"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.InitDataSourceType(BlueOcean.Framework.Data.DataCallType)">
+            <summary>
+            기능 추가 [20101110]
+            </summary>
+            <param name="dataCallType"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ClearParameters">
+            <summary>
+            파라미터 정보를 초기화 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.DbClose">
+            <summary>
+            연결을 닫는다
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.BeginTransaction">
+            <summary>
+             트랜잭션을 시작 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.Commit">
+            <summary>
+            트랜잭션 처리를 완료 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.Rollback">
+            <summary>
+            트랜잭션 처리를 취소 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저명</param>
+            <remarks>
+            <example>
+            <code>
+            DBHelper _DBHelper = new DBHelper();
+            this._parameterList.Clear();
+            this._parameterList.AddParameter("@SEND_DATE_FR", SqlDbType.VarChar, 8, "5"));
+            DataTable dt = this._DBHelper.ExecuteDataTable("USP_E007_SMS_LOG_SELECT", this._parameterList);
+            </code>
+            </example>
+            </remarks>
+            <returns>DataTable 반환</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저명</param>
+            <param name="parameterList">데이터 파리미터 구성 리스트</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,System.Object[])">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.String,System.Object[],System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>        
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>        
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>        
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String,System.Object[],System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues"> object[] parameterValues 를 가지고서 DataParameter를 생성 한다. </param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">데이터 타입</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String)">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,System.Object[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.String,System.Object[],System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.Data.CommandType,System.String,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.Data.CommandType,System.String,System.Object[],System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object[] parameterValues 를 DataParameterCollection로 반환 한다.</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(System.Data.CommandType,System.String,System.String[],BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <param name="tablenames">테이블 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+            <remarks>
+            XML 형태로 값 넘겨서 실행시에 아래처럼 테이블명의
+            대소문자가 틀려도 실행이 안된다.
+            FROM @XmlData.nodes('/NewDataSet/table1') ItemData(row)   -- 실행됨
+            FROM @XmlData.nodes('/NewDataSet/Table1') ItemData(row)   -- 아무런 반응 없고 -1 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+            <remarks>
+            XML 형태로 값 넘겨서 실행시에 아래처럼 테이블명의
+            대소문자가 틀려도 실행이 안된다.
+            FROM @XmlData.nodes('/NewDataSet/table1') ItemData(row)   -- 실행됨
+            FROM @XmlData.nodes('/NewDataSet/Table1') ItemData(row)   -- 아무런 반응 없고 -1 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+            <remarks>
+            XML 형태로 값 넘겨서 실행시에 아래처럼 테이블명의
+            대소문자가 틀려도 실행이 안된다.
+            FROM @XmlData.nodes('/NewDataSet/table1') ItemData(row)   -- 실행됨
+            FROM @XmlData.nodes('/NewDataSet/Table1') ItemData(row)   -- 아무런 반응 없고 -1 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.Data.CommandType,System.String)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String,System.Object[])">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String,System.Object[],System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.Data.CommandType,System.String,System.Object[],System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.String)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.String,System.Object[])">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.Data.CommandType,System.String)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.String)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.String,BlueOcean.Framework.Data.ConnectionOwnerShip)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="connectionOwnerShip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.String,System.Object[])">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.Data.CommandType,System.String)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.ConnectionOwnerShip)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="connectionOwnerShip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.ConnectionOwnerShip,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            ExecuteReader
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="connectionOwnerShip"></param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>    
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.ConnectionOwnerShip,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="connectionOwnerShip">데이터베이스의 연결을 호출자에서 닫을것인지 라이브러리 내부에서 닫을것인지의 여부를 나타낸다.</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReaderSchemaTable(System.String)">
+            <summary>
+            테이블 이름을 넘겨서 테이블의 스키마정보를 반환 받는다.
+            </summary>
+            <param name="commandText">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.DBAcceeLogInsert">
+            <summary>
+            DB ACCESS LOG 파라미터 정보를 기록 한다. 개발자 직접 호출 금지.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteNonQuery(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            트랜잭션 처리를 한다.
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataTable(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            조회 값을 DataTable 로 반환 한다.
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteDataSet(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            조회 값을 DataSet 로 반환 한다.
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteScalar(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            단일 값(scalar value)을 반환 한다. 반환 타입 : object
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DBHelper.ExecuteReader(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.DBHelper.ConnectFileDirection">
+            <summary>
+            연결문자열 파일 유형 => DEFAULT : DAT 파일
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.DBHelper.CommandTimeout">
+            <summary>
+            명령 실행을 종료하고 오류를 생성하기 전 대기 시간을 가져오거나 설정합니다. 기본값은 30초입니다. 최대 600초 (10분) 입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.DBHelper.ConnectionString">
+            <summary> 
+            연결정보 문자열을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.DBHelper.IsTransaction">
+            <summary>
+            트랜잭션 사용 유무 [alth,20140417]
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecureLoginFieldString">
+            <summary>
+            로그인 화면에서 사용하는 보안 필드 클래스.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._CALL_SCOPENAME">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._login_admin_id">
+            <summary>
+            로그인 어드민 아이디
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._login_admin_pw">
+            <summary>
+            로그인 어드민 암호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._login_studio_id">
+            <summary>
+            로그인 SQL STUDIO 아이디
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._login_studio_pw">
+            <summary>
+            로그인 SQL STUDIO 암호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._login_corp_id">
+            <summary>
+            로그인 회사 아이디
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureLoginFieldString._login_corp_pw">
+            <summary>
+            로그인 회사 암호
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureLoginFieldString.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureLoginFieldString.InitSecureLoginFieldString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureLoginFieldString.InitCallInfo(System.String)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureLoginFieldString.CheckValidation">
+            <summary>
+            호출을 한 곳의 위치의 유효성 여부 체크
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureLoginFieldString.GetDecrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureLoginFieldString.GetDecryptSecureStringInner(System.Security.SecureString)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureLoginFieldString.LOGIN_ADMIN_ID">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureLoginFieldString.LOGIN_ADMIN_PW">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureLoginFieldString.LOGIN_STUDIO_ID">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureLoginFieldString.LOGIN_STUDIO_PW">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureLoginFieldString.LOGIN_CORP_ID">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureLoginFieldString.LOGIN_CORP_PW">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureLoginFieldString.CALL_SCOPENAME">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ProcedureInfo">
+            <summary>
+            프로시저 파라미터 정보 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._spName">
+            <summary>
+            프로시저 이름
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._parameterName">
+            <summary>
+            Parameter의 이름을 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._datatype">
+            <summary>
+            매개 변수의  DataType 입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._sqldbtype">
+            <summary>
+            매개 변수의 SqlDbType 입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._dbtype">
+            <summary>
+            매개 변수의 DbType 입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._precision">
+            <summary>
+            숫자 매개 변수의 전체 자릿수를 나타냅니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._scale">
+            <summary>
+            숫자 매개 변수의 소수 자릿수를 나타냅니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._size">
+            <summary>
+            매개 변수의 크기입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._direction">
+            <summary>
+            매개 변수가 입력 전용, 출력 전용, 양방향 또는 저장 프로시저의 반환 값 매개 변수인지 여부를 나타내는 값을 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfo._valueMode">
+            <summary>
+            파라미터 존재 유형
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfo.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfo.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Data.ParameterDirection,System.Data.SqlDbType,System.Data.DbType)">
+            <summary>
+            파라미터의 세부 정보를 설정한다. DbType
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parametername">파라미터 이름</param>
+            <param name="datatype">데이터 타입</param>
+            <param name="size"> 매개 변수의 크기</param>
+            <param name="precision">숫자 매개 변수의 전체 자릿수</param>
+            <param name="scale">숫자 매개 변수의 소수 자릿수</param>
+            <param name="direction">파라미터 유형(입력 전용, 출력 전용, 양방향)</param>
+            <param name="sqldbType">MS-SQL 전용 데이터 타입</param>
+            <param name="dbType">닷넷 공용 데이터 타입</param>
+            <remarks>
+            size, precision, scale 값이 0 이면 실제 SqlParameter 파라미터 생성시 값을 설정 안한다.
+            </remarks>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.SPName">
+            <summary>
+            프로시저 이름
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.ParameterName">
+            <summary>
+            Parameter의 이름을 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.Datatype">
+            <summary>
+            매개 변수의  DataType 입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.Sqldbtype">
+            <summary>
+            매개 변수의 SqlDbType 입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.Dbtype">
+            <summary>
+            매개 변수의 DbType 입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.Precision">
+            <summary>
+            숫자 매개 변수의 전체 자릿수를 나타냅니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.Scale">
+            <summary>
+            숫자 매개 변수의 소수 자릿수를 나타냅니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.Size">
+            <summary>
+            매개 변수의 크기입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.Direction">
+            <summary>
+            매개 변수가 입력 전용, 출력 전용, 양방향 또는 저장 프로시저의 반환 값 매개 변수인지 여부를 나타내는 값을 가져오거나 설정합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfo.ValueMode">
+            <summary>
+            파라미터 존재 유형
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ConnectionStringHelper">
+            <summary>
+            연결문자열 관련 정보를 제공하는 클래스
+            환경설정 화면에서 연결문자열 정보를 재설정 한다.
+            다른곳에서는 설정 불가 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.SetConnectionString(System.Data.DataTable)">
+            <summary>
+            데이터베이스 문자열 정보를 전역 변수에 설정 한다.
+            </summary>
+            <param name="dtSource">데이터베이스 연결 정보 테이블</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.SetConnectionStringExec(System.Data.DataTable)">
+            <summary>
+            데이터베이스 문자열 정보를 전역 변수에 설정 한다.
+            .DAT 파일인 경우 호출 한다.
+            </summary>
+            <param name="dtSource">데이터베이스 연결 정보 테이블</param>
+            <remarks>
+            별도의 문자열 정보만 가지는 클래스를 생성해서 사용한다.
+            해당 클래스는 DataTable 에 있는 자료를 연결문자열 클래스에 넘기기 위한 Helper 클래스 이다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.SetConnectionString(System.Security.SecureString)">
+            <summary>
+            데이터베이스 문자열 정보를 전역 변수에 설정 한다.
+            .XML 파일인 경우 호출 한다.
+            </summary>
+            <param name="connectionString">연결문자열 텍스트</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.GetColumnValue(System.Data.DataRow,System.String)">
+            <summary>
+            컬럼에 암호화 되어 있는 것을 복호화 해서 반환 받는다.
+            </summary>
+            <param name="dr"></param>
+            <param name="column">체크 컬럼명</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.CheckColumnContains(System.Data.DataTable)">
+            <summary>
+            연결문자열을 지정하기 위한 컬럼이 존재하는지 유무 체크.
+            </summary>
+            <param name="dtSource"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.CheckKeyValue(System.String,System.String)">
+            <summary>
+            환경설정 화면에서 텍스트박스요 표현을 하기 위해서 호출 한다.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.CheckKeyValueExec(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.InitStringConnect(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="stra"></param>
+            <param name="strb"></param>
+            <param name="strc"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ConnectionStringHelper.InitLocalInfoString(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="stra"></param>
+            <param name="strb"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ConnectionStringHelper.IsCheckingConnect">
+            <summary>
+            연결 문자열 설정 상태 값
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ConnectionStringHelper.ConnectionString">
+            <summary> 
+            연결문자열 : 내부 클래스 에서만 호출 가능하게 수정 [20100617]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ConnectionStringHelper.DataSource">
+            <summary> 
+            데이터 소스 : 서버명 또는 IP
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ConnectionStringHelper.Catalog">
+            <summary> 
+            데이터베이스 명 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ConnectionStringHelper.Port">
+            <summary> 
+            포트 
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ConnectionStringHelper.DataProvider">
+            <summary> 
+            DB Provider 유형 
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.DataBaseHandler">
+            <summary>
+            데이터베이스 핸들링 Helper 클래스
+            </summary>
+            <remarks>
+            추가작업 :: 파라미터 사용 방법에 대한 샘플 코드를 정의 한다. [20120612]
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler.DefaultTableName">
+            <summary>
+            기본 테이블명
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._SecureString">
+            <summary>
+            문자열 정보
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._connection">
+            <summary>
+            연결 객체
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._command">
+            <summary>
+            Command
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._transaction">
+            <summary>
+            트랜잭션 객체
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._dataProvider">
+            <summary>
+            DataProvider
+            MSSql로 고정되어 있다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler.disposed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._isTransaction_Custom">
+            <summary>
+            트랜잭션 사용 유무 : 사용자 설정 트랜잭션 [20121119]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._isTransaction">
+            <summary>
+            트랜잭션 사용 유무
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._defaultDataProvider">
+            <summary>
+            기본 프로바이터 유형 :  MS-SQL
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._DataParameterHelper">
+            <summary>
+            DataParameter Helper 클래스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._ProcedureInfoList">
+            <summary>
+            프로시저 파라미터 정보 리스트
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._CommandTimeout">
+            <summary>
+            명령 실행을 종료하고 오류를 생성하기 전 대기 시간을 가져오거나 설정합니다. 기본값은 80초입니다. [20121023]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._ParameterSourceType_ErrorMsg_Format">
+            <summary>
+            ParameterSourceType 타입 오류 에러 메시지 포맷.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.DataBaseHandler._sql_exec">
+            <summary>
+            EXEC 문자열 저장용 전역변수.  [alth,20151014]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.#cctor">
+            <summary>
+            데이터베이스 연결문자열을 설정한다.
+            DBHelper 처음으로 호출시에 한번만 수행 된다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.#ctor">
+            <summary>
+             데이터베이스 연결문자열을 설정한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.InitConnection">
+            <summary>
+            서버 인스턴스를 설정 한다.
+            </summary>
+            <param name="server"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.GetStrConn">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ReReadConnectionString">
+            <summary>
+            서버가 변경된 경우 연결문자열 인스턴스 정보를 초기화 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.CreateConnection(BlueOcean.Framework.Data.DataProvider)">
+            <summary>
+            connection 인서턴스를 생성한다.
+            </summary>
+            <param name="provider"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Finalize">
+            <summary>
+            소명자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.InitDataSourceType(BlueOcean.Framework.Data.DataCallType)">
+            <summary>
+            기능 추가 [20101110]
+            </summary>
+            <param name="dataCallType"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.InitDataSourceTypeExec(BlueOcean.Framework.Data.DataCallType)">
+            <summary>
+            기능 추가 [20101110]
+            </summary>
+            <param name="dataCallType"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.InitConnectionStringExec(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.GetDbDataAdapter">
+            <summary>
+            DataAdapter 를 생성 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.PrepareCommand(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            요청 형식에 따라서 타입, 객체, 파라미터 정보를 설정 한다.
+            </summary>
+            <param name="commandType">CommandText 속성이 해석되는 방법(프로시저, 텍스트, 기타)</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.AttachParameters(BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            파라미터를 추가 한다.
+            </summary>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.SetSqlParameters(BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            MS-SQL 데이터베이스의 SqlParameter 파라미터 정보를 추가 한다.
+            </summary>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <remarks>
+            size, precision, scale 값이 0 이면 파라미터를 별도 설정 안하고 기본 값을 이용한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ClearParameters">
+            <summary>
+            파라미터 정보를 초기화 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.DbClose">
+            <summary>
+            연결을 닫는다
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.BeginTransaction">
+            <summary>
+             트랜잭션을 시작 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Commit">
+            <summary>
+            트랜잭션 처리를 완료 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Rollback">
+            <summary>
+            트랜잭션 처리를 취소 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Inner_BeginTransaction">
+            <summary>
+             트랜잭션을 시작 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Inner_Commit">
+            <summary>
+            트랜잭션 처리를 완료 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.Inner_Rollback">
+            <summary>
+            트랜잭션 처리를 취소 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저명</param>
+            <remarks>
+            <example>
+            <code>
+            DBHelper _DBHelper = new DBHelper();
+            this._parameterList.Clear();
+            this._parameterList.AddParameter("@SEND_DATE_FR", SqlDbType.VarChar, 8, "5"));
+            DataTable dt = this._DBHelper.ExecuteDataTable("USP_E007_SMS_LOG_SELECT", this._parameterList);
+            </code>
+            </example>
+            </remarks>
+            <returns>DataTable 반환</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저명</param>
+            <param name="parameterList">데이터 파리미터 구성 리스트</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,System.Object[])">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.String,System.Object[],System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>        
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.Data.CommandType,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>        
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>        
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.Data.CommandType,System.String,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.Data.CommandType,System.String,System.Object[],System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues"> object[] parameterValues 를 가지고서 DataParameter를 생성 한다. </param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="tablename">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(System.Data.CommandType,System.String,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">데이터 타입</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTableExec(System.Data.CommandType,System.String,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            DataTable 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablename"></param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String)">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,System.Object[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.String,System.Object[],System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.Data.CommandType,System.String,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.Data.CommandType,System.String,System.Object[],System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object[] parameterValues 를 DataParameterCollection로 반환 한다.</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.String[])">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="tablenames">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(System.Data.CommandType,System.String,System.String[],BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablename">테이블 이름</param>
+            <param name="tablenames">테이블 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSetExec(System.Data.CommandType,System.String,System.String[],BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            DataSet 형식으로  결과 값을 반환 한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="tablenames">테이블 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+            <remarks>
+            XML 형태로 값 넘겨서 실행시에 아래처럼 테이블명의
+            대소문자가 틀려도 실행이 안된다.
+            FROM @XmlData.nodes('/NewDataSet/table1') ItemData(row)   -- 실행됨
+            FROM @XmlData.nodes('/NewDataSet/Table1') ItemData(row)   -- 아무런 반응 없고 -1 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+            <remarks>
+            XML 형태로 값 넘겨서 실행시에 아래처럼 테이블명의
+            대소문자가 틀려도 실행이 안된다.
+            FROM @XmlData.nodes('/NewDataSet/table1') ItemData(row)   -- 실행됨
+            FROM @XmlData.nodes('/NewDataSet/Table1') ItemData(row)   -- 아무런 반응 없고 -1 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+            <remarks>
+            XML 형태로 값 넘겨서 실행시에 아래처럼 테이블명의
+            대소문자가 틀려도 실행이 안된다.
+            FROM @XmlData.nodes('/NewDataSet/table1') ItemData(row)   -- 실행됨
+            FROM @XmlData.nodes('/NewDataSet/Table1') ItemData(row)   -- 아무런 반응 없고 -1 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.Data.CommandType,System.String)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String,System.Object[])">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String,System.Object[],System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.Data.CommandType,System.String,System.Object[],System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryExec(System.Data.CommandType,System.String,System.Object[],System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryExec(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.String)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.String,System.Data.DataSet,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.String,System.Data.DataSet,System.String,System.String)">
+            <summary>
+            DataSet 객체를 XML 형태의 파라미터로 생성해서 프로시저를 호출 한다. 
+            파라미터명 : "XMLDATA" 로 정의해서 사용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="dsSave">저장 데이터소스(save, delete) DataSet</param>
+            <param name="id_user">사용자 아이디, 20자리</param>
+            <param name="ip_user">컴퓨터 IP, 20자리</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.String,System.Object[])">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.Data.CommandType,System.String)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalarExec(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            단일 값(scalar value)을 반환하는 SQL 문장 혹은 stored procedure를 수행한다.
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.String)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.String,BlueOcean.Framework.Data.ConnectionOwnerShip)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="connectionOwnerShip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.String,System.Object[])">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.Data.CommandType,System.String)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.ConnectionOwnerShip)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="connectionOwnerShip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.Data.CommandType,System.String,System.Object[])">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterValues">object [] value</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.ConnectionOwnerShip,BlueOcean.Framework.Data.DataParameterCollection)">
+            <summary>
+            ExecuteReader
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="connectionOwnerShip"></param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>    
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(System.Data.CommandType,System.String,BlueOcean.Framework.Data.ConnectionOwnerShip,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="connectionOwnerShip">데이터베이스의 연결을 호출자에서 닫을것인지 라이브러리 내부에서 닫을것인지의 여부를 나타낸다.</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReaderExec(System.Data.CommandType,System.String,BlueOcean.Framework.Data.ConnectionOwnerShip,BlueOcean.Framework.Data.DataParameterCollection,System.Data.IDataParameterCollection@)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <param name="connectionOwnerShip">데이터베이스의 연결을 호출자에서 닫을것인지 라이브러리 내부에서 닫을것인지의 여부를 나타낸다.</param>
+            <param name="parameterList">DataParameter 클래스의 콜렉션 클래스</param>        
+            <param name="outParameterCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReaderSchemaTable(System.String)">
+            <summary>
+            테이블 이름을 넘겨서 테이블의 스키마정보를 반환 받는다.
+            </summary>
+            <param name="commandText">테이블 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReaderSchemaTableExec(System.Data.CommandType,System.String)">
+            <summary>
+            ExecuteReader
+            </summary>
+            <param name="commandType">명령 문자열을 해석하는 방법</param>
+            <param name="commandText">데이터 소스에 대해 실행할 텍스트 명령, 또는 프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.SqlParameterLog(System.Data.CommandType,System.String,System.Data.IDataParameterCollection,System.Diagnostics.Stopwatch,System.String)">
+            <summary>
+            파라미터 정보를 기록 한다.
+            </summary>
+            <param name="commandType">CommandType</param>
+            <param name="commandText">commandText</param>
+            <param name="sqlParams">파라미터</param>
+            <param name="startTime">시작 시간</param>
+            <example>
+            <code>
+            SqlParameterLog(commandType, commandText, _command.Parameters, startTime);
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.SqlParameterLog(System.Data.CommandType,System.String,System.Data.IDataParameterCollection,System.Diagnostics.Stopwatch,System.String,System.Int32,System.Boolean)">
+            <summary>
+            파라미터 정보를 기록 한다.
+            </summary>
+            <param name="commandType">CommandType</param>
+            <param name="commandText">commandText</param>
+            <param name="sqlParams">파라미터</param>
+            <param name="startTime">시작 시간</param>
+            <param name="isSelectCall">조회 프로시저 호출여부 [20140724]</param>
+            <example>
+            <code>
+            SqlParameterLog(commandType, commandText, _command.Parameters, startTime);
+            </code>
+            </example>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.SetGlobalParamsString(System.Data.CommandType,System.String,System.Data.IDataParameterCollection)">
+            <summary>
+            전역 변수에 DB 호출을 하는 파라미터 정보를 string 생성 한다. [20110825,alth]
+            </summary>
+            <param name="sqlParams">sql 파라미터</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ClearGlobalParamsString">
+            <summary>
+            전역 변수에 DB 호출을 하는 파라미터 정보를 string 생성 정보를 초기화 한다. [20110825,alth]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.GetParameterInfo(System.Data.IDataParameterCollection)">
+            <summary>
+            디비 호출하는 파라미터 정보를 분석한 문자열을 반환 한다.
+            </summary>
+            <param name="sqlParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.DBAcceeLogInsert">
+            <summary>
+            DB ACCESS LOG 파라미터 정보를 기록 한다. 개발자 직접 호출 금지.
+            </summary>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Data.DataBaseHandler.DBAcceeLogInsertExec" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.DbErrorLog(System.Data.SqlClient.SqlException)">
+            <summary>
+            테스트용 쿼리.
+            </summary>
+            <param name="sqlEx"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.CreateProcedureInfoList(System.String)">
+            <summary>
+            ProcedureInfoCollection 정보 체크
+            없으면 USP_SPHELP 이용해서 스키마 정보 정의. 전역 변수 클래스 추가
+            두번째 호출시 부터는 메모리 데이터 이용 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.CreateProcedureInfoListSave(System.String)">
+            <summary>
+            Save 타입용 프로시저 파라미터 리스트 생성.
+            </summary>
+            <param name="spname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.GetDataParameterList">
+            <summary>
+            파라미터만 이용해서 값 설정하는 경우에 사용 한다.
+            NonQueryNormal, ExecuteDataTable, ExecuteDataSet, ExecuteScalar, ExecuteReader 에서 사용 한다.
+            DataParameter 리스트 생성 반환 한다.
+            파라미터 제공하는 것이 없느 프로시저 인 경우 Count == 0 으로 제어 한다.
+            </summary>
+            <returns>DataParameterCollection 리스트</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.InitSelectParameterSourceType(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            1. 소스타입 : Select 유효성 체크
+            2. 전역 변수 설정 : _DataParameterHelper
+            3. 전역 변수 설정 : _ProcedureInfoList
+            4. DataParameterCollection 설정 반환
+            5. 조회 파라미터 유효성 체크
+            </summary>
+            <param name="dataParameterHelper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.CheckParameterContainsTable(BlueOcean.Framework.Data.ProcedureInfoCollection@,System.Data.DataTable)">
+            <summary>
+            파라미터 존재 유무 유효성 체크. DataTable, Object 2군데에서 체크 한다.
+            존재하지 않으면 Exception 발생 시킨다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.VerifyParameterItem">
+            <summary>
+            UI에 개발자가 추가한 파라미터에 프로시저 파라미터 항목의 존재 유무 유효성 체크 한다.
+            Object 1군데에서 체크 한다.  존재하지 않으면 Exception 발생 시킨다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.VerifyParameterXmlSave">
+            <summary>
+            Xml 타입 이용 저장 프로시저 유형
+            파라미터 존재 유무 유효성 체크. Object 1군데에서 체크 한다.
+            존재하지 않으면 Exception 발생 시킨다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ErrorParameterExecption(System.Collections.Generic.List{System.String})">
+            <summary>
+            에러 메시지 출력
+            </summary>
+            <param name="errorParameter">에러 컬럼 리스트 문자열</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ErrorParameterExecption(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            에러 메시지 출력
+            </summary>
+            <param name="errorParameter">에러 컬럼 리스트 문자열</param>
+            <param name="spname">프로시저 이름</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.VerifyParameterSourceTypeSelect(BlueOcean.Framework.Data.ParameterSourceType)">
+            <summary>
+            데이터 소스 유형 타입
+            </summary>
+            <param name="sourceType"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQuery(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            결과셋이 없는 SQL 문장 혹은 stored procedure를 수행한다. 
+            트랜잭션 처리를 한다.
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryExec(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            파라미터 이용해서 저장 한다.
+            저장 타입에 따라 해당 메소드를 호출 한다.
+            트랜잭션 처리를 한다.
+            </summary>
+            <param name="dataParameterHelper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryDataTable">
+            <summary>
+            저장 타입 : 1.DataTable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryDataTableExec(System.Data.DataTable,BlueOcean.Framework.Data.ProcedureInfoCollection,BlueOcean.Framework.Data.ProcedureInfoCollection,BlueOcean.Framework.Data.ProcedureInfoCollection)">
+            <summary>
+            프로시저 실행 : 3가지 유형 (신규,수정,삭제)
+            </summary>
+            <param name="dtSource"></param>
+            <param name="procList_Insert">Insert 프로시저 리스트</param>
+            <param name="procList_Update">Update 프로시저 리스트</param>
+            <param name="procList_Delete">Delete 프로시저 리스트</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryXml">
+            <summary>
+            저장 타입: 2.XML
+            저장 프로시저 1개로 모든 것을 활용 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryNormal">
+            <summary>
+            저장 타입: 3.파라미터 이용 NonQuery()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteNonQueryMultiSave">
+            <summary>
+            저장 타입 : 4.MultiSave
+            DataTable 여러개를 동시에 저장 한다.
+            트랜잭션 처리를 한다.
+            </summary>
+            <returns>영향 받은 행 갯수</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataTable(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            조회 값을 DataTable 로 반환 한다.
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteDataSet(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            조회 값을 DataSet 로 반환 한다.
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteScalar(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            단일 값(scalar value)을 반환 한다. 반환 타입 : object
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.ExecuteReader(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            IDataReader 형식으로 반환
+            </summary>
+            <param name="dataParameterHelper">DataParameterHelper 정보</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.DataBaseHandler.GetDataParameterCollection(BlueOcean.Framework.Data.DataParameterHelper)">
+            <summary>
+            파라미터 리스트를 반환 한다.
+            개발자가 정의 안한 경우 디비를 호출해서 정의후 반환 한다.
+            </summary>
+            <param name="dataParameterHelper"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.DataBaseHandler.CommandTimeout">
+            <summary>
+            명령 실행을 종료하고 오류를 생성하기 전 대기 시간을 가져오거나 설정합니다. 기본값은 30초입니다. 최대 600초 (10분) 입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.DataBaseHandler.IsTransaction">
+            <summary>
+            트랜잭션 사용 유무 [alth,20140417]
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.DataBaseHandler.ConnectionString">
+            <summary> 
+            연결정보 문자열을 설정하거나 가져옵니다.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecureCertifyFieldString2">
+            <summary>
+            로그인 화면에서 사용하는 보안 필드 클래스. 백업 인증 서버. 37 서버.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString2._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString2._CALL_SCOPENAME">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString2._server_ip">
+            <summary>
+            인증서버 아이피
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString2._db_name">
+            <summary>
+            인증서버 디비
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString2._login_id">
+            <summary>
+            로그인 어드민 아이디 : 뉴젠소호 임. 읽기전용 스키마 별도 생성한것.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString2._login_pw">
+            <summary>
+            로그인 어드민 암호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString2._str_Conn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString2.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString2.InitSecureCertifyFieldString2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString2.InitCallInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString2.CheckValidation">
+            <summary>
+            호출을 한 곳의 위치의 유효성 여부 체크
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString2.GetDecrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString2.InitData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureCertifyFieldString2.STRING_CONN">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.InfoConnect">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.InfoConnect._DAT_FILENAME">
+            <summary>
+            데이터베이스 정보 파일 명칭
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.InfoConnect.ConnectFile_Direction">
+            <summary>
+            .DAT 파일에서 연결문자열을 읽고서 설정한다. : DEFAULT : DAT 파일
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.InfoConnect.InitDatFileName(System.String)">
+            <summary>
+            추가작업 : 개발시에만 사용함.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.InfoConnect.DemoServer_Notice_Conn">
+            <summary>
+             [alth,20150923]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.InfoConnect.DAT_FILENAME">
+            <summary>
+            데이터베이스 정보 파일 명칭
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.EncryptionUtility">
+            <summary>
+            관리되지 않는 코드 : 내부에서 사용되는 클래스 유틸리티
+            </summary>
+            <remarks>
+             기밀로 유지되어야 하는 텍스트를 나타냅니다. 
+             이 텍스트는 사용될 때 기밀을 위해 암호화되고 더 이상 필요하지 않을 때 컴퓨터 메모리에서 삭제됩니다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.EncryptionUtility.EncryptStringAES(System.String,System.Boolean)">
+            <summary>
+            기밀이 유지되는 텍스트를 만들어서 반환 한다.
+            </summary>
+            <param name="inputText">일반 문자열</param>
+            <param name="isDataProtection"> true 암호화, false 복호화</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.EncryptionUtility.EncryptString(System.String)">
+            <summary>
+            기밀이 유지되는 텍스트를 만들어서 반환 한다.
+            </summary>
+            <param name="inputText">일반 문자열</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.EncryptionUtility.DecryptSecureString(System.Security.SecureString)">
+            <summary>
+            기밀이 유지되던 텍스트를 일반 문자열로 변환 하여 반환 한다.
+            </summary>
+            <param name="inputText">기밀 텍스트</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.EncryptionUtility.DataProtection(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="isSecurity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.SecureCertifyFieldString">
+            <summary>
+            로그인 화면에서 사용하는 보안 필드 클래스. 인증 서버. 38 서버.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString._isChecked">
+            <summary>
+            유효성 호출 체크 여부
+            </summary> 
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString._CALL_SCOPENAME">
+            <summary>
+            데이터베이스 정보 폴더
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString._server_ip">
+            <summary>
+            인증서버 아이피
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString._db_name">
+            <summary>
+            인증서버 디비
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString._login_id">
+            <summary>
+            로그인 어드민 아이디 : 뉴젠소호 임. 읽기전용 스키마 별도 생성한것.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString._login_pw">
+            <summary>
+            로그인 어드민 암호
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.SecureCertifyFieldString._str_Conn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString.#cctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString.InitSecureCertifyFieldString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString.InitCallInfo(System.Security.SecureString)">
+            <summary>
+            호출한 클래스 주소
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString.CheckValidation">
+            <summary>
+            호출을 한 곳의 위치의 유효성 여부 체크
+            </summary>
+            <example>
+            </example>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString.GetDecrypt(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.SecureCertifyFieldString.InitData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.SecureCertifyFieldString.STRING_CONN">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Data.ProcedureInfoCollection">
+            <summary>
+            프로시저 파라미터 정보 콜렉션 클래스 입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Data.ProcedureInfoCollection._spName">
+            <summary>
+            프로시저 이름 : PK 컬럼 (DB 단위 유일함)
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Data.ProcedureInfoCollection.#ctor(System.String)">
+            <summary>
+            생성자 : 디폴트로 15개 정도의 항목 영역을 생성 한다.
+            </summary>
+            <param name="spname">프로시저 이름</param>
+        </member>
+        <member name="P:BlueOcean.Framework.Data.ProcedureInfoCollection.SP_NAME">
+            <summary>
+            프로시저 이름 : PK 컬럼 (DB 단위 유일함)
+            </summary>
+        </member>
+    </members>
+</doc>

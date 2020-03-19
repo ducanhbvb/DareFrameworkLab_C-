@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Runtime.ContainerControls</name>
+    </assembly>
+    <members>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerControls.DebugTraceControls">
+            <summary>
+            이건 아무곳에서도 사용을 안하는 것이다.. 그냥 만들어 놓은것야...
+            삭제 절대금지. [20110707, alth]
+            </summary>
+        </member>
+    </members>
+</doc>

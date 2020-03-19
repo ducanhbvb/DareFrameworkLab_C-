@@ -1,0 +1,3346 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueOcean.Framework.Runtime.ContainerHelpForms</name>
+    </assembly>
+    <members>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.NoticdBoard.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.NoticdBoard.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.NoticdBoard.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalPassword.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalPassword.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalPassword.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalPassword.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalPassword.PwdChanged">
+            <summary>
+            패스워드 변경
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalPassword.txt_sel_BIZ_CD_CodeHelpResultOK(System.Object,BlueOcean.Framework.CPControls.HelpCodeInfoEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.HelpForms.HelpLoading">
+            <summary>
+            컨테이너 생성시 로딩중 표시 폼.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.HelpForms.HelpLoading.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.HelpForms.HelpLoading.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.HelpForms.HelpLoading.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.HelpForms.HelpLoading._ProgressBarAuto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.HelpForms.HelpLoading._iconManager">
+            <summary>
+            아이콘 Helper Class
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.HelpForms.HelpLoading.IconManager">
+            <summary>
+            Returns the IconManager instance that provides the bitmaps for this application.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping">
+            <summary>
+            사용자별 사업장 연결정보 설정 값 기능 복사 [20141104]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.#ctor">
+            <summary>
+            생성자
+            </summary>
+            <param name="memb_busnpers_no">발주사업자번호</param>
+            <param name="ID_USER">아이디</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.HelpChangePassword_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.HelpChangePassword_Shown(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.btnOk_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.btnClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.txt_ORG_USER_ID_CodeHelpResultOK(System.Object,BlueOcean.Framework.CPControls.HelpCodeInfoEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.SetCreateCopy">
+            <summary>
+            내용 복사 : 원본 아이디에 해당하는 멀티 대상에 대해서 같은 내용을 복사해 준다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping._dataSource">
+            <summary>
+            검색된 데이터 소스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.SetRowFilter">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.txt_SEARCH_KEY_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.txt_SEARCH_KEY_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeCopyMaping.txt_SEARCH_KEY_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.AboutForm.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.AboutForm.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.AboutForm.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp">
+            <summary>
+            급여조회 서비스의 회사코드 도움창 [alth,20141215]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp._BIZ_NO">
+            <summary>
+            로그인 사용자의 발주사업자번호  [alth,20141215]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp._dataSource">
+            <summary>
+            검색된 데이터 소스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp.SetRowFilter">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserPayCorp.txtKeyword_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.frmOwner">
+            <summary>
+            Dialog which enables the end user to add a new WinSchedule Owner
+            or modify the properties of an existing one.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.#ctor(Infragistics.Win.UltraWinSchedule.UltraCalendarInfo)">
+            <summary>
+            Creates a new instance of the <see cref="T:BlueOcean.Framework.Runtime.Container.Forms.frmOwner"/> class.
+            </summary>
+            <param name="calendarInfo">The UltraCalendarInfo instance to which this dialog is associated.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.cmdOk_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Ok button's Click event
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.cmdCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Cancel button's Click event
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.OnFieldValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the appropriate "value changed" event for all controls
+            on the dialog which represent Owner properties.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.ShowMe(Infragistics.Win.UltraWinSchedule.Owner)">
+            <summary>
+            Shows the dialog
+            </summary>
+            <param name="owner">The Owner being edited, or null if adding a new Owner.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.ValidateKey">
+            <summary>
+            Validates the 'Key' field by ensuring the key is non-empty and unique.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.Key">
+            <summary>
+            Returns the value of the 'Key' field.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.OwnerName">
+            <summary>
+            Returns the value of the 'Name' field.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.EMailAddress">
+            <summary>
+            Returns the value of the 'Email' field.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.OwnerVisible">
+            <summary>
+            Returns the value of the 'Visible' field.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.frmOwner.Locked">
+            <summary>
+            Returns the value of the 'Locked' field.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH">
+            <summary>
+            하나로 제품 : 회사코드 도움창.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH._TAX_ID_USER">
+            <summary>
+            세무사 직원 아이디 [20120707]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tax_id_user"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.InitGrid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH._dataSource">
+            <summary>
+            검색된 데이터 소스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.SetRowFilter">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpH.txtKeyword_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices">
+            <summary>
+            부가기능 도움창.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices._OptionalServicesType">
+            <summary>
+            부가 서비스 호출 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices._ToolTip">
+            <summary>
+            툴팁 인스턴스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.#ctor">
+            <summary>
+            생성자. 
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices._OptionalServiceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.RaiseCompletedExec(BlueOcean.Framework.AppBase.ToolBarButton)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.SetToolTips">
+            <summary>
+            ToolTip Contents
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.HelpOptionalServices.OptionalServicesType">
+            <summary>
+            부가 서비스 호출 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck._ID_USER">
+            <summary>
+            사용자 아이디.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.frmAppConfig_Load(System.Object,System.EventArgs)">
+            <summary>w
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.txtPASSWORD_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            키 이벤트 추가. [alth,20150813]
+            </summary>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSecurityCheck.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Data.BizFormsData">
+            <summary>
+            공통 제공 데이터 조회 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Data.BizFormsData.ChangePassword2(System.String,System.String,System.String,System.String)">
+            <summary>
+            암호 변경
+            </summary>
+            <param name="CORP_CODE">회사코드</param>
+            <param name="USERID">사용자아이디</param>
+            <param name="PASS">현재 암호</param>
+            <param name="NEW_PASS">신규 암호</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Data.BizFormsData.GetMenu_Devloper(System.String)">
+            <summary>
+            메뉴별 담당자 정보 조회
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.#ctor">
+            <summary>
+            입력 컨트롤 바인딩 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.OnToolBarSelect">
+            <summary>
+            조회 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.OnToolBarApply">
+            <summary>
+            적용(확인) 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.OnToolBarClose">
+            <summary>
+            닫기 버튼을 클릭할 경우 발생하는 이벤트
+            true 를 리턴을 경우 화면이 닫히고, false 를 리턴할 경우 화면이 닫히지 않는다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.SaveDataMaster">
+            <summary>
+            MASTER 데이터 저장
+            </summary>
+            <param name="DSSAVE">변경(save)/삭제(delete) 테이블</param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpSelectInfo.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam">
+            <summary>
+            웹카메라 도움창.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam._ip_url_web_cam_1">
+            <summary>
+            웹 카메라 주소 1
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam._ip_url_web_cam_2">
+            <summary>
+            웹 카메라 주소 2
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam._ip_url_web_cam_3">
+            <summary>
+            웹 카메라 주소 3
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam._ip_url_web_cam_4">
+            <summary>
+            웹 카메라 주소 4
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam._url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam._ToolTip">
+            <summary>
+            툴팁
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam._webBrowser">
+            <summary>
+            웹 브라우저
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.#ctor">
+            <summary>
+            생성자
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            그리드를 먼저 설정 하고 그외 컨트롤에 대해서 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅 같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializeAfterPage">
+            <summary>
+            Page Base 에서 컨트롤 초기화 작업 완료후
+            UI 이벤트 재호출해서 변경작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnToolBarSelect">
+            <summary>
+            툴바의 조회 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnToolBarInsert">
+            <summary>
+            툴바의 추가 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnToolBarDelete">
+            <summary>
+            툴바의 삭제 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnToolBarSave">
+            <summary>
+            툴바의 저장 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnToolBarPrint">
+            <summary>
+            툴바의 인쇄 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnToolBarHelp">
+            <summary>
+            Help 버튼을 클릭할 경우 발생하는 이벤트(도움창호출 HELP 버튼)
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnToolBarClose">
+            <summary>
+            툴바의 종료 버튼을 클릭할 경우 발생하는 이벤트
+            true 를 리턴을 경우 화면이 닫히고, false 를 리턴할 경우 화면이 닫히지 않는다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.SetFocus">
+            <summary>
+            화면 오픈시 첫번째 포커스 설정 메소드.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.InitializeAfterPageExec">
+            <summary>
+            페이지 베이스에서 내부적 컨트롤 및 속성 설정 완료 후
+            UI 이벤트 재 호출. 속성 설정 완료 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.CheckDataChanges">
+            <summary>
+            화면 닫기전, 마스터 행 변경전 데이터 변경 유무 체크.
+            </summary>
+            <returns></returns>
+            <remarks>
+            DialogResult.Yes, No, Cancel 3가지 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.SetTool_ToolTip">
+            <summary>
+            ToolTip Contents
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.isIEClear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnStatusTextChanged(System.Object,System.EventArgs)">
+            <summary>
+            마우스 링크시 상태바에 내역을 표시 한다.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.OnDocumentCompleted(System.Object,System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)">
+            <summary>
+            버튼 활성화 비활성화.
+            IE 뒤로, 앞으로 버튼
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.WebBrowser_Navigate(System.String)">
+            <summary>
+            브라우저 사이트 검색.
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.URL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.HelpWebCam.TitleText">
+            <summary>
+            도움창 타이틀을 제어 합니다. [20120315]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.OnToolBarSelect">
+            <summary>
+            조회 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.OnToolBarApply">
+            <summary>
+            적용(확인) 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.OnToolBarClose">
+            <summary>
+            닫기 버튼을 클릭할 경우 발생하는 이벤트
+            true 를 리턴을 경우 화면이 닫히고, false 를 리턴할 경우 화면이 닫히지 않는다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpGlobalDataSource.CheckDataChanges">
+            <summary>
+            화면 닫기전 데이터 변경 유무 체크.
+            </summary>
+            <returns></returns>
+            <remarks>
+            DialogResult.Yes, No, Cancel 3가지 리턴
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo._DBM">
+            <summary>
+            입력 컨트롤 바인딩 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.OnToolBarSelect">
+            <summary>
+            조회 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.OnToolBarApply">
+            <summary>
+            적용(확인) 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.OnToolBarClose">
+            <summary>
+            닫기 버튼을 클릭할 경우 발생하는 이벤트
+            true 를 리턴을 경우 화면이 닫히고, false 를 리턴할 경우 화면이 닫히지 않는다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpFunctionInfo.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword">
+            <summary>
+            사용자 암호 변경 도움창.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword.#ctor(System.String,System.String)">
+            <summary>
+            생성자
+            </summary>
+            <param name="memb_busnpers_no">발주사업자번호</param>
+            <param name="ID_USER">아이디</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            OnUIKeyDown 이벤트
+            </summary>
+            <param name="keyData"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword.GetCheckPasswordEncyptString(System.String)">
+            <summary>
+            암호 데이터를 보안 문자열로 생성후에 리턴 한다. [20120614]
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpChangePassword.PwdChanged">
+            <summary>
+            패스워드 변경
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Data.BIZ_FUNCTION.get_SelectDataMaster(System.Int32)">
+            <summary>
+            MASTER 테이블 데이터 조회
+            </summary>
+            <param name="CODE_HELP_NAME">도움창코드</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Data.BIZ_FUNCTION.set_SaveDataMaster(System.Data.DataSet)">
+            <summary>
+            기능 개선 정보 저장
+            </summary>
+            <param name="DSSAVE">변경(save)/삭제(delete) 테이블</param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.cbo_sel_MODULE_CD_AControl_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.GetMyMenuSelect">
+            <summary>
+            마이 메뉴 조회 : 회사단위로 사용자 거부메뉴를 뺀 메뉴만 조회 한다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.SaveDataMaster">
+            <summary>
+            마이메뉴 변경 내역 저장.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMyMenuChange.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.Help_OptionalServices">
+            <summary>
+            부가기능 화면 :: 사용안함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_OptionalServices.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_OptionalServices.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_OptionalServices.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping">
+            <summary>
+            ACCOMMONHELP 프로젝트에 있는 팝업 화면에 여기에 별도 생성 한 것임.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping._Is_B2B_USER_CALL">
+            <summary>
+            B2B 사용자 리스트 표시 여부 : B2B 사용자관리화면에서 호출시에 TRUE 임. [alth,20140503]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            그리드를 먼저 설정 하고 그외 컨트롤에 대해서 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅 같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializeAfterPage">
+            <summary>
+            Page Base 에서 컨트롤 초기화 작업 완료후
+            UI 이벤트 재호출해서 변경작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.SetFocus">
+            <summary>
+            화면 오픈시 첫번째 포커스 설정 메소드.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.InitializeAfterPageExec">
+            <summary>
+            페이지 베이스에서 내부적 컨트롤 및 속성 설정 완료 후
+            UI 이벤트 재 호출. 속성 설정 완료 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.CheckDataChanges">
+            <summary>
+            화면 닫기전, 마스터 행 변경전 데이터 변경 유무 체크.
+            </summary>
+            <returns></returns>
+            <remarks>
+            DialogResult.Yes, No, Cancel 3가지 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.SetNewRowDetail">
+            <summary>
+            grid_Detail의 신규행을 추가한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.grid_MASTER_AfterRowActivate(System.Object,System.EventArgs)">
+            <summary>
+            grid_MASTER 로우 활성화시
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.grid_DETAIL_BeforeRowDeactivate(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            grid_DETAIL 로우 이동시
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.grid_DETAIL_BeforeRowAdd(System.Object,System.EventArgs)">
+            <summary>
+            grid_DETAIL 로우 추가시
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.grid_DETAIL_RowDupColumnEvent(System.Object,BlueOcean.Framework.BaseControls.RowDupColumnEventArgs)">
+            <summary>
+            grid_DETAIL PK 컬럼 중복시 이벤트 (해당 컬럼으로 포커스 이동)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.grid_DETAIL_Leave(System.Object,System.EventArgs)">
+            <summary>
+            grid_DETAIL 포커스를 잃을시
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.grid_DETAIL_CodeHelpButtonClick(System.Object,BlueOcean.Framework.BaseControls.CodeHelpEventArgs)">
+            <summary>
+            grid_DETAIL_CodeHelpButtonClick
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.grid_DETAIL_CodeHelpResultOK(System.Object,BlueOcean.Framework.BaseControls.HelpCodeInfoEventArgs)">
+            <summary>
+            사업장 멀티 도움창 CodeHelpResultOK
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.btnDel_Click(System.Object,System.EventArgs)">
+            <summary>
+            삭제버튼 클릭시
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            확인버튼 클릭시
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.HelpBizOfficeMaping_Shown(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.btn_USER_DATA_COPY_Click(System.Object,System.EventArgs)">
+            <summary>
+            사업장 매핑 정보 복사 기능 : 도움창 호출
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.AddMergeColumn(BlueOcean.Framework.CMControls.CMGrid,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles)">
+            <summary>
+            머지컬럼 추가
+            </summary>
+            <param name="grid">그리드</param>
+            <param name="mergeColKey">머지컬럼KEY</param>
+            <param name="mergeColName">머지컬럼명</param>
+            <param name="codeWidth">코드컬럼 사이즈</param>
+            <param name="nameWidth">명컬럼 사이즈</param>
+            <param name="codeLen">코드길이</param>
+            <param name="nameLen">명길이</param>
+            <param name="columnStyle">컬럼스타일</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.AddMergeColumnDept(BlueOcean.Framework.CMControls.CMGrid,BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles)">
+            <summary>
+            부서컬럼 추가
+            </summary>
+            <param name="grid">그리드</param>
+            <param name="columnStyle">컬럼 스타일</param>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.AddMergeColumnDept(BlueOcean.Framework.CMControls.CMGrid,System.Int32,System.Int32,BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.AddMergeColumnBiz(BlueOcean.Framework.CMControls.CMGrid,BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles)">
+            <summary>
+            사업장 추가
+            </summary>
+            <param name="grid">그리드</param>
+            <param name="columnStyle">컬럼 스타일</param>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.AddMergeColumnBiz(BlueOcean.Framework.CMControls.CMGrid,System.Int32,System.Int32,BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.AddMergeColumnEmp(BlueOcean.Framework.CMControls.CMGrid,BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles)">
+            <summary>
+            사원컬럼 추가
+            </summary>
+            <param name="grid">그리드</param>
+            <param name="columnStyle">컬럼 스타일</param>
+        </member>
+        <!-- 잘못된 형식의 XML 주석은 "M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.AddMergeColumnEmp(BlueOcean.Framework.CMControls.CMGrid,System.Int32,System.Int32,BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles)" 멤버에 대해 무시됩니다. -->
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.GetSecYn">
+            <summary>
+            공통
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.GetChangedOKData(System.Data.DataTable,System.String[])">
+            <summary>
+            필수컬럼값에 Null 값인 데이터를 걸러냅니다.
+            </summary>
+            <param name="dt">대상이 되는 DataTable</param>
+            <param name="lstCheckColumn">필수값을 체크할 컬럼명들</param>
+            <returns>필수값중 Null값이 들어간 Row만 제외한 테이블</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.IsRequiredColsCheck(System.Collections.Generic.List{System.String[]},BlueOcean.Framework.CMControls.CMGrid)">
+            <summary>
+            그리드 필수컬럼 체크
+            </summary>
+            <param name="lstCheckColumns">0:체크할 컬럼명, 1:메시지 ex) new string { "CODE", "코드는 필수값 입니다." }</param>
+            <param name="cmGrid">대상이 되는 그리드</param>
+            <returns>필수값이 모두 들어가 있는지 여부</returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.IsExistRequiredValue(Infragistics.Win.UltraWinGrid.UltraGridRow,System.String[])">
+            <summary>
+            UltraGridRow의 필수값들이 Null or "" 일경우 Fasle, 존재할경우 True
+            </summary>
+            <param name="gr">UltraGridRow</param>
+            <param name="columnName">컬럼명</param>
+            <returns>True: 필수값 존재,    False: 필수값이 모두 존재하지 않음</returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ExceptionTypes">
+            <summary>
+            예외 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ExceptionTypes.General">
+            <summary>
+            일반
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ExceptionTypes.Exception">
+            <summary>
+            예외
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles">
+            <summary>
+            컬럼 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles.Search">
+            <summary>
+            조회
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles.Insert">
+            <summary>
+            입력
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizOfficeMaping.ColumnStyles.CodeHelp">
+            <summary>
+            코드헬프
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping._DBM">
+            <summary>
+            입력 컨트롤 바인딩 헬퍼 클래스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            그리드를 먼저 설정 하고 그외 컨트롤에 대해서 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅 같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.InitializeAfterPageExec">
+            <summary>
+            페이지 베이스에서 내부적 컨트롤 및 속성 설정 완료 후
+            UI 이벤트 재 호출. 속성 설정 완료 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.txt_GUBUN_HelpDropDownOk(System.Object,BlueOcean.Framework.BaseControls.TDataList.HelpDropDownEventArgs)">
+            <summary>
+            txt_GUBUN_HelpDropDownOk
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpBizCDMapping.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            OnUIKeyDown 이벤트
+            </summary>
+            <param name="keyData"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.SetDataCodeList(System.Data.DataTable)">
+            <summary>
+            필터링으로 사용할 데이터소스를 설정 한다.
+            </summary>
+            <param name="dtCode"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2._dataSource_tax_Corp">
+            <summary>
+            검색된 데이터 소스 : 수임업체 기장 회사 리스트
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2._dataSource_my_Corp">
+            <summary>
+            검색된 데이터 소스 : 우리 회사 리스트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.SetRowFilter">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp2.txtKeyword_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpUser.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUser.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUser.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUser.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUser.GetResultValueAutoCode(System.String)">
+            <summary>
+            단일 사용자 아이디 조회.
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalRegister">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalRegister.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalRegister.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalRegister.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSemuPortalRegister.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Event.OptionalServicesEventHandler">
+            <summary>
+            부가 서비스 이벤트 핸들러
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Event.OptionalServicesEventArgs">
+            <summary>
+            부가 서비스 이벤트 Args
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Event.OptionalServicesEventArgs._OptionalServicesType">
+            <summary>
+            부가 서비스 호출 타입
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Event.OptionalServicesEventArgs.#ctor(BlueOcean.Framework.AppBase.ToolBarButton)">
+            <summary>
+            생성자.
+            </summary>
+            <param name="optionalServicesType">부가 서비스 타입</param>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Event.OptionalServicesEventArgs.OptionalServicesType">
+            <summary>
+            부가 서비스 호출 타입
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.CheckMenuNameFind(System.String)">
+            <summary>
+            메뉴명으로 검색해서 1건이면 메뉴 정보를 리턴 한다.
+            </summary>
+            <param name="searchkey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect._dataSource">
+            <summary>
+            검색된 데이터 소스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.SetRowFilter">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuSelect.txtKeyword_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList">
+            <summary>
+            사용자 정보 리스트를 보여준다.
+            모든 법인의 모든 사용자 리스트
+            즉 연결 가능한 서버의 모든 정보를 조회 한다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.SelectDataDetail">
+            <summary>
+            상세 내역을 조회 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.SetResultValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.GetResultValueAutoCode(System.String)">
+            <summary>
+            단일 사용자 아이디 조회.
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList._dataSource_TAB2">
+            <summary>
+            검색된 데이터 소스
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList._dataSource_TAB1">
+            <summary>
+            검색된 데이터 소스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.SetRowFilter(System.Data.DataTable,BlueOcean.Framework.CMControls.CMGrid,BlueOcean.Framework.CMControls.CMGrid,System.String)">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.txt_SEARCH_KEY_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.txt_SEARCH_KEY_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSyUserList.txt_SEARCH_KEY_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.SetMenu_Devloper">
+            <summary>
+            메뉴 작업자 표시.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm._pageCode">
+            <summary>
+            메뉴 코드
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm._Deploy_path">
+            <summary>
+            메뉴 파일 위치
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.SetInfo(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pageName"></param>
+            <param name="pageCode"></param>
+            <param name="exeCode"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.SetInfo2(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="bulidInfo"></param>
+            <param name="menuType"></param>
+            <param name="module"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.SetGrant(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="grant"></param>
+            <param name="insert"></param>
+            <param name="edit"></param>
+            <param name="delete"></param>
+            <param name="print"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpMenuForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.SemuPortalConfigFile.ConfigFileOpen">
+            <summary>
+            사용자 정의 저장 파일을 읽고서 변수에 선언 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.SemuPortalConfigFile.Save(System.String,System.String,System.String)">
+            <summary>
+            정보업데이트
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.OnToolBarSelect">
+            <summary>
+            조회 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.OnToolBarApply">
+            <summary>
+            적용(확인) 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.OnToolBarClose">
+            <summary>
+            닫기 버튼을 클릭할 경우 발생하는 이벤트
+            true 를 리턴을 경우 화면이 닫히고, false 를 리턴할 경우 화면이 닫히지 않는다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.CheckDataChanges">
+            <summary>
+            화면 닫기전 데이터 변경 유무 체크.
+            </summary>
+            <returns></returns>
+            <remarks>
+            DialogResult.Yes, No, Cancel 3가지 리턴
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.SetGridFillDataSource(BlueOcean.Framework.CMControls.CMGrid,System.Data.DataTable)">
+            <summary>
+            그리드 데이터 소스 설정
+            </summary>
+            <param name="grid">그리드</param>
+            <param name="dtSource">데이터 소스</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.GridSetColumnWidthToAutoResize(BlueOcean.Framework.CMControls.CMGrid[])">
+            <summary>
+            컬럼 자동 조정
+            </summary>
+            <param name="grid"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.btn_BIND_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.SetMenuSelect(System.String,BlueOcean.Framework.CMControls.CMGrid,System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <param name="grid"></param>
+            <param name="dtSource"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.SubForms.HelpPageHelpInfo.SetUserInfo">
+            <summary>
+            사용자, 사원 정보
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._CurrentProcess">
+            <summary>
+            현재 프로세스.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._oldVirtualMemorySize64_calc">
+            <summary>
+            가상메모리 체크용 변수1.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._oldVirtualMemorySize64">
+            <summary>
+            가상메모리 체크용 변수1.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._checkVirtualMemorySize64">
+            <summary>
+            가상메모리 체크용 변수2.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._EmptyWorkingSet_Result">
+            <summary>
+            가상메모리 체크용 변수3.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._checkVirtualMemoryError">
+            <summary>
+            가상메모리 체크용 변수2.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._old_GC_GetTotalMemory">
+            <summary>
+            GC.GetTotalMemory HEAP 사이즈 체크용 변수1.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.EmptyWorkingSet(System.Int64)">
+            <summary>
+            psapi.dll  에 있는 EmptyWorkingSet(long hProcess) 입니다. 이 놈이 특정 프로세스의 사용하지 않는 메모리를 반환하게끔 합니다.
+            </summary>
+            <param name="hProcess"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.SetProcessWorkingSetSize(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="proc"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.Set_GC_WaitForPendingFinalizers">
+            <summary>
+            GC.Collect() 가비지 수집기가 회수 한다. [20130501]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck._ID_USER">
+            <summary>
+            사용자 아이디.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.frmAppConfig_Load(System.Object,System.EventArgs)">
+            <summary>w
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            키 이벤트 추가. [alth,20150813]
+            </summary>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpAutoMemoryTrimCheck.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpRole.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpRole.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpRole.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.frmQuery">
+            <summary>
+            Dialog which displays the result of a database query.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.#ctor(BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase,BlueOcean.Framework.Runtime.Container.Forms.QueryType)">
+            <summary>
+            Creates a new instance of the <see cref="T:BlueOcean.Framework.Runtime.Container.Forms.frmQuery"/> class.
+            </summary>
+            <param name="databaseSupport">The <see cref="!:WinScheduleDatabaseSupport"/> instance which contains the data for the query.</param>
+            <param name="queryType">The QueryType constant which defines the type of query.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.InitializeUI">
+            <summary>
+            Initializes the user interface.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.FormatOwners(Infragistics.Win.UltraWinTree.UltraTreeColumnSet)">
+            <summary>
+            Formats the display for columns in the 'Owners' ColumnSet
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.FormatAppointments(Infragistics.Win.UltraWinTree.UltraTreeColumnSet)">
+            <summary>
+            Formats the display for columns in the 'Appointments' ColumnSet
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.AutoSizeColumns">
+            <summary>
+            Calls PerformAutoResize on all single-line columns
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.GetAppointmentsTable">
+            <summary>
+            Returns a DataTable which contains the Appointment data.
+            Unlike the database table, the value of the 'AllProperties'
+            field is broken out into the corresponding Appointment properties.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.GetOwnersTable">
+            <summary>
+            Returns a DataTable which contains the Owner data.
+            Unlike the database table, the value of the 'AllProperties'
+            field is broken out into the corresponding Owner properties.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.frmQuery.ultraTree1_ColumnSetGenerated(System.Object,Infragistics.Win.UltraWinTree.ColumnSetGeneratedEventArgs)">
+            <summary>
+            Handles the UltraTree's ColumnSetGenerated event.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.QueryType">
+            <summary>
+            Constants which define different queries available to the end user.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.QueryType.AllOwners">
+            <summary>
+            Constant which represents a database query which returns
+            all Owners in the Owners collection.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.QueryType.AllAppointments">
+            <summary>
+            Constant which represents a database query which returns
+            all Appointments in the Appointments collection.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.QueryType.AppointmentsByOwner">
+            <summary>
+            Constant which represents a database query which returns
+            Owners with their Appointments as a child table.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp._ID_USER">
+            <summary>
+            로그인 사용자 아이디  [alth,20140829]
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp._dataSource">
+            <summary>
+            검색된 데이터 소스
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp.SetRowFilter">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorp.txtKeyword_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpUserLogoPriview.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserLogoPriview.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserLogoPriview.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpUserLogoPriview.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpSkinPriview.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSkinPriview.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSkinPriview.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpSkinPriview.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpGridPriview.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpGridPriview.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpGridPriview.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpGridPriview.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary">
+            <summary>
+            디자인 보기 할때 오류가 나면
+            frmMain_Fill_Panel 컨트롤을 추가 하는 위치를 맨 끝으로 이동 시키면 된다.
+            this._MainPanel.Controls.Add(this.frmMain_Fill_Panel); 를 아래코드 보다 1행 전에 추가 해준다.
+            this.Controls.Add(this.panel1);
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.frmMain_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Handles the main form's Closing event
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.frmMain_Load(System.Object,System.EventArgs)">
+            <summary>
+            Handles the main form's Load event.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.WinScheduleControl_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handles the MouseDown event for the WinSchedule controls.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.OnContextMenuItemClick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Click event for the context menu items.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.OwnerCheckbox_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the CheckedChanged event for the checkboxes which represent Owners.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.ultraCalendarInfo1_ValidateAppointment(System.Object,Infragistics.Win.UltraWinSchedule.ValidateAppointmentEventArgs)">
+            <summary>
+            Handles the UltraCalendarInfo component's 'ValidateAppointment' event.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.InitializeUI">
+            <summary>
+            Initialize the user interface by configuring controls, etc.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.InitializeOwnersPanel(System.Boolean)">
+            <summary>
+            Adds checkboxes to the pnlOwners Panel control when 'refreshOnly' is false;
+            when 'refreshOnly' is true, the existing ones are refreshed.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.AddCheckboxForOwner(Infragistics.Win.UltraWinSchedule.Owner)">
+            <summary>
+            Adds an UltraCheckEditor control to the 'pnlOwners' control
+            for the specified Owner.
+            </summary>
+            <param name="owner">The Owner for which a checkbox is to be added.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.ShowScheduleControl(Infragistics.Win.UltraWinSchedule.UltraScheduleControlBase)">
+            <summary>
+            Shows the specified UltraScheduleControlBase-derived control,
+            and hides the others; also sets its Dock property to 'Fill'
+            </summary>
+            <param name="scheduleControl">The UltraScheduleControlBase-derived control to show.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.SelectWorkWeek(System.DateTime,System.Boolean)">
+            <summary>
+            Selects a 5-day range of dates, beginning with the first
+            Monday that falls on or after the specified date. If 'alternate'
+            is true, the AlternateSelectedDateRanges collection is used;
+            otherwise, the SelectedDateRanges collection is used.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.SelectActiveDay(System.Boolean)">
+            <summary>
+            Resets the SelectedDateRanges collection to
+            contain only the current day. If 'alternate'
+            is true, the AlternateSelectedDateRanges collection is used;
+            otherwise, the SelectedDateRanges collection is used.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.HelpWorkDiary.DatabaseSupport">
+            <summary>
+            Returns an instance of the WinScheduleDatabaseSupportBase object
+            that provides access to the Appointments and Owners tables.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange._SC_WORK_YEAR">
+            <summary>
+            원천 작업년도 표시 여부.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            그리드를 먼저 설정 하고 그외 컨트롤에 대해서 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅 같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializeAfterPage">
+            <summary>
+            Page Base 에서 컨트롤 초기화 작업 완료후
+            UI 이벤트 재호출해서 변경작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnToolBarSelect">
+            <summary>
+            툴바의 조회 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnToolBarInsert">
+            <summary>
+            툴바의 추가 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnToolBarDelete">
+            <summary>
+            툴바의 삭제 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnToolBarSave">
+            <summary>
+            툴바의 저장 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnToolBarPrint">
+            <summary>
+            툴바의 인쇄 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnToolBarHelp">
+            <summary>
+            Help 버튼을 클릭할 경우 발생하는 이벤트(도움창호출 HELP 버튼)
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnToolBarClose">
+            <summary>
+            툴바의 종료 버튼을 클릭할 경우 발생하는 이벤트
+            true 를 리턴을 경우 화면이 닫히고, false 를 리턴할 경우 화면이 닫히지 않는다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.SetFocus">
+            <summary>
+            화면 오픈시 첫번째 포커스 설정 메소드.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.InitializeAfterPageExec">
+            <summary>
+            페이지 베이스에서 내부적 컨트롤 및 속성 설정 완료 후
+            UI 이벤트 재 호출. 속성 설정 완료 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.btn_USER_OK_Click(System.Object,System.EventArgs)">
+            <summary>
+            사용자 임시 기수변경  [20130110]
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.txt_SC_WORK_YEAR_AfterModifiedDataChanged(System.Object,BlueOcean.Framework.BaseControls.ModifiedDataChangedEventArgs)">
+            <summary>
+            원천작업년도
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpPrdNoChange.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.Common">
+            <summary>
+            Helper class with constants used by the samples
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.Common.DataPath">
+            <summary>
+            Path to the data installed by the install.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.ContainerHelpForms.Properties.Resources">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerHelpForms.Properties.Resources.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.ContainerHelpForms.Properties.Resources.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage._WebBrowser_MAIN">
+            <summary>
+            웹 브라우저
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage._modulecd">
+            <summary>
+            모듈코드 2자리
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage._pagecode">
+            <summary>
+            메뉴코드 12자리
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage._titletext">
+            <summary>
+            메뉴 명
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage._baseText">
+            <summary>
+            화면 타이틀 : 상태바 표시용.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.SetCallData(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="modulecd"></param>
+            <param name="pagecode"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializePageControls">
+            <summary>
+            컨트롤 초기화 작업을 할 경우 사용
+            디자인적인 요소등을 초기화 할 경우 사용 한다.
+            그리드를 먼저 설정 하고 그외 컨트롤에 대해서 설정 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializePageDataBinding">
+            <summary>
+            컨트롤의 데이터 초기화 작업을 할 경우 사용
+            콤보박스의 데이터 셋팅 같은 데이터 초기화 작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializeAfterPage">
+            <summary>
+            Page Base 에서 컨트롤 초기화 작업 완료후
+            UI 이벤트 재호출해서 변경작업을 할 경우 사용 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnToolBarSelect">
+            <summary>
+            툴바의 조회 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnToolBarInsert">
+            <summary>
+            툴바의 추가 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnToolBarDelete">
+            <summary>
+            툴바의 삭제 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnToolBarSave">
+            <summary>
+            툴바의 저장 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnToolBarPrint">
+            <summary>
+            툴바의 인쇄 버튼을 클릭할 경우 발생하는 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnToolBarHelp">
+            <summary>
+            Help 버튼을 클릭할 경우 발생하는 이벤트(도움창호출 HELP 버튼)
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnToolBarClose">
+            <summary>
+            툴바의 종료 버튼을 클릭할 경우 발생하는 이벤트
+            true 를 리턴을 경우 화면이 닫히고, false 를 리턴할 경우 화면이 닫히지 않는다.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.CheckPageDataChanges">
+            <summary>
+            화면에서 변경된 내역이 있는지의 여부를 체크 한다.
+            true 를 리턴을 경우 변경내역이 있는 것이고, false 를 리턴할 경우 변경내역이 없는 것이다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnUIKeyDown(BlueOcean.Framework.WinApp.Base.Events.BlueOceanKeyDownEventArgs)">
+            <summary>
+            UI의 개별 페이지에서 단축키 처리 등을 할 경우 사용 한다.
+            </summary>
+            <param name="keyData"></param>
+            <remarks>
+            UI 에서 키 처리 이벤트를 재정의 해서 사용을 하고
+            BasePage에서 키를 제어하지 않아야 하는 경우 e.Cancel = true 한다.
+            <example>
+            <code>
+            (코드예제1)
+            if (keyData.Key == (Keys.E | Keys.Control)) 
+            (코드예제2)
+            if(keyData.Key == (Keys.E | Keys.Control | Keys.Shift))
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.SetFocus">
+            <summary>
+            화면 오픈시 첫번째 포커스 설정 메소드.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializeGrid">
+            <summary>
+            그리드 컬럼 환경 설정 한다.
+            AddColumn() 기타 모든 설정을 코딩으로 처리 한다. 그리드는 디자인으로 작업 안한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializePageControlsExec">
+            <summary>
+            화면 컨트롤 초기화
+            </summary>
+            <remarks>
+            다국어 설정, DataBindingManager 등의 작업을 여기에서 설정 한다.
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializePageDataBindingExec">
+            <summary>
+            화면 데이터 바인딩
+            콤보박스 데이터 소스, 또는 화면에서 한번만 로딩해야 하는 것들은 여기에서 바인딩 한다.
+            </summary>
+            <remarks>
+            세팅 오류시 전역(Framework)으로 에러를 넘기지 않기 위해서 메소드 안에서 try ~ catch{} 를 한다.
+            </remarks>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.InitializeAfterPageExec">
+            <summary>
+            페이지 베이스에서 내부적 컨트롤 및 속성 설정 완료 후
+            UI 이벤트 재 호출. 속성 설정 완료 이벤트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.Set_Manual">
+            <summary>
+            메뉴 작업자 표시.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.isIEClear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnStatusTextChanged(System.Object,System.EventArgs)">
+            <summary>
+            마우스 링크시 상태바에 내역을 표시 한다.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.OnDocumentCompleted(System.Object,System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)">
+            <summary>
+            버튼 활성화 비활성화.
+            IE 뒤로, 앞으로 버튼
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.Help_ErrorResolvePage.WebBrowser_Navigate(System.String)">
+            <summary>
+            브라우저 사이트 검색.
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase">
+            <summary>
+            Base class for the WinSchedule database access classes.
+            </summary>
+            <remarks>
+            The <b>WinScheduleDatabaseSupportBase</b> class is an abstract class which
+            defines properties that return instances of the OleDB-related classes that
+            are necessary to connect to a database. The 'ConnectionString' property,
+            which must be overridden in a derived class, defines the connection string
+            specific to that type of database. The DataAdapterForOwners and
+            DataAdapterForAppointments properties, which also must be overridden in a
+            derived class, define the OleDbCommand instances which control the selection,
+            updating, and deletion of records in their respective tables.
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.SELECT_OWNERS_TEMPLATE">
+            <summary>
+            Template for the SQL SELECT statement for Owners.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.SELECT_APPOINTMENTS_TEMPLATE">
+            <summary>
+            Template for the SQL SELECT statement for Appointments.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.OWNERS_TABLE_NAME">
+            <summary>
+            Defines the name of the table that contains the Owner data.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.APPOINTMENTS_TABLE_NAME">
+            <summary>
+            Defines the name of the table that contains the Appointment data.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.MAX_APPOINTMENT_BYTES">
+            <summary>
+            The maximum number of bytes allowed for an appointment. Note that this
+            is a function of the database table, and should not be changed here.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.UpdateOwnersTable">
+            <summary>
+            Commits any outstanding changes to owner data to the DataTable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.UpdateAppointmentsTable">
+            <summary>
+            Commits any outstanding changes to appointment data to the DataTable.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.OnRowChanged(System.Object,System.Data.DataRowChangeEventArgs)">
+            <summary>
+            Handles the RowUpdated event for the data tables. We use this
+            to receive a notification when a row has been modified or deleted,
+            so that we can track the dirty state of the tables.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.System#IDisposable#Dispose">
+            <summary>
+            Implements the IDisposable interface's Dispose method.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.Dispose">
+            <summary>
+            Releases all resources used by this <see cref="T:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport"/> instance.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.Connection">
+            <summary>
+            Returns the OleDbConnection with which to connect to the data source.
+            An attempt is made to open the connection the first time the property
+            is accessed.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.ConnectionString">
+            <summary>
+            Returns the connection string to be assigned to the ConnectionString
+            property of the OleDbConnection referenced by the <see cref="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.Connection"/>
+            property. Must be overridden in derived classes to return a valid connection
+            string for the type of database associated with the derived class.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.DataAdapterForOwners">
+            <summary>
+            Returns the OleDbDataAdapter to be used for Owner data.
+            </summary>
+            <remarks>
+            The OleDbDataAdapter instance referenced by this property is "lazily" created,
+            i.e., object creation is deferred until the property is requested. When the
+            object is created, the InsertCommand, UpdateCommand and DeleteCommand properties
+            are all set to new instances of OleDbCommand objects, and those instances are
+            configured appropriately.
+            </remarks>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.DataAdapterForAppointments">
+            <summary>
+            Returns the OleDbDataAdapter to be used for Owner data.
+            </summary>
+            <remarks>
+            The OleDbDataAdapter instance referenced by this property is "lazily" created,
+            i.e., object creation is deferred until the property is requested. When the
+            object is created, the InsertCommand, UpdateCommand and DeleteCommand properties
+            are all set to new instances of OleDbCommand objects, and those instances are
+            configured appropriately.
+            </remarks>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.DataSet">
+            <summary>
+            Returns the DataSet which holds the Owner and Appointment data.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.Owners">
+            <summary>
+            Returns the DataTable which contains the Owner data.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.Appointments">
+            <summary>
+            Returns the DataTable which contains the Appointment data.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.HasOwnerChanges">
+            <summary>
+            Returns whether the Owners table has changes which have not
+            been committed to the database.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleDatabaseSupportBase.HasAppointmentChanges">
+            <summary>
+            Returns whether the Appointments table has changes which have not
+            been committed to the database.
+            </summary>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport">
+            <summary>
+            Handles communication between the WinSchedule data binding layer
+            and a SQL Server database.
+            </summary>
+            <remarks>
+            The WinScheduleMSSQLServerSupport class exposes properties that simplify the coding
+            that is necessary to bind the UltraCalendarInfo component's Appointments and Owners
+            collections to a SQL Server database.
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.DATABASE_CONNECTION_STRING_TEMPLATE">
+            <summary>
+            Defines the connection string; takes the following 5 parameters:
+            
+            Parameter {0} = UserId
+            Parameter {1} = Password
+            Parameter {2} = DatabaseName
+            Parameter {3} = ServerName
+            Parameter {4} = WorkstationId
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.DATABASE_USER_ID">
+            <summary>
+            The value of the 'User ID' parameter of the connection string.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.DATABASE_PASSWORD">
+            <summary>
+            The value of the 'Password' parameter of the connection string.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.DATABASE_NAME">
+            <summary>
+            The value of the 'Initial Catalog' parameter of the connection string.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.DATABASE_SERVER_NAME">
+            <summary>
+            The value of the 'DataSource' parameter of the connection string.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.ALLPROPERTIES_FIELD_SIZE">
+            <summary>
+            The number of bytes in the 'AllProperties' database field.
+            Note that this value MUST not be changed unless the actual
+            database field is also changed to the same value.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.SUBJECT_FIELD_SIZE">
+            <summary>
+            The number of bytes in the 'Subject' database field.
+            Note that this value MUST not be changed unless the actual
+            database field is also changed to the same value.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.ConnectionString">
+            <summary>
+            Returns a connection string specific to the SQL Server database
+            associated with this instance.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.DataAdapterForOwners">
+            <summary>
+            Returns the OleDbDataAdapter to be used for Owner data.
+            </summary>
+            <remarks>
+            The OleDbDataAdapter instance referenced by this property is "lazily" created,
+            i.e., object creation is deferred until the property is requested. When the
+            object is created, the InsertCommand, UpdateCommand and DeleteCommand properties
+            are all set to new instances of OleDbCommand objects, and those instances are
+            configured appropriately.
+            </remarks>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSSQLServerSupport.DataAdapterForAppointments">
+            <summary>
+            Returns the OleDbDataAdapter to be used for Appointment data.
+            </summary>
+            <remarks>
+            The OleDbDataAdapter instance referenced by this property is "lazily" created,
+            i.e., object creation is deferred until the property is requested. When the
+            object is created, the InsertCommand, UpdateCommand and DeleteCommand properties
+            are all set to new instances of OleDbCommand objects, and those instances are
+            configured appropriately.
+            </remarks>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSAccessSupport">
+            <summary>
+            Handles communication between the WinSchedule data binding layer and an MS Access database.
+            </summary>
+            <remarks>
+            The WinScheduleMSSQLServerSupport class exposes properties that simplify the coding
+            that is necessary to bind the UltraCalendarInfo component's Appointments and Owners
+            collections to an MS Access database.
+            </remarks>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSAccessSupport.DATABASE_CONNECTION_STRING_TEMPLATE">
+            <summary>
+            Defines the connection string; takes the following parameters:
+            
+            Parameter {0} = Path to the location (directory) of the database file
+            Parameter {1} = Name of the database file, including file extension
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSAccessSupport.DATABASE_NAME">
+            <summary>
+            The filename of the MS Access database.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSAccessSupport.ConnectionString">
+            <summary>
+            Returns a connection string specific to the MS Access database
+            associated with this instance.
+            </summary>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSAccessSupport.DataAdapterForOwners">
+            <summary>
+            Returns the OleDbDataAdapter to be used for Owner data.
+            </summary>
+            <remarks>
+            The OleDbDataAdapter instance referenced by this property is "lazily" created,
+            i.e., object creation is deferred until the property is requested. When the
+            object is created, the InsertCommand, UpdateCommand and DeleteCommand properties
+            are all set to new instances of OleDbCommand objects, and those instances are
+            configured appropriately.
+            </remarks>
+        </member>
+        <member name="P:BlueOcean.Framework.Runtime.Container.Forms.WinScheduleMSAccessSupport.DataAdapterForAppointments">
+            <summary>
+            Returns the OleDbDataAdapter to be used for Appointment data.
+            </summary>
+            <remarks>
+            The OleDbDataAdapter instance referenced by this property is "lazily" created,
+            i.e., object creation is deferred until the property is requested. When the
+            object is created, the InsertCommand, UpdateCommand and DeleteCommand properties
+            are all set to new instances of OleDbCommand objects, and those instances are
+            configured appropriately.
+            </remarks>
+        </member>
+        <member name="T:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo">
+            <summary>
+            다래본사처럼 여러개의 DB 에 접속을 하기 위해서 멀티 디비 정보를 설정해 놓는 경우이다.  [alth,20151014]
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.SetDataSource(System.Data.DataTable)">
+            <summary>
+            필터링으로 사용할 데이터소스를 설정 한다.
+            </summary>
+            <param name="dtCode"></param>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.SetResultValue">
+            <summary>
+            결과 반환
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo._tableRowFilter">
+            <summary>
+            테이블 행 필터 변수
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo._isRowFilter">
+            <summary>
+            행 필터링 중임을 체크 함.
+            </summary>
+        </member>
+        <member name="F:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo._dataSource">
+            <summary>
+            검색된 데이터 소스 : 수임업체 기장 회사 리스트
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.SetRowFilter">
+            <summary>
+            리스트 필터링을 한다.
+            </summary>
+        </member>
+        <member name="M:BlueOcean.Framework.Runtime.Container.Forms.HelpCorpDBInfo.txtKeyword_Leave(System.Object,System.EventArgs)">
+            <summary>
+            포커스 변경시 그리드 행 이벤트 호출 위해 변수 설정.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>
